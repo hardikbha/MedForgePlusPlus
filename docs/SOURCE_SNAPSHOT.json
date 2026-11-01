@@ -1,0 +1,1124 @@
+{
+  "source_project": "CIRCE and MedForge++ working trees, including local uncommitted work",
+  "snapshot_date": "2026-11-01",
+  "files": [
+    {
+      "file": "circe/__init__.py",
+      "source": "CIRCE/circe/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "circe/ablation1_stage_contribution.py",
+      "source": "CIRCE/circe/ablation1_stage_contribution.py",
+      "source_sha256": "fc35451a39fef30d2a2707304e225b6f00ac69a7269838aa54f94200a56fe407",
+      "release_sha256": "59936a7f49232c996fc43cb753a95526e9795b7d78562df4765593ac2d54605f"
+    },
+    {
+      "file": "circe/aggregate_results.py",
+      "source": "CIRCE/circe/aggregate_results.py",
+      "source_sha256": "d02e3ce97d87903dcee1211e5e061493574774ada8f6f331e2259ab296e7c975",
+      "release_sha256": "3ae9f08e4b6a6de648a1827e2641ee82366dde88ea00fbdae84654a63adb9d76"
+    },
+    {
+      "file": "circe/audit_protocol.py",
+      "source": "CIRCE/circe/audit_protocol.py",
+      "source_sha256": "22ce303e793df1df90d97261dc0bc1acc765b925c80756398c68964a6d0efdf3",
+      "release_sha256": "bcedd6d556f18f9a51f45fd1166074d66dcff020cb1f6a985696610fcb0be56b"
+    },
+    {
+      "file": "circe/build_failure_replay.py",
+      "source": "CIRCE/circe/build_failure_replay.py",
+      "source_sha256": "bc8816288e39fdf4a3a1b085c91fbddf5fa89f8d2ee8a9cbc7b8b69857ab60b9",
+      "release_sha256": "dbe6ac712417687c17f764d73b354982ba5b4e6cc8dae807a625067c21a91c10"
+    },
+    {
+      "file": "circe/build_medforge_eval.py",
+      "source": "CIRCE/circe/build_medforge_eval.py",
+      "source_sha256": "71aff5f71a1cc4f8eb3b9afff0e482265c6d4bcf144db944d13a6e58f8c0ffe4",
+      "release_sha256": "aab53d16aae19bb38674993519c5165dec84ab656a13da78bbf639748fd9a11f"
+    },
+    {
+      "file": "circe/build_medforge_protocol.py",
+      "source": "CIRCE/circe/build_medforge_protocol.py",
+      "source_sha256": "35e4864a4a893cc9050acfffa3b69e48e8e0e1eb4a2db0e760bf7fc81a847112",
+      "release_sha256": "e4602974ef245a236f5507c8cb200617390c01e3214d951ae3925b718e7007a2"
+    },
+    {
+      "file": "circe/build_medforge_sft.py",
+      "source": "CIRCE/circe/build_medforge_sft.py",
+      "source_sha256": "ce2dd18508186c248cb9b927e09fa878fb95e4774b086e2718e3f946c51d62e7",
+      "release_sha256": "d8290c688183e019c4d8b37d98292aa0d1dcf4bff27ede6dbeaeb70f0625e2ba"
+    },
+    {
+      "file": "circe/build_mixed_sft_set.py",
+      "source": "CIRCE/circe/build_mixed_sft_set.py",
+      "source_sha256": "3165a68bbce39b82226ccc3d1693e92e6d661aedfe01d9d306ee9b86949bf0f2",
+      "release_sha256": "3165a68bbce39b82226ccc3d1693e92e6d661aedfe01d9d306ee9b86949bf0f2"
+    },
+    {
+      "file": "circe/build_pfplus_failure_replay.py",
+      "source": "CIRCE/circe/build_pfplus_failure_replay.py",
+      "source_sha256": "6335c2db7a85624d5af83f4e6fe9119d155dd6a93afd69032d6e72c6b5dad30b",
+      "release_sha256": "271394d689af14ed106b533515515a0036224ef6a2db0a91d8d3dd2b0a9be0e0"
+    },
+    {
+      "file": "circe/build_protocol_matrix.py",
+      "source": "CIRCE/circe/build_protocol_matrix.py",
+      "source_sha256": "e50bd9e6f3166af05d4a8bc5238c8d911862a7d5e237cfc366675475c7babbbf",
+      "release_sha256": "44edc6ab324aff88ed1f4fec441a41e65b24d2eb53a952ff1518204cd81e38d2"
+    },
+    {
+      "file": "circe/build_regime_replay.py",
+      "source": "CIRCE/circe/build_regime_replay.py",
+      "source_sha256": "1188dac7d4dfc0133c454e4371fcdff3c99fbd6f0968db1f8748c8941c5b7811",
+      "release_sha256": "1188dac7d4dfc0133c454e4371fcdff3c99fbd6f0968db1f8748c8941c5b7811"
+    },
+    {
+      "file": "circe/build_sft_data.py",
+      "source": "CIRCE/circe/build_sft_data.py",
+      "source_sha256": "bda6e1831068b33ac9e5fbfd83dd4c987282a063258d0733239c29d7e3f0df34",
+      "release_sha256": "358084ddc6602b603cb7e7a54e7de72bee5a264d99706baebb08d0c4713fb12f"
+    },
+    {
+      "file": "circe/build_strict_failure_replay.py",
+      "source": "CIRCE/circe/build_strict_failure_replay.py",
+      "source_sha256": "8ba52442ddabf6b4d9d95ea6c0eb96e7b82c59c00c170d6bc7b5a4ab24a2a610",
+      "release_sha256": "8ba52442ddabf6b4d9d95ea6c0eb96e7b82c59c00c170d6bc7b5a4ab24a2a610"
+    },
+    {
+      "file": "circe/build_targeted_sft_replay.py",
+      "source": "CIRCE/circe/build_targeted_sft_replay.py",
+      "source_sha256": "49199405d168a084157d9fa564167b65041e5170578f8b2b01fb0e99c844d661",
+      "release_sha256": "49199405d168a084157d9fa564167b65041e5170578f8b2b01fb0e99c844d661"
+    },
+    {
+      "file": "circe/circe_grpo_reward.py",
+      "source": "CIRCE/circe/circe_grpo_reward.py",
+      "source_sha256": "755036a6d97e84b6a60231e4a672dfda792d840d5605191ef742ad3b3c59dbb5",
+      "release_sha256": "755036a6d97e84b6a60231e4a672dfda792d840d5605191ef742ad3b3c59dbb5"
+    },
+    {
+      "file": "circe/circe_reward.py",
+      "source": "CIRCE/circe/circe_reward.py",
+      "source_sha256": "b3a6f8cd8122a3645661f4f751667677da7fee58ec78b917553ec6344bd980c7",
+      "release_sha256": "b3a6f8cd8122a3645661f4f751667677da7fee58ec78b917553ec6344bd980c7"
+    },
+    {
+      "file": "circe/compute_pertype.py",
+      "source": "CIRCE/circe/compute_pertype.py",
+      "source_sha256": "b8c78f782fb6ce229b9c26316e72a08a91507c1ce88e47393453c661b4b3ba4b",
+      "release_sha256": "6d7d6f9b35718252378eaad40808b0744872b13375707db95c93b1a1326cde10"
+    },
+    {
+      "file": "circe/convert_sft_to_eval_schema.py",
+      "source": "CIRCE/circe/convert_sft_to_eval_schema.py",
+      "source_sha256": "be7b616cb951cadaeecee8fcc4321fe0d8ccba121a0573d4fbdf859d60bee3b7",
+      "release_sha256": "be7b616cb951cadaeecee8fcc4321fe0d8ccba121a0573d4fbdf859d60bee3b7"
+    },
+    {
+      "file": "circe/diag_removal.py",
+      "source": "CIRCE/circe/diag_removal.py",
+      "source_sha256": "8ad4e2abfa0165648c6d3e929a3b23fecaf2ddc2178aa841b05339421dd020e8",
+      "release_sha256": "9f8830a923b349afe46f65609e2ae1d40cf4155099d029da698a586aeb59bb60"
+    },
+    {
+      "file": "circe/error_overlap_analysis.py",
+      "source": "CIRCE/circe/error_overlap_analysis.py",
+      "source_sha256": "1d3bad151e53a010a1b5a11b486fedc16689d9384a5cc7c9381ae92ac3d4df54",
+      "release_sha256": "cf5d4d299df9ac8a5fe28f09f55d38d73fc440ca7e96443d4e564424db160316"
+    },
+    {
+      "file": "circe/error_overlap_extended.py",
+      "source": "CIRCE/circe/error_overlap_extended.py",
+      "source_sha256": "e13d2e7f82871706672054903deda3ba7cc83eb8c956ffc475f4d72f8c4bdfff",
+      "release_sha256": "8ff38359af06fe4292cba12185e9ed2b15edc7ca45637fe03670ccc475240178"
+    },
+    {
+      "file": "circe/eval_medforge.py",
+      "source": "CIRCE/circe/eval_medforge.py",
+      "source_sha256": "a763b9e82c7f2a1fb457ebe0fdebff67afcf44a9e265b683893c243b2892529b",
+      "release_sha256": "e1406b30ae036aaf9bfd31fa14fbe49ffecd4fdd19c86b95289dca9f6eec2442"
+    },
+    {
+      "file": "circe/eval_official_medforge_fair.py",
+      "source": "CIRCE/circe/eval_official_medforge_fair.py",
+      "source_sha256": "cba5c0ac301e052aae47972e89486682aa4eb6b12e2aa76d4d244b0b1c47cbd4",
+      "release_sha256": "cba5c0ac301e052aae47972e89486682aa4eb6b12e2aa76d4d244b0b1c47cbd4"
+    },
+    {
+      "file": "circe/hybrid_eval.py",
+      "source": "CIRCE/circe/hybrid_eval.py",
+      "source_sha256": "f4a3f0ee92db40b6188d46f12ea9d43a4f1d4812c88d05ab7505e916bc1e989a",
+      "release_sha256": "5b067b96fa31063e5c34e85c38de549bac26d90f422154a145aea06fef62fea3"
+    },
+    {
+      "file": "circe/infer_sanity.py",
+      "source": "CIRCE/circe/infer_sanity.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "release_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "circe/interpolate_adapters.py",
+      "source": "CIRCE/circe/interpolate_adapters.py",
+      "source_sha256": "1447be5702b6d4867410994d91f454acc3d1577837a3baed0156ec4decacf5be",
+      "release_sha256": "1447be5702b6d4867410994d91f454acc3d1577837a3baed0156ec4decacf5be"
+    },
+    {
+      "file": "circe/make_eval_split.py",
+      "source": "CIRCE/circe/make_eval_split.py",
+      "source_sha256": "d74ea93aede642cad0eb0911b322addde53986286cf175bef10f99e38f7eb315",
+      "release_sha256": "6d4eb96aa7a9c52a0e80d663aa7b3b8504f0826c24b58db91d100af679bd426e"
+    },
+    {
+      "file": "circe/make_results_csv.py",
+      "source": "CIRCE/circe/make_results_csv.py",
+      "source_sha256": "15f98ce1cd34d8e4e481079030cfe93195a46216f48f6064756d80dc47a4bc2b",
+      "release_sha256": "2664f4c78ab14fe7299eab3451347dcdf0c96481a45fb600d7dba2fa9a1bf121"
+    },
+    {
+      "file": "circe/per_class_breakdown.py",
+      "source": "CIRCE/circe/per_class_breakdown.py",
+      "source_sha256": "e6c53cfe9a5509560f387718db9a301587fc6d955225c0c202ab93e0fdf2af0d",
+      "release_sha256": "2a52dda44d37aa3192d22e6ab7e04df2bc794e4979dbe5f6eec011881751e1b1"
+    },
+    {
+      "file": "circe/plot_circe_vs_medforge.py",
+      "source": "CIRCE/circe/plot_circe_vs_medforge.py",
+      "source_sha256": "50dde6ab95f60c6a28ae6c6fd0dd20ceb4bb4cc78b8a13c5fa6a47270e99b33b",
+      "release_sha256": "b7a2f2240173b3513fb0cd43303ca535a5a48f36b2cfe0c8ec27854a68b38c07"
+    },
+    {
+      "file": "circe/plot_protocol_3tier.py",
+      "source": "CIRCE/circe/plot_protocol_3tier.py",
+      "source_sha256": "de701a8a07831ecd2e43e0a6fa73cc729a8c3a43c8a9f123a271f55278f9a302",
+      "release_sha256": "771f9a42cbc9811673d4dbce6d03de43d4b8099168057c32eb83aecd57b9428a"
+    },
+    {
+      "file": "circe/plot_protocol_matrix.py",
+      "source": "CIRCE/circe/plot_protocol_matrix.py",
+      "source_sha256": "2abae1df62bf9118050ec82d3a6905c67d759b098a7d39afc341901c7e042c4f",
+      "release_sha256": "8eb03fd76e11305ef25bb8c3484bd58fadd97a39d7b01b12feb571846803ea5f"
+    },
+    {
+      "file": "circe/raft_stage2.py",
+      "source": "CIRCE/circe/raft_stage2.py",
+      "source_sha256": "ca249e0d0fae4ccc7bbfe90a622f56df15c839fefc3daeb9dc8c7435ad22412f",
+      "release_sha256": "ca249e0d0fae4ccc7bbfe90a622f56df15c839fefc3daeb9dc8c7435ad22412f"
+    },
+    {
+      "file": "circe/removal_fingerprint.py",
+      "source": "CIRCE/circe/removal_fingerprint.py",
+      "source_sha256": "ee124223665ffefeb642de098a00a19ec6081f574d125138b80757515b9978e5",
+      "release_sha256": "809f51cd41a04f99a62a5f72000901569a76e9cd2a9538948f8e91488d885ce4"
+    },
+    {
+      "file": "circe/smoke_test_circe.py",
+      "source": "CIRCE/circe/smoke_test_circe.py",
+      "source_sha256": "52c15754129440caa80b481808188e723d53a074d9ffa9d9cb6af6b937f2226c",
+      "release_sha256": "c87df8e6b76ab06a2a818a078bc5c522ec444bcc769004b4b66db7ace9995070"
+    },
+    {
+      "file": "circe/smoke_test_training.py",
+      "source": "CIRCE/circe/smoke_test_training.py",
+      "source_sha256": "40456e9c87a8c901961796d679c17ed27d2d0fcef91e800bf8d8d1cc0b8cb01e",
+      "release_sha256": "b53657d95a3c1e8d067dbb0c4a86123f086917f11b9710c95bd40d681d0136c7"
+    },
+    {
+      "file": "circe/train_grpo.py",
+      "source": "CIRCE/circe/train_grpo.py",
+      "source_sha256": "59ea94af59033da116290e95f0e9bd1ec9de3b25819e6ce2561fc99d1655ea50",
+      "release_sha256": "2bce3b9c461f6a63b7406ff3609caf2df59f211cf76b4294f2c5b5e46d3a43a1"
+    },
+    {
+      "file": "circe/train_sft.py",
+      "source": "CIRCE/circe/train_sft.py",
+      "source_sha256": "4f07e2e8962ed5f2f44cb9027f843d29136274d518443313e8b234aa0374213d",
+      "release_sha256": "0ae595b2ad058d6df0dc108ba4dc3f8845316ed3e2710bd9df7e0e992e52e487"
+    },
+    {
+      "file": "circe/vlm_grpo_patch.py",
+      "source": "CIRCE/circe/vlm_grpo_patch.py",
+      "source_sha256": "d4e591d5b7bf808728f0744b2a67fed56218d46ec068000b0a3b59ada5910178",
+      "release_sha256": "d4e591d5b7bf808728f0744b2a67fed56218d46ec068000b0a3b59ada5910178"
+    },
+    {
+      "file": "v3/build_counterfactual_test.py",
+      "source": "CIRCE/v3/build_counterfactual_test.py",
+      "source_sha256": "f519ddef08fde6596d0d8cd60ac9bc8dadc816dbac103b7c3fbb912b5c2bb7a3",
+      "release_sha256": "dfe5855373c65dc002df082187e155ecf568064bbd0576abe5f3827e0550fb69"
+    },
+    {
+      "file": "v3/build_mfclean.py",
+      "source": "CIRCE/v3/build_mfclean.py",
+      "source_sha256": "8f778dc2f01de4bd78772fad1eb6f84fa29972176cb66109ae989f6576ef720b",
+      "release_sha256": "7a7932696668481aba42dabdf2781dd9faf678edce4788279c12be048819f90c"
+    },
+    {
+      "file": "v3/build_rl_as_sft.py",
+      "source": "CIRCE/v3/build_rl_as_sft.py",
+      "source_sha256": "87e99ef39b46d71291802a289ff9ee3d596a8eaca0872844c9e521230838b27c",
+      "release_sha256": "87e99ef39b46d71291802a289ff9ee3d596a8eaca0872844c9e521230838b27c"
+    },
+    {
+      "file": "v3/build_sft_v3.py",
+      "source": "CIRCE/v3/build_sft_v3.py",
+      "source_sha256": "d92f65889913042a0019c15ac787e7bd93861c99370043847abd78c9356b29be",
+      "release_sha256": "b750e756b9e903418edd004a88bb4306cb12264c70ff12d0f153f8e6a0392414"
+    },
+    {
+      "file": "v3/check_sft_collator_v3.py",
+      "source": "CIRCE/v3/check_sft_collator_v3.py",
+      "source_sha256": "4ee244fbe9b5b489e2d0661d11b3d2c2730ef1a7c1f0b250770015f86921d170",
+      "release_sha256": "63931d50a2078d9c2292e18cd08117d5db9237511945b02b55d697adff3df000"
+    },
+    {
+      "file": "v3/ctgrpo_core.py",
+      "source": "CIRCE/v3/ctgrpo_core.py",
+      "source_sha256": "17bea7f893f7c3e20068aba79b496568c7a1aa6446ace67ccdb83fa47bd624e2",
+      "release_sha256": "17bea7f893f7c3e20068aba79b496568c7a1aa6446ace67ccdb83fa47bd624e2"
+    },
+    {
+      "file": "v3/dryrun_ctgrpo.py",
+      "source": "CIRCE/v3/dryrun_ctgrpo.py",
+      "source_sha256": "91510c119b1eef3b652b58c33351465d8a10c501ae2aa1940931b25fd9ec2fe4",
+      "release_sha256": "6255517b4ed9e0e5e3a5804c41dbbab7b12bddddd18132bd68ed3d5e06bebca1"
+    },
+    {
+      "file": "v3/eval_v3.py",
+      "source": "CIRCE/v3/eval_v3.py",
+      "source_sha256": "e08213325aa272d5842be55ddcdbfda08c0d591bff1e403aabca516da8bd86d3",
+      "release_sha256": "6c858d5c614458c7a368745af54ae990f69d356b4fc7ef87f0cf81a174d83859"
+    },
+    {
+      "file": "v3/legacy_meta_v3.py",
+      "source": "CIRCE/v3/legacy_meta_v3.py",
+      "source_sha256": "1a1a6686e1df9f959ea400fb41f58e18215d95ec7a378e91bcdcf4557860df55",
+      "release_sha256": "dfed7b7faa8fa39372d500778d4130be48dc96ffe019ee30dd9015a212d64c55"
+    },
+    {
+      "file": "v3/prompts_v3.py",
+      "source": "CIRCE/v3/prompts_v3.py",
+      "source_sha256": "4f5ac03efb98e9fe1d2c9e177e86927c4007d138d3ec0a21934debc9a6aa11ca",
+      "release_sha256": "4f5ac03efb98e9fe1d2c9e177e86927c4007d138d3ec0a21934debc9a6aa11ca"
+    },
+    {
+      "file": "v3/rollout_diag.py",
+      "source": "CIRCE/v3/rollout_diag.py",
+      "source_sha256": "3467b04522f3a56f29cc81d194faeba28ba4af4a00bc21608429de8f32f261e8",
+      "release_sha256": "04c8a11f87564c825c039eb7a9eac2d20c7c6c5f688e9a2b1f8b6f14dc244550"
+    },
+    {
+      "file": "v3/shortcut_probe_v3.py",
+      "source": "CIRCE/v3/shortcut_probe_v3.py",
+      "source_sha256": "9b3e1bf01b191759f61a804cd99cbb8d1066aa18ab93fe039834fd39591dccb3",
+      "release_sha256": "a694ee1d26dc0b2b85b27ca45d0a3bf72e3d84201c99b55b2daaeb930362d70c"
+    },
+    {
+      "file": "v3/stats_v3.py",
+      "source": "CIRCE/v3/stats_v3.py",
+      "source_sha256": "3122d8f8e579f6946d558e245a2a0f818ab98cc0b169ba6f8ed87f05a813ad07",
+      "release_sha256": "362d619a7ac62ed3927cb99b8aaf97e9852649f8239284f0f42a3fd2174df41d"
+    },
+    {
+      "file": "v3/test_ctgrpo.py",
+      "source": "CIRCE/v3/test_ctgrpo.py",
+      "source_sha256": "8309027952c60aeb516f5065121a0834510f369d3dfd980cb8f0392251940699",
+      "release_sha256": "750e617e6a7015b42f5d203e2d5942636960d1c439975d5ab220a9cf716ef15e"
+    },
+    {
+      "file": "v3/train_ctgrpo.py",
+      "source": "CIRCE/v3/train_ctgrpo.py",
+      "source_sha256": "8d7167cf12e1e55e2ec2f399e7be985570f3dc57124678c02b57e9da10e8a56b",
+      "release_sha256": "0198e7e7f68e06c375cc7787fbfa0e28afce5de0271b721b2fc039ce7d16b8f2"
+    },
+    {
+      "file": "v3/verify_color_rule.py",
+      "source": "CIRCE/v3/verify_color_rule.py",
+      "source_sha256": "c98d41e45da4d0b6c20991558ce3e1742ef272e124804453a487ecdcc312882b",
+      "release_sha256": "c98d41e45da4d0b6c20991558ce3e1742ef272e124804453a487ecdcc312882b"
+    },
+    {
+      "file": "v3_audit/scripts/box_sibling.py",
+      "source": "CIRCE/v3_audit/scripts/box_sibling.py",
+      "source_sha256": "c379b55362adbe47a6e3d2b23a5e452788c7fc81911188f59fb531f0c5e507b2",
+      "release_sha256": "27017c61bf45c98fc5f1dec16c16c35855d359328046601b5ce9f6275f1f2348"
+    },
+    {
+      "file": "v3_audit/scripts/census_hash.py",
+      "source": "CIRCE/v3_audit/scripts/census_hash.py",
+      "source_sha256": "3335a6ca8209f2735fe9aee36136406c4e0dfe51ade880ce9515902ac06ee6dd",
+      "release_sha256": "c536d13c2ecf843147c6f073adce6647b8b24c06f0d30f733fff829d763b0a9a"
+    },
+    {
+      "file": "v3_audit/scripts/composition.py",
+      "source": "CIRCE/v3_audit/scripts/composition.py",
+      "source_sha256": "8ae342210e9e000939171405b37af385282582e2173d7667a514774d364cb4d6",
+      "release_sha256": "f83ae252daddb700b4bf118785fd532117998cee6ba4c93c9ff5cc62f29ddd57"
+    },
+    {
+      "file": "v3_audit/scripts/diffsrc_fullres.py",
+      "source": "CIRCE/v3_audit/scripts/diffsrc_fullres.py",
+      "source_sha256": "5cc484d07990e1c0c4e3501151aaca70d5f99f7dd43195db805e6c4be6e976c1",
+      "release_sha256": "f9762db5f8d4514e50dc9007d3cf5708e06731e6dcf886588d8b396b3cf03da9"
+    },
+    {
+      "file": "v3_audit/scripts/edit_strength.py",
+      "source": "CIRCE/v3_audit/scripts/edit_strength.py",
+      "source_sha256": "7835c898cefac9be94a190d889b9a316b85cb72bc3abbe0f29b64aa853afbe7e",
+      "release_sha256": "67940724110d7cb073f9cf532f721675e85209af21b992631869926c41980652"
+    },
+    {
+      "file": "v3_audit/scripts/group_components.py",
+      "source": "CIRCE/v3_audit/scripts/group_components.py",
+      "source_sha256": "2488663d829a5cfb7a70470080e6178fc6cc8c475cd65ba4a48a097cfb85a8d8",
+      "release_sha256": "323b076de4f2ddb473b8c9d6d6901ccab0936562fea48154225472a06d14c18f"
+    },
+    {
+      "file": "v3_audit/scripts/mf90k_census.py",
+      "source": "CIRCE/v3_audit/scripts/mf90k_census.py",
+      "source_sha256": "4edc36f73237914d35484d56f0ae568520b4fb9938743c241be220d5d6f298bf",
+      "release_sha256": "fa0bd1ed59fa7b41736a1abdb64dde4d356a2ed1f7aeb8b931ea7d8dc76dddda"
+    },
+    {
+      "file": "v3_audit/scripts/mfpp_leak.py",
+      "source": "CIRCE/v3_audit/scripts/mfpp_leak.py",
+      "source_sha256": "21baa60627ffc91cfde6db6eb0250324999f2b3d83509977f75a68cc46feaf65",
+      "release_sha256": "393a797f2ebfc0e74ec6aaf01d8c73340ba9c323e42ec98e1c2da76ba7ddb63a"
+    },
+    {
+      "file": "v3_audit/scripts/mfpp_verified.py",
+      "source": "CIRCE/v3_audit/scripts/mfpp_verified.py",
+      "source_sha256": "b2e16cedbe593face87b894c9beb779c20c74d1112624fbe57ceb682d4b008c0",
+      "release_sha256": "a122fd3920ab52dd4e1a623921fddc70c71c9b9e49fb0d455596520a002eb4fe"
+    },
+    {
+      "file": "v3_audit/scripts/near_dup.py",
+      "source": "CIRCE/v3_audit/scripts/near_dup.py",
+      "source_sha256": "b907c75458e76ef75d487fab021ba1beccd316681cebc73a8504ee71c53eb545",
+      "release_sha256": "9215c11da008a663f579d6cd1c2b6cc71bce9728bffd4942ca26f70f600b3cda"
+    },
+    {
+      "file": "v3_audit/scripts/near_dup_verify.py",
+      "source": "CIRCE/v3_audit/scripts/near_dup_verify.py",
+      "source_sha256": "47cfe78d0a336e2a694351ebd5d87dfd0681d45b3008e2fe650d31004ee8b7b9",
+      "release_sha256": "1658225b97f719fc3f4f72c2301f5c36beebd5eb065f67c7458e231fa0289e81"
+    },
+    {
+      "file": "v3_audit/scripts/protocol_parse.py",
+      "source": "CIRCE/v3_audit/scripts/protocol_parse.py",
+      "source_sha256": "2acd01678e1cd8687df46efe7a083f70ce7440fc17c647acb0169504b3ca7b9d",
+      "release_sha256": "735140d2c0e6e6ef4e0c8cb8c3daff631084b50efd8f0ccc52c3f7ab86424791"
+    },
+    {
+      "file": "v3_audit/scripts/removal_diff.py",
+      "source": "CIRCE/v3_audit/scripts/removal_diff.py",
+      "source_sha256": "6d11e95ba4e34aa3f009f4f5ba2aa929304b77b60288e30a5eedf2c47dce5241",
+      "release_sha256": "81942bd8c43439361c9972ad24689ac7f3212f435aaf99f27936d1541ffc0267"
+    },
+    {
+      "file": "v3_audit/scripts/source_confound.py",
+      "source": "CIRCE/v3_audit/scripts/source_confound.py",
+      "source_sha256": "f0a50f99bd25ad1f824b5de672d89f14a8c2d0f382a0dfb03d7d142bb1f8f5c1",
+      "release_sha256": "f00b0de7fed7766764148cf3502af1332e1c7fa15dd67d85f9d80a3e685a2942"
+    },
+    {
+      "file": "v3_audit/scripts/source_leak.py",
+      "source": "CIRCE/v3_audit/scripts/source_leak.py",
+      "source_sha256": "3e74eca5b691aad781b496b81c7d79a2cfb4ad0f4f1cd448b0178323161d012b",
+      "release_sha256": "46f29d1bbf4c43b5cd8ed6eb77524564628624b11e135a1f2e59a190c594d7d7"
+    },
+    {
+      "file": "v3_audit/code_scripts/bonus_constancy.py",
+      "source": "CIRCE/v3_audit/code_scripts/bonus_constancy.py",
+      "source_sha256": "238c55a213a6781d52a37c626027349a76330c832c19676c63043f3a31f5b29d",
+      "release_sha256": "58bfb26b6d6538c19c03848c869fda333b571bfef2784da5f1478a96952683f1"
+    },
+    {
+      "file": "v3_audit/code_scripts/branch_tokens.py",
+      "source": "CIRCE/v3_audit/code_scripts/branch_tokens.py",
+      "source_sha256": "4202c57ddc8dc4d6730fd95f6d450b810c8fdadc45549c339b2f07a19643e6bc",
+      "release_sha256": "e203ec01dc6396d9ab48911be30b29b11c1a04911d930637ff7700a75d465741"
+    },
+    {
+      "file": "v3_audit/code_scripts/cpu_dryrun_tiny_qwen3vl.py",
+      "source": "CIRCE/v3_audit/code_scripts/cpu_dryrun_tiny_qwen3vl.py",
+      "source_sha256": "9e8cc1ccb8b0aea3754f1c374b3abcf10cb5d640750d28dd9ff514ce18b3640b",
+      "release_sha256": "e9f7225d4a2e0d77dbabc61e6c387460b36434ed8f872bc8ae2d49ca2a3485b4"
+    },
+    {
+      "file": "v3_audit/code_scripts/diffmap_feasibility.py",
+      "source": "CIRCE/v3_audit/code_scripts/diffmap_feasibility.py",
+      "source_sha256": "ae1e9675c54982e662ee6c9b190dd9fbd97289cf1287e6a409a27f90167da127",
+      "release_sha256": "d6e22da78e9fd57c3739e963ef85ec22f61c29e098f5a12eb0bf3ca79b6210d3"
+    },
+    {
+      "file": "v3_audit/code_scripts/diffmap_inbox.py",
+      "source": "CIRCE/v3_audit/code_scripts/diffmap_inbox.py",
+      "source_sha256": "0bfa5ffbdc5063fbbccb90d21d5d999a4fc3dcea821ddff0bdc50d4d67870025",
+      "release_sha256": "45402d4d969ce8a33497dfbf93bd17fac270fcaeec6a2c949e8c1911b024c5c6"
+    },
+    {
+      "file": "v3_audit/code_scripts/gen_structure.py",
+      "source": "CIRCE/v3_audit/code_scripts/gen_structure.py",
+      "source_sha256": "1c6c5e64f1326268c5bcdc7e93713ad9206519808563f9720161ba678e579d15",
+      "release_sha256": "0f2844e608b2b72835bea2100a5dfc3e7be30ee8bb0942e0728873bf3ada1be0"
+    },
+    {
+      "file": "v3_audit/code_scripts/group_bounds.py",
+      "source": "CIRCE/v3_audit/code_scripts/group_bounds.py",
+      "source_sha256": "c04282c13365cdd658298b9f64488025128605c8b88d4652dc98d73fd39a580f",
+      "release_sha256": "c04282c13365cdd658298b9f64488025128605c8b88d4652dc98d73fd39a580f"
+    },
+    {
+      "file": "v3_audit/code_scripts/grpo_v3_reference.py",
+      "source": "CIRCE/v3_audit/code_scripts/grpo_v3_reference.py",
+      "source_sha256": "7a934433e1935bfe6812474a2de43a474b6aa7e0cf3c866e7bb2ea4fc352011d",
+      "release_sha256": "7a934433e1935bfe6812474a2de43a474b6aa7e0cf3c866e7bb2ea4fc352011d"
+    },
+    {
+      "file": "v3_audit/code_scripts/pair_leakage.py",
+      "source": "CIRCE/v3_audit/code_scripts/pair_leakage.py",
+      "source_sha256": "fbcc13c7a502d1f99ba30cd5e3c313f8795ed318c9bef59e1d1ed1f708bf073c",
+      "release_sha256": "8d09745ce173338f362b762792d7deb688a36fa49214b1fce91c6a93681ac90a"
+    },
+    {
+      "file": "v3_audit/code_scripts/parse_grpo_logs.py",
+      "source": "CIRCE/v3_audit/code_scripts/parse_grpo_logs.py",
+      "source_sha256": "79faedcd80bb0e10cd23c8eed377ab7f2b006921842f92054f897d8dea5ad226",
+      "release_sha256": "79faedcd80bb0e10cd23c8eed377ab7f2b006921842f92054f897d8dea5ad226"
+    },
+    {
+      "file": "v3_audit/code_scripts/prompt_parity.py",
+      "source": "CIRCE/v3_audit/code_scripts/prompt_parity.py",
+      "source_sha256": "ffd8ec538e5f3caaf34df658225e06842f0ca29b0ba571bbdf77aa193c6e943c",
+      "release_sha256": "f4e8c44da23692460c68aa975a775d2a2cc475d0dfd7b44a43a354dd8735ff49"
+    },
+    {
+      "file": "v3_audit/code_scripts/rl_pool_stats.py",
+      "source": "CIRCE/v3_audit/code_scripts/rl_pool_stats.py",
+      "source_sha256": "330aa7b681268b87025468fbfb99b0eb00f5e05373fd6baeec456a309131738b",
+      "release_sha256": "ddafb23407d2898d6f6dbfa1d93f6fa140bfb051555c1b2e03170617c62fe1b3"
+    },
+    {
+      "file": "v3_audit/code_scripts/test_grpo_v3_reference.py",
+      "source": "CIRCE/v3_audit/code_scripts/test_grpo_v3_reference.py",
+      "source_sha256": "7e2c6635bd82818ac5eeca2d5c21a1a15d42b0eff5f440ab8bc6552ca00802e3",
+      "release_sha256": "bc916e24f565dd7c2efe6ab3d1bd54ceeed5e849ae96f2150da3f700acbf1502"
+    },
+    {
+      "file": "v3_audit/shortcut_work/build_sample.py",
+      "source": "CIRCE/v3_audit/shortcut_work/build_sample.py",
+      "source_sha256": "aeb8849c11093a0a8d2c6efd199b45dfd0635f737ca8cb3ac09ad123a55c49b1",
+      "release_sha256": "38b956f587a6a079c68988c02bf234e63740ba99b6994116feafdc719be44413"
+    },
+    {
+      "file": "v3_audit/shortcut_work/common.py",
+      "source": "CIRCE/v3_audit/shortcut_work/common.py",
+      "source_sha256": "7377c660d0fef60d75114521b9fca079be415d329be5c3ede465ebee66608420",
+      "release_sha256": "14646909eefb6dc5b323b77882119b3a676b75e1847bd7ab1aa75a5c7578fb22"
+    },
+    {
+      "file": "v3_audit/shortcut_work/exp_addition.py",
+      "source": "CIRCE/v3_audit/shortcut_work/exp_addition.py",
+      "source_sha256": "62cf20f6df424d0526a0540878cfcd567ca84073c593eb3876b9b36bf9e610ac",
+      "release_sha256": "edb484598281bde6bc5e1ce9342a75038a5491187bab0c411528ed7ef147812f"
+    },
+    {
+      "file": "v3_audit/shortcut_work/exp_mf90k.py",
+      "source": "CIRCE/v3_audit/shortcut_work/exp_mf90k.py",
+      "source_sha256": "26b77aa2fdc72e23ec88f02813e2843c19535cd591cdca5be61bf3c6162169d9",
+      "release_sha256": "e933f31cd7658a881fe86e35d9999615b31ab7407c08a525428aee8b0452da1e"
+    },
+    {
+      "file": "v3_audit/shortcut_work/exp_norm.py",
+      "source": "CIRCE/v3_audit/shortcut_work/exp_norm.py",
+      "source_sha256": "8e18802002eb0b4190c1761f8da655e27c9ae5278409da9f0480de3ca80a7e95",
+      "release_sha256": "ccd4dbb80d8f9977fcbf483170f131e56066a43d43fd47f3edb50dfb7814112f"
+    },
+    {
+      "file": "v3_audit/shortcut_work/exp_pasteback.py",
+      "source": "CIRCE/v3_audit/shortcut_work/exp_pasteback.py",
+      "source_sha256": "3b745157605587c426cfe19c3c26ff744bc79027fcb73345049baa2aec8f1275",
+      "release_sha256": "2fdb46f234f3b889dcb667fdbb70fcb1d0c93004c151a54752d30694a58a7ed7"
+    },
+    {
+      "file": "v3_audit/shortcut_work/exp_protocol.py",
+      "source": "CIRCE/v3_audit/shortcut_work/exp_protocol.py",
+      "source_sha256": "ab21692d95f8174cf7cb118f9a28d85c26c980eed1408ad3bb30e131c83ba2c1",
+      "release_sha256": "acf19500b9e7864078c062b5b6abc269027bf81732430fb058ea1e45b10006e7"
+    },
+    {
+      "file": "v3_audit/shortcut_work/exp_protocol_ablate.py",
+      "source": "CIRCE/v3_audit/shortcut_work/exp_protocol_ablate.py",
+      "source_sha256": "7b3a44e34a88fcf96686f7a34a4281d854f23f9189dc4cb6318f047e5012091d",
+      "release_sha256": "d060c1b1a4f86f7e87f77660bca73439394e01bff31eb2843e40e2641ae371f4"
+    },
+    {
+      "file": "v3_audit/shortcut_work/extract.py",
+      "source": "CIRCE/v3_audit/shortcut_work/extract.py",
+      "source_sha256": "b092d3bbd8d3e91e4aec58e812ac9b178d2c2ce13028272595a5f7e004be1acb",
+      "release_sha256": "b092d3bbd8d3e91e4aec58e812ac9b178d2c2ce13028272595a5f7e004be1acb"
+    },
+    {
+      "file": "v3_audit/shortcut_work/locality.py",
+      "source": "CIRCE/v3_audit/shortcut_work/locality.py",
+      "source_sha256": "eb61e666dc616c6f8f5de92352f918e9493a7baa5d678afc1f7cc181730afc22",
+      "release_sha256": "c04b2ec60da2d97e9da61064e7f42fec9ef3df9d06249fc0151e45da27101249"
+    },
+    {
+      "file": "v3_audit/shortcut_work/locality_add.py",
+      "source": "CIRCE/v3_audit/shortcut_work/locality_add.py",
+      "source_sha256": "850ee2c1261a5486fdf584553fe1bf152d976e26df97089276aa5972d1317c74",
+      "release_sha256": "5bd4919672b22ee0a1b2dc200135ad5b982de8981473bdf49aaff7b0add23df8"
+    },
+    {
+      "file": "v3_audit/shortcut_work/normalize_probe.py",
+      "source": "CIRCE/v3_audit/shortcut_work/normalize_probe.py",
+      "source_sha256": "85050e60aa44642858bfe59021470d6c1fbe593d98a8fb31250446edf33376d8",
+      "release_sha256": "3e523d547777498a88ec4a7808412321cbbd5ec7eb7ab749627a3664f5f7b528"
+    },
+    {
+      "file": "v3_audit/shortcut_work/paste_back.py",
+      "source": "CIRCE/v3_audit/shortcut_work/paste_back.py",
+      "source_sha256": "eb6eb6af342becb653cdaaef5771270aefccb2c014ecfc4450a7eeb70a1a0db0",
+      "release_sha256": "f85393eab89461989bf2e14bceea0552c27c112c12d7be11b56e543b829bb3a7"
+    },
+    {
+      "file": "v3_audit/shortcut_work/tab_meta.py",
+      "source": "CIRCE/v3_audit/shortcut_work/tab_meta.py",
+      "source_sha256": "284a136381c93b93c881935d46549350b5aed83218030070ba1782addb67d503",
+      "release_sha256": "9a0753a32bcb7f6d967d30124da9993c73097f84b62d0e734f61906a705661e3"
+    },
+    {
+      "file": "v3_audit/exp_build_large_test.py",
+      "source": "CIRCE/v3_audit/exp_build_large_test.py",
+      "source_sha256": "9daf3358119ab8fda4dcc5063d9b61f9dfa402737c342b3def8a95c56c356550",
+      "release_sha256": "19131d1714ee16dd609f3da693c94a5a3b4004c40c9a2688227ebb4f36847b28"
+    },
+    {
+      "file": "v3_audit/exp_confound.py",
+      "source": "CIRCE/v3_audit/exp_confound.py",
+      "source_sha256": "1ca989759c4de649645eaa285276bfde85a716faf481f9e8047dd0e710bb5bc8",
+      "release_sha256": "086120ca13e37e73834b177f04d803e0af07105010576cfd02ebe5529b0670de"
+    },
+    {
+      "file": "v3_audit/exp_implant_quality.py",
+      "source": "CIRCE/v3_audit/exp_implant_quality.py",
+      "source_sha256": "61fc042dd664e9179b8791eff02c25ff32ae2d338627f3a54f6569b9b057e423",
+      "release_sha256": "f353698d0c50e3e8fc34a380c03dbd94fa59998a34c70e29186f2d4e9ef6ef55"
+    },
+    {
+      "file": "v3_audit/exp_kits_export_fit.py",
+      "source": "CIRCE/v3_audit/exp_kits_export_fit.py",
+      "source_sha256": "a9d436ab6fe0691c5a1328c45405b1ca7539b1594065d53919df60c98e12b550",
+      "release_sha256": "a273dd56a7a334622d9de4bdb2bfd7cbc18b8ba166ce2c8475e64a8279b076fe"
+    },
+    {
+      "file": "v3_audit/exp_kits_slices.py",
+      "source": "CIRCE/v3_audit/exp_kits_slices.py",
+      "source_sha256": "b26cdb49f72a303a3ad807b528cb66eddf283f34be2e7c932736720a94c2121a",
+      "release_sha256": "bd5574a4fad0e7fbfca5716b3153fa183d908f8cef6e8abf9b51d8bb696f21fe"
+    },
+    {
+      "file": "v3_audit/exp_kits_window_fit.py",
+      "source": "CIRCE/v3_audit/exp_kits_window_fit.py",
+      "source_sha256": "4271699071b17fd4375902d391ae87821b3f85aea7e740539629edebafa169f5",
+      "release_sha256": "170d699b8f1ccf2084d0f47a3c0600890a9521fe949857c0231a54fd0dffd171"
+    },
+    {
+      "file": "v3_audit/exp_kits_window_fit2.py",
+      "source": "CIRCE/v3_audit/exp_kits_window_fit2.py",
+      "source_sha256": "ff70525414e63923d8e82e83a111876aaf517573a0e332693cc1f361d221c185",
+      "release_sha256": "ac2214555df413e73d4920d83762bb9837713e516f5e3183b08ab0f0068fc2dc"
+    },
+    {
+      "file": "v3_audit/exp_mfpp_group_leak.py",
+      "source": "CIRCE/v3_audit/exp_mfpp_group_leak.py",
+      "source_sha256": "4b922499f0fc2494c8a952cee36602ed657fb70b8c5e887661cb317b69ff434b",
+      "release_sha256": "0dca6500dd0bb416c4cf5bebda31e214867e455aba244919dd07490cb0f1529c"
+    },
+    {
+      "file": "v3_audit/exp_sibling_effect.py",
+      "source": "CIRCE/v3_audit/exp_sibling_effect.py",
+      "source_sha256": "4608ac3ef4e8fbe37febad55f4b139869cd576cb4ac9f875eb236fb436a1d8ef",
+      "release_sha256": "373c476770d61b49a856c5ec91b3b9ac048d4e4b5e9dc90406c186ba8f4ebcfd"
+    },
+    {
+      "file": "v3_audit/exp_source_disjoint.py",
+      "source": "CIRCE/v3_audit/exp_source_disjoint.py",
+      "source_sha256": "c7fb24d058be76753abc4351b381ce8050451a43247b6b15271af6506bf04ba7",
+      "release_sha256": "5e5fe49aaf1ce5f61cd025514a5d29d509c3caf0664a968b882a91d8ece46d1b"
+    },
+    {
+      "file": "v3_audit/exp_test_siblings.py",
+      "source": "CIRCE/v3_audit/exp_test_siblings.py",
+      "source_sha256": "77444aa050b5f4adc42cc10f533eb72ade589c1b607ba107359fd91b9fd016ef",
+      "release_sha256": "acfcc4f77e86dca303625757add00d099a479f396d663a57323ed596ee3dd330"
+    },
+    {
+      "file": "v3_audit/exp_unused_protocol.py",
+      "source": "CIRCE/v3_audit/exp_unused_protocol.py",
+      "source_sha256": "ffd922c39ae7b1adc5718374fa14c8ea490f79e12b2c6c26e6bd28af44d83b88",
+      "release_sha256": "a1594d00f26890a0df0b9e42507226d51a40bcd2b89c7021c85707a088f77b7a"
+    },
+    {
+      "file": "v3_audit/exp_unused_scan.py",
+      "source": "CIRCE/v3_audit/exp_unused_scan.py",
+      "source_sha256": "98191b16b549cbcde12e77c09895f7d963deeea51259a59042c9c7d434a63afb",
+      "release_sha256": "cd4d2d9623a580d4551e2efba93a3f7b4694696684858b01fc48d918ce5ef478"
+    },
+    {
+      "file": "v3_audit/labels_aggregate.py",
+      "source": "CIRCE/v3_audit/labels_aggregate.py",
+      "source_sha256": "9a04b89e43cc03912976d940b10f4b3278e7ea1bc25b79696f8c04717751547a",
+      "release_sha256": "63c5b3ac6d7d8532b3407cd8d472675f24eadc33bccbb43133e002448ba0c046"
+    },
+    {
+      "file": "v3_audit/labels_boxstats.py",
+      "source": "CIRCE/v3_audit/labels_boxstats.py",
+      "source_sha256": "b941b3a3556c5714f5b6195d2e9ada9bc600665edfd609c6e1db25521fe911fe",
+      "release_sha256": "c39f745669ddb7e52145354553bcf7ccecf56d34c07499d040f05da5b42769f9"
+    },
+    {
+      "file": "v3_audit/labels_esm.py",
+      "source": "CIRCE/v3_audit/labels_esm.py",
+      "source_sha256": "69537e718650ce2d4785b55e60fcf0a1cd8f8117b882dc26068895decd7256a7",
+      "release_sha256": "2b6615afd6bcf982561075def2366f11dd0896563f323bcd8dd6ac5274302b6b"
+    },
+    {
+      "file": "v3_audit/labels_jpegq.py",
+      "source": "CIRCE/v3_audit/labels_jpegq.py",
+      "source_sha256": "32c74326501272e9eb8559a1f350753960c7e7238e3295f5ffd7f6d5cb34072c",
+      "release_sha256": "56aad385bd22e6488cdd4c606effdea4a01299baff01996179eec930d3fdcaf9"
+    },
+    {
+      "file": "v3_audit/labels_kidney.py",
+      "source": "CIRCE/v3_audit/labels_kidney.py",
+      "source_sha256": "99b1824936325653e5df0f055c5766e3e3f9b9e105e24e8d9ec4794835fcb571",
+      "release_sha256": "e98f1d9683cd63233c1bb13340de6a6373635e69fa9de8be1e80ef15f939e296"
+    },
+    {
+      "file": "v3_audit/labels_mfpp_implant.py",
+      "source": "CIRCE/v3_audit/labels_mfpp_implant.py",
+      "source_sha256": "c605a4a36e2b4b706484ba8ce3ad3a9fdeb22c084e13d87cb3ed18e932c24058",
+      "release_sha256": "e6dd692a3e4a52bdecd591394b331b7595683dd122b04cac9adfb86afaa2234b"
+    },
+    {
+      "file": "v3_audit/labels_pairdiff.py",
+      "source": "CIRCE/v3_audit/labels_pairdiff.py",
+      "source_sha256": "e4f5d61d3c093dfafd7f87e5329e046c7b0093251fdd03a4a5731e9fb14e793d",
+      "release_sha256": "ff5c47ddcc01751afa920f00470b496f9103dba1513429705209a17e1a3f294f"
+    },
+    {
+      "file": "v3_audit/labels_text_audit.py",
+      "source": "CIRCE/v3_audit/labels_text_audit.py",
+      "source_sha256": "36020f91a2cf62b0855522e16feccf380515ec6de19f8bf616accd5fdc95c7b7",
+      "release_sha256": "fe76f5de57898ae57f165513c42c093ec53d7d557894eeb4b17835bacfc3be81"
+    },
+    {
+      "file": "docs/evidence/audit/census.md",
+      "source": "CIRCE/v3_audit/census.md",
+      "source_sha256": "dc7e9b90a6c498dd22ff7b1b98e73dc0f1c1bfd0636728a5f8b79b04f7b623fc",
+      "release_sha256": "dc7e9b90a6c498dd22ff7b1b98e73dc0f1c1bfd0636728a5f8b79b04f7b623fc"
+    },
+    {
+      "file": "docs/evidence/audit/shortcut.md",
+      "source": "CIRCE/v3_audit/shortcut.md",
+      "source_sha256": "77a87741dc2197bb30a1f01f214a64facfea70051b251fe3d760f6c493a5effb",
+      "release_sha256": "77a87741dc2197bb30a1f01f214a64facfea70051b251fe3d760f6c493a5effb"
+    },
+    {
+      "file": "docs/evidence/audit/labels.md",
+      "source": "CIRCE/v3_audit/labels.md",
+      "source_sha256": "cdf196118c9eb393494c5978db0dcc7b24cab172508eb6c4dae3296e834a9910",
+      "release_sha256": "cdf196118c9eb393494c5978db0dcc7b24cab172508eb6c4dae3296e834a9910"
+    },
+    {
+      "file": "docs/evidence/audit/code.md",
+      "source": "CIRCE/v3_audit/code.md",
+      "source_sha256": "b1d8dcd60cb19b91a47210d0b214bc4496c215791740e52a9d0663d470bf8b41",
+      "release_sha256": "b1d8dcd60cb19b91a47210d0b214bc4496c215791740e52a9d0663d470bf8b41"
+    },
+    {
+      "file": "docs/evidence/audit/expansion.md",
+      "source": "CIRCE/v3_audit/expansion.md",
+      "source_sha256": "1cffe06c8783b2b38d070523f059975aae05a949a57e28cf70e4ae71731a5b79",
+      "release_sha256": "1cffe06c8783b2b38d070523f059975aae05a949a57e28cf70e4ae71731a5b79"
+    },
+    {
+      "file": "docs/evidence/v3/data_v3b.md",
+      "source": "CIRCE/v3/reports/data_v3b.md",
+      "source_sha256": "19f05bebf3930dae6e48d5865811d671dde708ddc915d1b6dcb1e3c68a13a04b",
+      "release_sha256": "d57d3b8d6494ca84392e960248b5d2bd967df599216d52d7398397b2fde24548"
+    },
+    {
+      "file": "docs/evidence/v3/shortcut_mfclean.md",
+      "source": "CIRCE/v3/reports/shortcut_mfclean.md",
+      "source_sha256": "ad30bf6c19d334c769a8e40a4250b1e963514fc61c1c7b45a2f3f0501375be30",
+      "release_sha256": "701d28207d9df28711adc888d5ac0fb69ece4c7063bff967cc22446417a88dda"
+    },
+    {
+      "file": "docs/evidence/v3/ctgrpo_s42_test.md",
+      "source": "CIRCE/v3/reports/ctgrpo_s42_test.md",
+      "source_sha256": "699ad0be199893a7c4daa46005eac07fa40b17151e304b5587114d0d2281e803",
+      "release_sha256": "699ad0be199893a7c4daa46005eac07fa40b17151e304b5587114d0d2281e803"
+    },
+    {
+      "file": "docs/evidence/v3/ctgrpo_s7_test.md",
+      "source": "CIRCE/v3/reports/ctgrpo_s7_test.md",
+      "source_sha256": "840c4d3791acb0685dbe298eaa42dbf3afea2967ae276c6b44b47cd7ffaeec3a",
+      "release_sha256": "840c4d3791acb0685dbe298eaa42dbf3afea2967ae276c6b44b47cd7ffaeec3a"
+    },
+    {
+      "file": "docs/evidence/v3/ctgrpo_lr5_test.md",
+      "source": "CIRCE/v3/reports/ctgrpo_lr5_test.md",
+      "source_sha256": "9b5e126d9c85f124994ee82efcb0810cc80138fbbc02e8a0c3fe8e3e8a9e2ab2",
+      "release_sha256": "9b5e126d9c85f124994ee82efcb0810cc80138fbbc02e8a0c3fe8e3e8a9e2ab2"
+    },
+    {
+      "file": "docs/evidence/v3/controls_test.md",
+      "source": "CIRCE/v3/reports/controls_test.md",
+      "source_sha256": "41a5c3fe39179d14bf3cf5cc6b9e0240736e8d7776d95fc5673e6be889ae3269",
+      "release_sha256": "41a5c3fe39179d14bf3cf5cc6b9e0240736e8d7776d95fc5673e6be889ae3269"
+    },
+    {
+      "file": "docs/evidence/v3/eval_v3.md",
+      "source": "CIRCE/v3/reports/eval_v3.md",
+      "source_sha256": "c101bc144d4d871357562b5085b31330729669f6c724830ea6db9c6567c586b7",
+      "release_sha256": "fc0d1f372fd5eccdf94a59584cce79ea737c9139858e7979ef0ccdd5afd44385"
+    },
+    {
+      "file": "docs/evidence/v3/trainer_review.md",
+      "source": "CIRCE/v3/reports/trainer_review.md",
+      "source_sha256": "eabf7dc615a4cb7fe93b733d3de8631890556d98dda1ac211343f8e540359f5a",
+      "release_sha256": "fd89bf154dcc0e56a4763dee001d8e9143c08b8010db63e70a3f9caa29592f57"
+    },
+    {
+      "file": "docs/evidence/v3/shortcut_mfclean/cv_within_organ.csv",
+      "source": "CIRCE/v3/reports/shortcut_mfclean/cv_within_organ.csv",
+      "source_sha256": "db27f897384d1138313edf1755002624c737465bb9327250d815266b92cae53c",
+      "release_sha256": "db27f897384d1138313edf1755002624c737465bb9327250d815266b92cae53c"
+    },
+    {
+      "file": "docs/evidence/v3/shortcut_mfclean/composition.csv",
+      "source": "CIRCE/v3/reports/shortcut_mfclean/composition.csv",
+      "source_sha256": "cd4a21e02b0a2c987244c0f85f28a783c2ac5efdd3e3857633361578864581eb",
+      "release_sha256": "cd4a21e02b0a2c987244c0f85f28a783c2ac5efdd3e3857633361578864581eb"
+    },
+    {
+      "file": "docs/evidence/v3/shortcut_mfclean/colour_rule.csv",
+      "source": "CIRCE/v3/reports/shortcut_mfclean/colour_rule.csv",
+      "source_sha256": "0780b6423ed62c517d078c9c83f973178e7036d2b396f0710e1bd5c5dfcf1ec8",
+      "release_sha256": "0780b6423ed62c517d078c9c83f973178e7036d2b396f0710e1bd5c5dfcf1ec8"
+    },
+    {
+      "file": "docs/evidence/v3/shortcut_mfclean/transfer.csv",
+      "source": "CIRCE/v3/reports/shortcut_mfclean/transfer.csv",
+      "source_sha256": "41ddccd803d293910c63fa90992c59a594142eeb92f2e3fd6ed15bd977e44ce3",
+      "release_sha256": "41ddccd803d293910c63fa90992c59a594142eeb92f2e3fd6ed15bd977e44ce3"
+    },
+    {
+      "file": "docs/evidence/v3/shortcut_mfclean/source_prior_cv.csv",
+      "source": "CIRCE/v3/reports/shortcut_mfclean/source_prior_cv.csv",
+      "source_sha256": "107499d6e056939b7e86b462894158b5b156edba70c82534fcf9c408773a40fd",
+      "release_sha256": "107499d6e056939b7e86b462894158b5b156edba70c82534fcf9c408773a40fd"
+    },
+    {
+      "file": "docs/evidence/v3/shortcut_mfclean/twin_diff_summary.csv",
+      "source": "CIRCE/v3/reports/shortcut_mfclean/twin_diff_summary.csv",
+      "source_sha256": "bb1d2f4a5c0a8c927e82c0dc4cd66c02c31e8ef85755d22d95d5f5b717e6b06b",
+      "release_sha256": "bb1d2f4a5c0a8c927e82c0dc4cd66c02c31e8ef85755d22d95d5f5b717e6b06b"
+    },
+    {
+      "file": "docs/evidence/v3/ctgrpo_s42_test.json",
+      "source": "CIRCE/v3/reports/ctgrpo_s42_test.json",
+      "source_sha256": "dbcbf223598a33f672aba7fd6ed9b78e306fecbf9630fe242a7c502659e8b964",
+      "release_sha256": "b9be217bc6ea59dc9acf3e62a4d7c2ae085c96f6bad271f3c03e4ac755057855"
+    },
+    {
+      "file": "docs/evidence/v3/ctgrpo_s7_test.json",
+      "source": "CIRCE/v3/reports/ctgrpo_s7_test.json",
+      "source_sha256": "e08556ba3f469b8534af92e940958e242fc8093075635329491a6ac3c2845b01",
+      "release_sha256": "e655e8c0693f2a36eb90677bd9f297bf438869c71f4c1e2d499771f8c540a377"
+    },
+    {
+      "file": "docs/evidence/v3/ctgrpo_lr5_test.json",
+      "source": "CIRCE/v3/reports/ctgrpo_lr5_test.json",
+      "source_sha256": "d5accdac1a4234f79971b5126bae7ba02b9194e66a06a1baad724a01ebebd9d0",
+      "release_sha256": "d3ba8f62e658cef61ad36affe7afd6a12d4eeb911e4615e646e3c580e8c83bad"
+    },
+    {
+      "file": "docs/evidence/v3/controls_test.json",
+      "source": "CIRCE/v3/reports/controls_test.json",
+      "source_sha256": "da6ad67790c622f4311b7007be78fb893378dcf785c5acf23f5a03deaab02260",
+      "release_sha256": "3e85200f1e7e41ca76829665e499685f4c0ef9b569f42e59fc803646634ba104"
+    },
+    {
+      "file": "construction/legacy/build_medforgepp.py",
+      "source": "AAAI/MedForge++/build_medforgepp.py",
+      "source_sha256": "52c8987fbcee7e989f30e46450f93ded299ce4744bb9b2485b61f2a4abbd76f0",
+      "release_sha256": "c8c9d70410bb3d2895fb5b04c03393451308efdf005b9c19b5b98d30e7141374"
+    },
+    {
+      "file": "construction/legacy/build_medforge_annotations.py",
+      "source": "AAAI/MedForge++/build_medforge_annotations.py",
+      "source_sha256": "846e2d2a0c68b99ef2c89c791b4ec1e33c74cc41a19e5eb957983bd8b2c8a8a3",
+      "release_sha256": "976a130c1f1f18344b244e9369e40d4262c972a3f5fdffd670f4b807ec750547"
+    },
+    {
+      "file": "construction/inject_flux_colon.py",
+      "source": "AAAI/colon/inject_flux_batch.py",
+      "source_sha256": "bcf30b8b016975a50acc892fe0b711c2550619d570a755a28d1727186a6244d7",
+      "release_sha256": "695f7cccbb0ec19fdd565da4ce86a89493fd9a46699bcbb3389c8edef4bebcf0"
+    },
+    {
+      "file": "construction/inject_flux_kidney.py",
+      "source": "AAAI/kidney/inject_flux_kidney.py",
+      "source_sha256": "74fc7c8305deb77a16a69afc31f837be46cd81ab1d145a7f90de9b0d6308d6d1",
+      "release_sha256": "b753406add3f147e71db4fe20a76381df2dc18bc9d1ddcd39cfbdd91bc68aafd"
+    },
+    {
+      "file": "construction/annotate_kidney_colon.py",
+      "source": "AAAI/naitik_data/annotate_naitik.py",
+      "source_sha256": "00b27f914ec856e4e28c3277641044d9af51cb9094c482f78f7eb5c8634fec5f",
+      "release_sha256": "51e69419e1ffda9a62e460c53962c89907cca96b0114aaceb4b39f1498253a13"
+    },
+    {
+      "file": "prompts/real_colon.txt",
+      "source": "Prompts/real_colon.txt",
+      "source_sha256": "63faa71ee9c269a3ebfa1fc1a18c50ff619b2a896a6fac78f9a7f46f0bf41450",
+      "release_sha256": "96dd585e31692effd57b62701c6754934f9ef4d56fade68c2d3518b77082231f"
+    },
+    {
+      "file": "prompts/real_colon_polyps.txt",
+      "source": "Prompts/real_colon_polyps.txt",
+      "source_sha256": "1943061eff0d6455271e315362b096d2b690c7326357f59a1d1817bab3bbb743",
+      "release_sha256": "43a929ae38639343afb88068589a04ba6e5f9f3a7df41ee5f8a688f5ad8529b8"
+    },
+    {
+      "file": "prompts/real_kidney.txt",
+      "source": "Prompts/real_kidney.txt",
+      "source_sha256": "c0f04e4da33eecc8edba423c374cadd6b0fd38b0c7721792787015c45b422e1b",
+      "release_sha256": "034239da3870a95fc566c4c3a2d6a5ab27c9d8bc6416d15af99c23b08e659273"
+    },
+    {
+      "file": "prompts/real_kidney_tumor.txt",
+      "source": "Prompts/real_kidney_tumor.txt",
+      "source_sha256": "e6874f75924a60a68bc87596ef171d8d4f738bb4b496220b57408413b63f59b3",
+      "release_sha256": "31b3cea364d833c03867f5ae9ae97458b22bb3380d00a8a4dba80c6b5e4c3caa"
+    },
+    {
+      "file": "prompts/removal_colon_polyps.txt",
+      "source": "Prompts/removal_colon_polyps.txt",
+      "source_sha256": "07a991e5ba8df0aac26c75525a93072fbbd3696ea7cfe41460ebf097f8b44510",
+      "release_sha256": "096744a7a3718852982147bda5fb1dffa27e597a6711a82d5d85857fb8f37907"
+    },
+    {
+      "file": "prompts/removal_kidney_tumor.txt",
+      "source": "Prompts/removal_kidney_tumor.txt",
+      "source_sha256": "a8e4ed96148b99d6d628ad7f81cd36f9591543badbcf43d8c5dfc616f9e3045a",
+      "release_sha256": "6acccf8fceba392cf2b2b4ca2a3ff32f071723c184c35c67539eed5e983d3957"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/main.tex",
+      "source": "CIRCE/paper_cvpr_v2/main.tex",
+      "source_sha256": "7f3ef25ed0d32c5828eb42e5f1ea78504a2e62da8716a06dbd5995ea0189a20b",
+      "release_sha256": "7f3ef25ed0d32c5828eb42e5f1ea78504a2e62da8716a06dbd5995ea0189a20b"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/main.pdf",
+      "source": "CIRCE/paper_cvpr_v2/main.pdf",
+      "source_sha256": "e413b2f071360bd91b36060d376ff87a82b1a5b663b556f26c3fa729f885322f",
+      "release_sha256": "e413b2f071360bd91b36060d376ff87a82b1a5b663b556f26c3fa729f885322f"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/main_updated.tex",
+      "source": "CIRCE/paper_cvpr_v2/main_updated.tex",
+      "source_sha256": "f04b9d4edddd1d41629207b04647f7ca25e621ea73237f7d98b4664e6cff9f6d",
+      "release_sha256": "f04b9d4edddd1d41629207b04647f7ca25e621ea73237f7d98b4664e6cff9f6d"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/main_updated.pdf",
+      "source": "CIRCE/paper_cvpr_v2/main_updated.pdf",
+      "source_sha256": "564e48eb9a376f8784b073187bc125e0f49006412763a23ed6cbae1adb0ef309",
+      "release_sha256": "564e48eb9a376f8784b073187bc125e0f49006412763a23ed6cbae1adb0ef309"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/supplementary.tex",
+      "source": "CIRCE/paper_cvpr_v2/supplementary.tex",
+      "source_sha256": "bd272833971bfa9b1207ab4fa6da59c02c52fee8328a3dcecb9a0abc22eb7889",
+      "release_sha256": "bd272833971bfa9b1207ab4fa6da59c02c52fee8328a3dcecb9a0abc22eb7889"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/supplementary.pdf",
+      "source": "CIRCE/paper_cvpr_v2/supplementary.pdf",
+      "source_sha256": "16783041bdc208d09e6a4d64e4679ce1a36193dff55f75a97bb66efc4abc12b9",
+      "release_sha256": "16783041bdc208d09e6a4d64e4679ce1a36193dff55f75a97bb66efc4abc12b9"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/preamble.tex",
+      "source": "CIRCE/paper_cvpr_v2/preamble.tex",
+      "source_sha256": "080e0bae5ff30626292192ee2b4d1afca432ed2d2c939486c1bb37856166f8c1",
+      "release_sha256": "080e0bae5ff30626292192ee2b4d1afca432ed2d2c939486c1bb37856166f8c1"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/references.bib",
+      "source": "CIRCE/paper_cvpr_v2/references.bib",
+      "source_sha256": "fecdcd4377ed33e54e3ac00870a0b799d96f20e8e29571624cc78655fd514f9f",
+      "release_sha256": "fecdcd4377ed33e54e3ac00870a0b799d96f20e8e29571624cc78655fd514f9f"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/cvpr.sty",
+      "source": "CIRCE/paper_cvpr_v2/cvpr.sty",
+      "source_sha256": "2602473285d1a7df2a445ac89b76e1afa0acab78e056f0369d19770245190153",
+      "release_sha256": "2602473285d1a7df2a445ac89b76e1afa0acab78e056f0369d19770245190153"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/ieeenat_fullname.bst",
+      "source": "CIRCE/paper_cvpr_v2/ieeenat_fullname.bst",
+      "source_sha256": "e38e6166bd7b1e6d23a1b79dcdb55c656e4fcdbe91bdf6b50d827e6b5d1aacfc",
+      "release_sha256": "e38e6166bd7b1e6d23a1b79dcdb55c656e4fcdbe91bdf6b50d827e6b5d1aacfc"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/main.bbl",
+      "source": "CIRCE/paper_cvpr_v2/main.bbl",
+      "source_sha256": "57aae44cf5f5b7c8172a3aa65a71d7bc6f508b5df20dfea2733ddfcd9afbe2a6",
+      "release_sha256": "57aae44cf5f5b7c8172a3aa65a71d7bc6f508b5df20dfea2733ddfcd9afbe2a6"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/supplementary.bbl",
+      "source": "CIRCE/paper_cvpr_v2/supplementary.bbl",
+      "source_sha256": "3d96fb0e92eff44100bc009b5e6a77082a712d40b04b2fc971a12bacbc71e661",
+      "release_sha256": "3d96fb0e92eff44100bc009b5e6a77082a712d40b04b2fc971a12bacbc71e661"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/figures/ablation7_agreement_heatmap.png",
+      "source": "CIRCE/paper_cvpr_v2/figures/ablation7_agreement_heatmap.png",
+      "source_sha256": "d5c60b58b4b6dd84608859f30ed0f7a8f9f5ac1dc185961933b7f9dbaa2a39d1",
+      "release_sha256": "d5c60b58b4b6dd84608859f30ed0f7a8f9f5ac1dc185961933b7f9dbaa2a39d1"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/figures/bridge.pdf",
+      "source": "CIRCE/paper_cvpr_v2/figures/bridge.pdf",
+      "source_sha256": "be6a48a3523dae4b375aa031928f5c15ba80cd84f00c4e27af834ca9c6e3fd3b",
+      "release_sha256": "be6a48a3523dae4b375aa031928f5c15ba80cd84f00c4e27af834ca9c6e3fd3b"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/figures/qualitative_eg.png",
+      "source": "CIRCE/paper_cvpr_v2/figures/qualitative_eg.png",
+      "source_sha256": "dca031a75d34f1d6915f4bc11f50d93ca8aa4be02eb3fcdbe8a716f88f7dc32e",
+      "release_sha256": "dca031a75d34f1d6915f4bc11f50d93ca8aa4be02eb3fcdbe8a716f88f7dc32e"
+    },
+    {
+      "file": "paper/legacy_cvpr_draft/figures/teaser_medforge++.pdf",
+      "source": "CIRCE/paper_cvpr_v2/figures/teaser_medforge++.pdf",
+      "source_sha256": "5f081864c58f034c326da1be664df4dd75c5780daf9fe1e69b63e519219650ed",
+      "release_sha256": "5f081864c58f034c326da1be664df4dd75c5780daf9fe1e69b63e519219650ed"
+    }
+  ],
+  "path_portability_changes": [
+    "circe/ablation1_stage_contribution.py",
+    "circe/aggregate_results.py",
+    "circe/audit_protocol.py",
+    "circe/build_failure_replay.py",
+    "circe/build_medforge_eval.py",
+    "circe/build_medforge_protocol.py",
+    "circe/build_medforge_sft.py",
+    "circe/build_pfplus_failure_replay.py",
+    "circe/build_protocol_matrix.py",
+    "circe/build_sft_data.py",
+    "circe/diag_removal.py",
+    "circe/error_overlap_analysis.py",
+    "circe/error_overlap_extended.py",
+    "circe/eval_medforge.py",
+    "circe/hybrid_eval.py",
+    "circe/make_eval_split.py",
+    "circe/make_results_csv.py",
+    "circe/per_class_breakdown.py",
+    "circe/plot_circe_vs_medforge.py",
+    "circe/plot_protocol_3tier.py",
+    "circe/plot_protocol_matrix.py",
+    "circe/removal_fingerprint.py",
+    "circe/smoke_test_circe.py",
+    "circe/smoke_test_training.py",
+    "circe/train_grpo.py",
+    "circe/train_sft.py",
+    "construction/annotate_kidney_colon.py",
+    "construction/inject_flux_colon.py",
+    "construction/inject_flux_kidney.py",
+    "construction/legacy/build_medforge_annotations.py",
+    "construction/legacy/build_medforgepp.py",
+    "v3/build_counterfactual_test.py",
+    "v3/build_mfclean.py",
+    "v3/build_sft_v3.py",
+    "v3/check_sft_collator_v3.py",
+    "v3/dryrun_ctgrpo.py",
+    "v3/eval_v3.py",
+    "v3/legacy_meta_v3.py",
+    "v3/rollout_diag.py",
+    "v3/shortcut_probe_v3.py",
+    "v3/stats_v3.py",
+    "v3/test_ctgrpo.py",
+    "v3/train_ctgrpo.py",
+    "v3_audit/code_scripts/bonus_constancy.py",
+    "v3_audit/code_scripts/branch_tokens.py",
+    "v3_audit/code_scripts/cpu_dryrun_tiny_qwen3vl.py",
+    "v3_audit/code_scripts/diffmap_feasibility.py",
+    "v3_audit/code_scripts/diffmap_inbox.py",
+    "v3_audit/code_scripts/gen_structure.py",
+    "v3_audit/code_scripts/pair_leakage.py",
+    "v3_audit/code_scripts/prompt_parity.py",
+    "v3_audit/code_scripts/rl_pool_stats.py",
+    "v3_audit/code_scripts/test_grpo_v3_reference.py",
+    "v3_audit/exp_build_large_test.py",
+    "v3_audit/exp_confound.py",
+    "v3_audit/exp_implant_quality.py",
+    "v3_audit/exp_kits_export_fit.py",
+    "v3_audit/exp_kits_slices.py",
+    "v3_audit/exp_kits_window_fit.py",
+    "v3_audit/exp_kits_window_fit2.py",
+    "v3_audit/exp_mfpp_group_leak.py",
+    "v3_audit/exp_sibling_effect.py",
+    "v3_audit/exp_source_disjoint.py",
+    "v3_audit/exp_test_siblings.py",
+    "v3_audit/exp_unused_protocol.py",
+    "v3_audit/exp_unused_scan.py",
+    "v3_audit/labels_aggregate.py",
+    "v3_audit/labels_boxstats.py",
+    "v3_audit/labels_esm.py",
+    "v3_audit/labels_jpegq.py",
+    "v3_audit/labels_kidney.py",
+    "v3_audit/labels_mfpp_implant.py",
+    "v3_audit/labels_pairdiff.py",
+    "v3_audit/labels_text_audit.py",
+    "v3_audit/scripts/box_sibling.py",
+    "v3_audit/scripts/census_hash.py",
+    "v3_audit/scripts/composition.py",
+    "v3_audit/scripts/diffsrc_fullres.py",
+    "v3_audit/scripts/edit_strength.py",
+    "v3_audit/scripts/group_components.py",
+    "v3_audit/scripts/mf90k_census.py",
+    "v3_audit/scripts/mfpp_leak.py",
+    "v3_audit/scripts/mfpp_verified.py",
+    "v3_audit/scripts/near_dup.py",
+    "v3_audit/scripts/near_dup_verify.py",
+    "v3_audit/scripts/protocol_parse.py",
+    "v3_audit/scripts/removal_diff.py",
+    "v3_audit/scripts/source_confound.py",
+    "v3_audit/scripts/source_leak.py",
+    "v3_audit/shortcut_work/build_sample.py",
+    "v3_audit/shortcut_work/common.py",
+    "v3_audit/shortcut_work/exp_addition.py",
+    "v3_audit/shortcut_work/exp_mf90k.py",
+    "v3_audit/shortcut_work/exp_norm.py",
+    "v3_audit/shortcut_work/exp_pasteback.py",
+    "v3_audit/shortcut_work/exp_protocol.py",
+    "v3_audit/shortcut_work/exp_protocol_ablate.py",
+    "v3_audit/shortcut_work/locality.py",
+    "v3_audit/shortcut_work/locality_add.py",
+    "v3_audit/shortcut_work/normalize_probe.py",
+    "v3_audit/shortcut_work/paste_back.py",
+    "v3_audit/shortcut_work/tab_meta.py"
+  ]
+}

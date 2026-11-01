@@ -1,0 +1,478 @@
+\begin{thebibliography}{64}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bai et~al.(2024{\natexlab{a}})Bai, Bai, Yang, Wang, Tan, Wang, Lin,
+  Zhou, and Zhou]{qwenvl2024}
+Jinze Bai, Shuai Bai, Shusheng Yang, Shijie Wang, Sinan Tan, Peng Wang, Junyang
+  Lin, Chang Zhou, and Jingren Zhou.
+\newblock Qwen-vl: A versatile vision-language model for understanding,
+  localization, text reading, and beyond.
+\newblock \emph{arXiv preprint arXiv:2308.12966}, 2024{\natexlab{a}}.
+
+\bibitem[Bai et~al.(2024{\natexlab{b}})Bai, Wang, Xiao, He, Han, Zhang, and
+  Shou]{hallucination_vlm_2024}
+Zechen Bai, Pichao Wang, Tianjun Xiao, Tong He, Zongbo Han, Zheng Zhang, and
+  Mike~Zheng Shou.
+\newblock Hallucination of multimodal large language models: A survey.
+\newblock \emph{arXiv preprint arXiv:2404.18930}, 2024{\natexlab{b}}.
+
+\bibitem[Brooks et~al.(2023)Brooks, Holynski, and Efros]{instruct_pix2pix_2023}
+Tim Brooks, Aleksander Holynski, and Alexei~A. Efros.
+\newblock Instructpix2pix: Learning to follow image editing instructions.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 18392--18402, 2023.
+
+\bibitem[Chen et~al.(2026)Chen, He, Lei, Pu, Zhang, Xu, and Feng]{medforge2026}
+Zhihui Chen, Kai He, Qingyuan Lei, Bin Pu, Jian Zhang, Yuling Xu, and Mengling
+  Feng.
+\newblock Medforge: Interpretable medical deepfake detection via forgery-aware
+  reasoning.
+\newblock In \emph{Proceedings of the 64th Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pages 25672--25692,
+  2026.
+
+\bibitem[Cho et~al.(2024)Cho, Mathur, Zakka, Kaur, Leipzig, Dalal, Krishnan,
+  Koo, Wai, Zhao, Chaudhari, Duda, Choi, Rahimy, Azzouz, Fong, Shad, and
+  Hiesinger]{medisyn_2024}
+Joseph Cho, Mrudang Mathur, Cyril Zakka, Dhamanpreet Kaur, Matthew Leipzig,
+  Alex Dalal, Aravind Krishnan, Eubee Koo, Karen Wai, Cindy~S. Zhao, Akshay
+  Chaudhari, Matthew Duda, Ashley Choi, Ehsan Rahimy, Lyna Azzouz, Robyn Fong,
+  Rohan Shad, and William Hiesinger.
+\newblock Medisyn: A generalist text-guided latent diffusion model for diverse
+  medical image synthesis.
+\newblock \emph{arXiv preprint arXiv:2405.09806}, 2024.
+
+\bibitem[Gambetti et~al.(2025)Gambetti, Han, Shen, and
+  Soares]{explainable_medical_ai_2025}
+Alessandro Gambetti, Qingpeng Han, Haocheng Shen, and Carlos Soares.
+\newblock A survey on human-centered evaluation of explainable ai methods in
+  clinical decision support systems.
+\newblock \emph{arXiv preprint arXiv:2502.09849}, 2025.
+
+\bibitem[Garrucho et~al.(2022)Garrucho, Kushibar, Jouide, Diaz, Igual, and
+  Lekadir]{cross_organ_transfer_2024}
+Lidia Garrucho, Kaisar Kushibar, Socayna Jouide, Oliver Diaz, Laura Igual, and
+  Karim Lekadir.
+\newblock Domain generalization in deep learning-based mass detection in
+  mammography: A large-scale multi-center study.
+\newblock \emph{arXiv preprint arXiv:2201.11620}, 2022.
+\newblock Presented at Artificial Intelligence in Medicine 2022.
+
+\bibitem[Guan et~al.(2023)Guan, Yap, Bozoki, and
+  Liu]{federated_learning_medical_2023}
+Hao Guan, Pew-Thian Yap, Andrea Bozoki, and Mingxia Liu.
+\newblock Federated learning for medical image analysis: A survey.
+\newblock \emph{arXiv preprint arXiv:2306.05980}, 2023.
+\newblock Presented at Pattern Recognition 2024.
+
+\bibitem[Guillaro et~al.(2023)Guillaro, Cozzolino, Sud, Dufour, and
+  Verdoliva]{trufor2023}
+Fabrizio Guillaro, Davide Cozzolino, Avneesh Sud, Nicholas Dufour, and Luisa
+  Verdoliva.
+\newblock {TruFor}: Leveraging all-round clues for trustworthy image forgery
+  detection and localization.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 20606--20615, 2023.
+
+\bibitem[Guo et~al.(2024)Guo, Lu, Szumel, Gui, Wang, Konz, and
+  Mazurowski]{scanner_variability_2024}
+Brian Guo, Darui Lu, Gregory Szumel, Rongze Gui, Tingyu Wang, Nicholas Konz,
+  and Maciej~A. Mazurowski.
+\newblock The impact of scanner domain shift on deep learning performance in
+  medical imaging: an experimental study.
+\newblock \emph{arXiv preprint arXiv:2409.04368}, 2024.
+
+\bibitem[Guo et~al.(2023)Guo, Liu, Ren, Grosz, Masi, and Liu]{hifinet2023}
+Xiao Guo, Xiaohong Liu, Zhiyuan Ren, Steven Grosz, Iacopo Masi, and Xiaoming
+  Liu.
+\newblock Hierarchical fine-grained image forgery detection and localization.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 3155--3165, 2023.
+
+\bibitem[Helff et~al.(2026)Helff, Delfosse, Steinmann, H{\"a}rle, Shindo,
+  Schramowski, Stammer, Kersting, and Friedrich]{rewardhacking2026}
+Lukas Helff, Quentin Delfosse, David Steinmann, Ruben H{\"a}rle, Hikaru Shindo,
+  Patrick Schramowski, Wolfgang Stammer, Kristian Kersting, and Felix
+  Friedrich.
+\newblock Llms gaming verifiers: Rlvr can lead to reward hacking.
+\newblock \emph{arXiv preprint arXiv:2604.15149}, 2026.
+
+\bibitem[Hu et~al.(2022)Hu, Shen, Wallis, Allen-Zhu, Li, Wang, Wang, and
+  Chen]{lora2021}
+Edward~J. Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean
+  Wang, Lu Wang, and Weizhu Chen.
+\newblock Lora: Low-rank adaptation of large language models.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2022.
+
+\bibitem[Huang et~al.(2024)Huang, Huang, Liu, Yan, Lv, Liu, Xiong, Zhang, Cao,
+  and Chen]{diffusion_survey_2024}
+Yi Huang, Jiancheng Huang, Yifan Liu, Mingfu Yan, Jiaxi Lv, Jianzhuang Liu, Wei
+  Xiong, He Zhang, Liangliang Cao, and Shifeng Chen.
+\newblock Diffusion model-based image editing: A survey.
+\newblock \emph{arXiv preprint arXiv:2402.17525}, 2024.
+
+\bibitem[Huang et~al.(2025{\natexlab{a}})Huang, Hu, Li, He, Zhao, Peng, Wu,
+  Huang, and Cheng]{sida2025}
+Zhenglin Huang, Jinwei Hu, Xiangtai Li, Yiwei He, Xingyu Zhao, Bei Peng,
+  Baoyuan Wu, Xiaowei Huang, and Guangliang Cheng.
+\newblock {SIDA}: Social media image deepfake detection, localization and
+  explanation with large multimodal model.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 28831--28841, 2025{\natexlab{a}}.
+
+\bibitem[Huang et~al.(2025{\natexlab{b}})Huang, Li, Li, Wen, He, Zhang, Fei,
+  Yang, Huang, Peng, and Cheng]{benchmark_diversity_2025}
+Zhenglin Huang, Tianxiao Li, Xiangtai Li, Haiquan Wen, Yiwei He, Jiangning
+  Zhang, Hao Fei, Xi Yang, Xiaowei Huang, Bei Peng, and Guangliang Cheng.
+\newblock So-fake: Benchmarking and explaining social media image forgery
+  detection.
+\newblock \emph{arXiv preprint arXiv:2505.18660}, 2025{\natexlab{b}}.
+
+\bibitem[Ibrahim et~al.(2024)Ibrahim, Al~Khalil, Amirrajab, Sun, Breeuwer,
+  Pluim, Elen, Ertaylan, and Dumontier]{synthetic_medical_data_2024}
+Mahmoud Ibrahim, Yasmina Al~Khalil, Sina Amirrajab, Chang Sun, Marcel Breeuwer,
+  Josien Pluim, Bart Elen, Gokhan Ertaylan, and Michel Dumontier.
+\newblock Generative ai for synthetic data across multiple medical modalities:
+  A systematic review of recent developments and challenges.
+\newblock \emph{arXiv preprint arXiv:2407.00116}, 2024.
+
+\bibitem[Ilharco et~al.(2023)Ilharco, Ribeiro, Wortsman, Gururangan, Schmidt,
+  Hajishirzi, and Farhadi]{task_arithmetic_2023}
+Gabriel Ilharco, Marco~Tulio Ribeiro, Mitchell Wortsman, Suchin Gururangan,
+  Ludwig Schmidt, Hannaneh Hajishirzi, and Ali Farhadi.
+\newblock Editing models with task arithmetic.
+\newblock \emph{arXiv preprint arXiv:2212.04089}, 2023.
+\newblock Presented at ICLR 2023.
+
+\bibitem[Kebaili et~al.(2023)Kebaili, Lapuyade-Lahorgue, and
+  Ruan]{medical_data_augmentation_2023}
+Aghiles Kebaili, J{\'e}r{\^o}me Lapuyade-Lahorgue, and Su Ruan.
+\newblock Deep learning approaches for data augmentation in medical imaging: A
+  review.
+\newblock \emph{arXiv preprint arXiv:2307.13125}, 2023.
+
+\bibitem[Lai et~al.(2024)Lai, Tian, Chen, Li, Yuan, Liu, and Jia]{lisa2024}
+Xin Lai, Zhuotao Tian, Yukang Chen, Yanwei Li, Yuhui Yuan, Shu Liu, and Jiaya
+  Jia.
+\newblock {LISA}: Reasoning segmentation via large language model.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 9579--9589, 2024.
+
+\bibitem[Lai et~al.(2026)Lai, Qian, Liu, Li, Luo, Wang, Zhuang, and
+  Hong]{miedb_2026}
+Yongfan Lai, W. Qian, B. Liu, H. Li, H. Luo, F. Wang, B. Zhuang, and S. Hong.
+\newblock Miedb-100k: A comprehensive dataset for medical image editing.
+\newblock \emph{arXiv preprint arXiv:2602.09587}, 2026.
+
+\bibitem[Li et~al.(2023)Li, Gan, Yang, Yang, Li, Wang, and
+  Gao]{multimodal_foundation_models_2023}
+Chunyuan Li, Zhe Gan, Zhengyuan Yang, Jianwei Yang, Linjie Li, Lijuan Wang, and
+  Jianfeng Gao.
+\newblock Multimodal foundation models: From specialists to general-purpose
+  assistants.
+\newblock \emph{arXiv preprint arXiv:2309.10020}, 2023.
+
+\bibitem[Li et~al.(2026)Li, Xu, and Chen]{vigil2026}
+Xinghan Li, Junhao Xu, and Jingjing Chen.
+\newblock Vigil: Part-grounded structured reasoning for generalizable deepfake
+  detection.
+\newblock \emph{arXiv preprint arXiv:2603.21526}, 2026.
+
+\bibitem[Li and Fan(2023)]{domain_adaptation_medical_2023}
+Yuemeng Li and Yong Fan.
+\newblock Medical image segmentation with domain adaptation: A survey.
+\newblock \emph{arXiv preprint arXiv:2311.01702}, 2023.
+
+\bibitem[Lin et~al.(2025)Lin, Yan, Chen, Ye, Zhang, Zhou, Jin, Li, Yao, and
+  Ding]{seeingbeforereasoning2025}
+Kaiqing Lin, Zhiyuan Yan, Ruoxin Chen, Junyan Ye, Ke-Yue Zhang, Yue Zhou, Peng
+  Jin, Bin Li, Taiping Yao, and Shouhong Ding.
+\newblock Seeing before reasoning: A unified framework for generalizable and
+  explainable fake image detection.
+\newblock \emph{arXiv preprint arXiv:2509.25502}, 2025.
+
+\bibitem[Liu et~al.(2024{\natexlab{a}})Liu, Li, Li, and Lee]{llava15_2024}
+Haotian Liu, Chunyuan Li, Yuheng Li, and Yong~Jae Lee.
+\newblock Improved baselines with visual instruction tuning.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 26296--26306, 2024{\natexlab{a}}.
+
+\bibitem[Liu et~al.(2024{\natexlab{b}})Liu, Tan, Tan, Wei, Wang, and
+  Zhao]{fatformer2024}
+Huan Liu, Zichang Tan, Chuangchuang Tan, Yunchao Wei, Jingdong Wang, and Yao
+  Zhao.
+\newblock Forgery-aware adaptive transformer for generalizable synthetic image
+  detection.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 10770--10780, 2024{\natexlab{b}}.
+
+\bibitem[Liu et~al.(2025{\natexlab{a}})Liu, He, Fan, Wang, and
+  Fung]{text_guided_medical_editing_2025}
+Minghao Liu, Zhitao He, Zhiyuan Fan, Qingyun Wang, and Yi~R. Fung.
+\newblock Medebench: Diagnosing reliability in text-guided medical image
+  editing.
+\newblock \emph{arXiv preprint arXiv:2506.01921}, 2025{\natexlab{a}}.
+\newblock Findings of EMNLP 2025.
+
+\bibitem[Liu et~al.(2025{\natexlab{b}})Liu, Sun, Zang, Dong, Cao, Duan, Lin,
+  and Wang]{reasoning_rl_visual_2024}
+Ziyu Liu, Zeyi Sun, Yuhang Zang, Xiaoyi Dong, Yuhang Cao, Haodong Duan, Dahua
+  Lin, and Jiaqi Wang.
+\newblock Visual-rft: Visual reinforcement fine-tuning.
+\newblock \emph{arXiv preprint arXiv:2503.01785}, 2025{\natexlab{b}}.
+
+\bibitem[Luo et~al.(2023)Luo, Cai, Kong, Ju, Kang, Huang, and
+  Kot]{vision_transformer_forgery_2023}
+Anwei Luo, Rizhao Cai, Chenqi Kong, Yakun Ju, Xiangui Kang, Jiwu Huang, and
+  Alex~C. Kot.
+\newblock Generalized face forgery detection via adaptive learning for
+  pre-trained vision transformer.
+\newblock \emph{arXiv preprint arXiv:2309.11092}, 2023.
+
+\bibitem[Luo et~al.(2024)Luo, Tang, Chen, Han, and
+  Chen]{medical_grounding_vlm_2024}
+Lingxiao Luo, Bingda Tang, Xuanzhong Chen, Rong Han, and Ting Chen.
+\newblock Vividmed: Vision language model with versatile visual grounding for
+  medicine.
+\newblock \emph{arXiv preprint arXiv:2410.12694}, 2024.
+
+\bibitem[Mehrjardi et~al.(2023)Mehrjardi, Latif, Zarchi, and
+  Sheikhpour]{medical_forgery_survey_2023}
+F.~Z. Mehrjardi, A.~M. Latif, M.~S. Zarchi, and R. Sheikhpour.
+\newblock A survey on deep learning-based image forgery detection.
+\newblock \emph{Pattern Recognition}, 144:\penalty0 109778, 2023.
+
+\bibitem[Mirsky et~al.(2019)Mirsky, Mahler, Shelef, and
+  Elovici]{ctgan_attack_2019}
+Yisroel Mirsky, Tom Mahler, Ilan Shelef, and Yuval Elovici.
+\newblock Ct-gan: Malicious tampering of 3d medical imagery using deep
+  learning.
+\newblock \emph{arXiv preprint arXiv:1901.03597}, 2019.
+\newblock Presented at the 28th USENIX Security Symposium, 2019.
+
+\bibitem[Nandi and Natarajan(2026{\natexlab{a}})]{biotampernet2026}
+Soumyaroop Nandi and Prem Natarajan.
+\newblock Biotampernet: Affinity-guided state-space model detecting tampered
+  biomedical images.
+\newblock \emph{arXiv preprint arXiv:2602.01435}, 2026{\natexlab{a}}.
+
+\bibitem[Nandi and
+  Natarajan(2026{\natexlab{b}})]{scientific_integrity_imaging_2026}
+Soumyaroop Nandi and Prem Natarajan.
+\newblock Rescind: Countering image misconduct in biomedical publications with
+  vision-language and state-space modeling.
+\newblock \emph{arXiv preprint arXiv:2601.08040}, 2026{\natexlab{b}}.
+
+\bibitem[Ojha et~al.(2023)Ojha, Li, and Lee]{clip_forgery_detection_2023}
+Utkarsh Ojha, Yuheng Li, and Yong~Jae Lee.
+\newblock Towards universal fake image detectors that generalize across
+  generative models.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 24480--24489, 2023.
+
+\bibitem[Ouyang et~al.(2022)Ouyang, Wu, Jiang, Almeida, Wainwright, Mishkin,
+  Zhang, Agarwal, Slama, Ray, Schulman, Hilton, Kelton, Miller, Simens, Askell,
+  Welinder, Christiano, Leike, and Lowe]{rlhf_instructgpt_2022}
+Long Ouyang, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll~L. Wainwright, Pamela
+  Mishkin, Chong Zhang, Sandhini Agarwal, Katarina Slama, Alex Ray, John
+  Schulman, Jacob Hilton, Fraser Kelton, Luke Miller, Maddie Simens, Amanda
+  Askell, Peter Welinder, Paul Christiano, Jan Leike, and Ryan Lowe.
+\newblock Training language models to follow instructions with human feedback.
+\newblock \emph{arXiv preprint arXiv:2203.02155}, 2022.
+\newblock Presented at NeurIPS 2022.
+
+\bibitem[Pan et~al.(2025)]{medvlmr1_2025}
+Jiazhen Pan et~al.
+\newblock Medvlm-r1: Incentivizing medical reasoning capability of
+  vision-language models (vlms) via reinforcement learning.
+\newblock \emph{arXiv preprint arXiv:2502.19634}, 2025.
+\newblock Presented at MICCAI 2025.
+
+\bibitem[Pei et~al.(2024)Pei, Zhang, Hu, Zhang, Wang, Wu, Zhai, Yang, and
+  Tao]{natural_deepfake_survey_2024}
+Gan Pei, Jiangning Zhang, Menghan Hu, Zhenyu Zhang, Chengjie Wang, Yunsheng Wu,
+  Guangtao Zhai, Jian Yang, and Dacheng Tao.
+\newblock Deepfake generation and detection: A benchmark and survey.
+\newblock \emph{arXiv preprint arXiv:2403.17881}, 2024.
+
+\bibitem[{Qwen Team}(2025)]{qwen3vl2025}
+{Qwen Team}.
+\newblock Qwen3-vl technical report.
+\newblock \emph{arXiv preprint arXiv:2511.21631}, 2025.
+
+\bibitem[Rombach et~al.(2022)Rombach, Blattmann, Lorenz, Esser, and
+  Ommer]{latent_diffusion_2022}
+Robin Rombach, Andreas Blattmann, Dominik Lorenz, Patrick Esser, and Bj{\"o}rn
+  Ommer.
+\newblock High-resolution image synthesis with latent diffusion models.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 10684--10695, 2022.
+
+\bibitem[Rosenbacke et~al.(2024)Rosenbacke, Melhus, McKee, and
+  Stuckler]{clinical_trust_ai_2024}
+Rikard Rosenbacke, {\AA}sa Melhus, Martin McKee, and David Stuckler.
+\newblock How explainable artificial intelligence can increase or decrease
+  clinicians' trust in ai applications in health care: Systematic review.
+\newblock \emph{JMIR AI}, 3:\penalty0 e53207, 2024.
+
+\bibitem[Schulman et~al.(2017)Schulman, Wolski, Dhariwal, Radford, and
+  Klimov]{ppo2017}
+John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov.
+\newblock Proximal policy optimization algorithms.
+\newblock \emph{arXiv preprint arXiv:1707.06347}, 2017.
+
+\bibitem[Shao et~al.(2024)Shao, Wang, Zhu, Xu, Song, Bi, Zhang, Zhang, Li, Wu,
+  and Guo]{grpo2024}
+Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Xiao Bi, Haowei
+  Zhang, Mingchuan Zhang, Y.K. Li, Y. Wu, and Daya Guo.
+\newblock Deepseekmath: Pushing the limits of mathematical reasoning in open
+  language models.
+\newblock \emph{arXiv preprint arXiv:2402.03300}, 2024.
+
+\bibitem[Skandarani et~al.(2021)Skandarani, Jodoin, and
+  Lalande]{gan_medical_synthesis_2022}
+Youssef Skandarani, Pierre-Marc Jodoin, and Alain Lalande.
+\newblock Gans for medical image synthesis: An empirical study.
+\newblock \emph{arXiv preprint arXiv:2105.05318}, 2021.
+
+\bibitem[Su et~al.(2024)Su, Guo, Yang, Wang, Coenen, and
+  Huang]{medical_domain_shift_2024}
+Zixian Su, Jingwei Guo, Xi Yang, Qiufeng Wang, Frans Coenen, and Kaizhu Huang.
+\newblock Navigating distribution shifts in medical image analysis: A survey.
+\newblock \emph{arXiv preprint arXiv:2411.05824}, 2024.
+
+\bibitem[Suvorov et~al.(2022)Suvorov, Logacheva, Mashikhin, Remizova, Ashukha,
+  Silvestrov, Kong, Goka, Park, and Lempitsky]{lama2022}
+Roman Suvorov, Elizaveta Logacheva, Anton Mashikhin, Anastasia Remizova,
+  Arsenii Ashukha, Aleksei Silvestrov, Naejin Kong, Harshith Goka, Kiwoong
+  Park, and Victor Lempitsky.
+\newblock Resolution-robust large mask inpainting with fourier convolutions.
+\newblock \emph{Proceedings of the IEEE/CVF Winter Conference on Applications
+  of Computer Vision (WACV)}, 2022.
+
+\bibitem[Tan et~al.(2024)Tan, Zhao, Wei, Gu, Liu, and Wei]{npr2024}
+Chuangchuang Tan, Yao Zhao, Shikui Wei, Guanghua Gu, Ping Liu, and Yunchao Wei.
+\newblock Rethinking the up-sampling operations in {CNN}-based generative
+  network for generalizable deepfake detection.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 28130--28139, 2024.
+
+\bibitem[Vimalachandran et~al.(2018)Vimalachandran, Wang, Zhang, Heyward, and
+  Whittaker]{medical_record_integrity_2018}
+P. Vimalachandran, H. Wang, Y. Zhang, B. Heyward, and F. Whittaker.
+\newblock Ensuring data integrity in electronic health records: A quality
+  health care implication.
+\newblock \emph{arXiv preprint arXiv:1802.00577}, 2018.
+
+\bibitem[Wang et~al.(2020)Wang, Wang, Zhang, Owens, and
+  Efros]{gan_fingerprint_detection_2020}
+Sheng-Yu Wang, Oliver Wang, Richard Zhang, Andrew Owens, and Alexei~A. Efros.
+\newblock Cnn-generated images are surprisingly easy to spot... for now.
+\newblock In \emph{Proceedings of the IEEE/CVF Conference on Computer Vision
+  and Pattern Recognition (CVPR)}, pages 8695--8704, 2020.
+
+\bibitem[Wang et~al.(2023)Wang, Liu, Wang, and Zhou]{radiology_report_vlm_2023}
+Zhanyu Wang, Lingqiao Liu, Lei Wang, and Luping Zhou.
+\newblock R2gengpt: Radiology report generation with frozen llms.
+\newblock \emph{arXiv preprint arXiv:2309.09812}, 2023.
+\newblock Presented at Meta-Radiology 2023.
+
+\bibitem[Wei et~al.(2022)Wei, Wang, Schuurmans, Bosma, Ichter, Xia, Chi, Le,
+  and Zhou]{chain_of_thought_2022}
+Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia,
+  Ed Chi, Quoc Le, and Denny Zhou.
+\newblock Chain-of-thought prompting elicits reasoning in large language
+  models.
+\newblock \emph{arXiv preprint arXiv:2201.11903}, 2022.
+\newblock Presented at NeurIPS 2022.
+
+\bibitem[Wortsman et~al.(2022)Wortsman, Ilharco, Gadre, Roelofs, Gontijo-Lopes,
+  Morcos, Namkoong, Farhadi, Carmon, Kornblith, and Schmidt]{modelsoups2022}
+Mitchell Wortsman, Gabriel Ilharco, Samir~Yitzhak Gadre, Rebecca Roelofs,
+  Raphael Gontijo-Lopes, Ari~S. Morcos, Hongseok Namkoong, Ali Farhadi, Yair
+  Carmon, Simon Kornblith, and Ludwig Schmidt.
+\newblock Model soups: averaging weights of multiple fine-tuned models improves
+  accuracy without increasing inference time.
+\newblock \emph{Proceedings of the 39th International Conference on Machine
+  Learning (ICML)}, 2022.
+
+\bibitem[Wu et~al.(2025)Wu, Yang, Liu, Wang, and Wong]{modelinterp2025}
+Taiqiang Wu, Runming Yang, Tao Liu, Jiahao Wang, and Ngai Wong.
+\newblock Revisiting model interpolation for efficient reasoning.
+\newblock \emph{arXiv preprint arXiv:2510.10977}, 2025.
+
+\bibitem[Yadav et~al.(2023)Yadav, Tam, Choshen, Raffel, and
+  Bansal]{ties_merging_2023}
+Prateek Yadav, Derek Tam, Leshem Choshen, Colin Raffel, and Mohit Bansal.
+\newblock Ties-merging: Resolving interference when merging models.
+\newblock \emph{arXiv preprint arXiv:2306.01708}, 2023.
+\newblock Presented at NeurIPS 2023.
+
+\bibitem[Yang et~al.(2024)Yang, Zhou, Li, and
+  Liu]{ood_generalization_survey_2024}
+Jingkang Yang, Kaiyang Zhou, Yixuan Li, and Ziwei Liu.
+\newblock Generalized out-of-distribution detection: A survey.
+\newblock \emph{International Journal of Computer Vision}, 132\penalty0
+  (12):\penalty0 5635--5662, 2024.
+\newblock Originally released as arXiv:2110.11334, 2021.
+
+\bibitem[Yu et~al.(2024)Yu, Yu, Yu, Huang, and Li]{dare_merging_2024}
+Le Yu, Bowen Yu, Haiyang Yu, Fei Huang, and Yongbin Li.
+\newblock Language models are super mario: Absorbing abilities from homologous
+  models as a free lunch.
+\newblock \emph{arXiv preprint arXiv:2311.03099}, 2024.
+\newblock Presented at ICML 2024.
+
+\bibitem[Zhang and Zhou(2025)]{lorainterference2025}
+Haobo Zhang and Jiayu Zhou.
+\newblock Unraveling lora interference: Orthogonal subspaces for robust model
+  merging.
+\newblock \emph{arXiv preprint arXiv:2505.22934}, 2025.
+
+\bibitem[Zhang et~al.(2022)Zhang, Huang, Liu, Han, and Xiang]{ctgan2022}
+Jianyi Zhang, Xuanxi Huang, Yaqi Liu, Yuyang Han, and Zixiao Xiang.
+\newblock Gan-based medical image small region forgery detection via a
+  two-stage cascade framework.
+\newblock \emph{arXiv preprint arXiv:2205.15170}, 2022.
+
+\bibitem[Zhang et~al.(2026)Zhang, Weng, Fu, Chen, Li, He, and Fu]{fmsd2026}
+Xiang Zhang, Wenliang Weng, Daoyong Fu, Beijing Chen, Ziqiang Li, Ziwen He, and
+  Zhangjie Fu.
+\newblock Generalizable deepfake detection based on forgery-aware layer masking
+  and multi-artifact subspace decomposition.
+\newblock \emph{arXiv preprint arXiv:2601.01041}, 2026.
+
+\bibitem[Zheng et~al.(2025{\natexlab{a}})Zheng, Liu, Li, Chen, Yu, Gao, Dang,
+  Liu, Men, Yang, Zhou, and Lin]{gspo2025}
+Chujie Zheng, Shixuan Liu, Mingze Li, Xiong-Hui Chen, Bowen Yu, Chang Gao, Kai
+  Dang, Yuqiong Liu, Rui Men, An Yang, Jingren Zhou, and Junyang Lin.
+\newblock Group sequence policy optimization.
+\newblock \emph{arXiv preprint arXiv:2507.18071}, 2025{\natexlab{a}}.
+
+\bibitem[Zheng et~al.(2025{\natexlab{b}})Zheng, Wang, Huang, Wang, Chen, Fan,
+  Hu, and Ye]{lora_orthogonal_merge_2025}
+Shenghe Zheng, Hongzhi Wang, Chenyu Huang, Xiaohui Wang, Tao Chen, Jiayuan Fan,
+  Shuyue Hu, and Peng Ye.
+\newblock Decouple and orthogonalize: A data-free framework for lora merging.
+\newblock \emph{arXiv preprint arXiv:2505.15875}, 2025{\natexlab{b}}.
+
+\bibitem[Zhu et~al.(2026)Zhu, Zhang, Zhang, Zhang, and
+  Wang]{medical_benchmark_survey_2026}
+Pengyu Zhu, Xiaojing Zhang, Kunbo Zhang, Chunyan Zhang, and Zhenyu Wang.
+\newblock A comprehensive survey of medical image segmentation: Challenges,
+  benchmarks, and beyond.
+\newblock \emph{arXiv preprint arXiv:2606.16153}, 2026.
+
+\bibitem[Zingarini et~al.(2023)Zingarini, Cozzolino, Corvi, Poggi, and
+  Verdoliva]{m3dsynth_2023}
+G. Zingarini, D. Cozzolino, R. Corvi, G. Poggi, and L. Verdoliva.
+\newblock M3dsynth: A dataset of medical 3d images with ai-generated local
+  manipulations.
+\newblock \emph{arXiv preprint arXiv:2309.07973}, 2023.
+
+\end{thebibliography}

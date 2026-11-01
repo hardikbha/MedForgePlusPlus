@@ -1,0 +1,65 @@
+# MedForge++: CVPR readiness review
+
+Review date: **2026-11-01**. Prepared for supervisor review from the working code, original paper, saved predictions/metrics, previous technical audits, and fresh checks described below. This is an AI-assisted technical assessment, not conference peer review or clinical validation. No new GPU training or clinician study was performed for this release.
+
+## Verdict
+
+**The dataset and paper are not ready for a CVPR submission in their present form.** There is substantial work to show: construction and annotation tools, training/evaluation pipelines, detailed audits, a source-grouped rebuild, multiple experiments, and grouped uncertainty estimates. However, the original draft's strongest numbers cannot support its stated claims. The best-supported direction is a carefully validated **benchmark and shortcut audit**, with training methods presented as baselines unless a reproducible advantage is established.
+
+No dataset is guaranteed acceptance by a conference. The missing evidence concerns experimental validity, clinical relevance, and reproducibility, rather than presentation alone.
+
+## Dataset identities must be separated
+
+| Artifact | What it actually describes | What to do |
+|---|---|---|
+| Early `medforgepp_manifest.json` builder | A mixture of MedForge-90K, lung CT, breast MRI and colon data; its code still has an empty kidney slot | Keep as historical code. It does not recreate the kidney/colon benchmark in the paper. |
+| Original paper's MedForge++ | Original three-organ MedForge pool plus 7,800 kidney/colon files | Reconcile file counts, provenance, duplicates, source links, and split contamination before retaining claims. |
+| MF-Clean | A rebuild of the original MedForge organ pool, using paste-back edits, common encoding and source-grouped splits | Evaluate as a distinct benchmark version. It does not repair or validate the kidney/colon extension. |
+
+The [census](evidence/audit/census.md) reports 95,276 mapping entries versus 94,987 existing upstream image files, plus 7,800 extension images: **102,787 existing files**, compared with the draft's 103,076. The [fresh audit](evidence/release_data_audit.json) independently checks current files and manifests; use it when counts differ from historical documents. Image-file counts must also be distinguished from unique scans, patients, and source groups.
+
+## Blocking issues and concrete improvements
+
+| Priority | Finding and evidence | Required improvement and completion criterion |
+|---|---|---|
+| P0 | The original 800-image extension evaluation is contained in the SFT training set. [Census](evidence/audit/census.md), [fresh audit](evidence/release_data_audit.json). | Rebuild splits before generating training records. Group source scans, edited siblings, known patient/volume IDs and verified duplicates together. Assert zero group overlap. Retrain and replace all affected tables. Excluding evaluation filenames alone is insufficient. |
+| P0 | The original Cross-Forgery replay used withheld implants; earlier technical analysis reports 4,678 leaked implants. The paper's 96.96% headline is unsupported under the intended protocol. [Code audit](evidence/audit/code.md). | Enforce regime exclusions in every SFT, replay and RL pool. Save manifests and hashes. Recompute results under the same frozen protocol used for baselines. |
+| P0 | Extension implants are JPEG while real/removal files are PNG. Kidney implants and kidney reals also come from different source datasets; polyp normals differ in origin from Kvasir cases. [Census](evidence/audit/census.md), [shortcut analysis](evidence/audit/shortcut.md). | Generate both real controls and edits from the same source population, with the same preprocessing and encoding. Use patient/source-matched controls. Include format-only, source-only and low-resolution probes; show held-out performance does not reduce to those cues. Re-encoding alone cannot remove source anatomy or acquisition confounds. |
+| P0 | The original organ results combine adaptation on target data with domain-specific model routing. The newer zero-shot evaluations are near chance. [Evaluation record](evidence/v3/eval_v3.md). | Distinguish zero-shot organ transfer, few-shot adaptation and routed deployment. For cross-organ claims, hold out the target organ throughout training and model selection, and evaluate a single fixed detector. Report all three settings separately if retained. |
+| P0 | The paper and current evidence tell different stories: legacy results, expert-alignment and pixel-mask claims remain in the draft. [Labels audit](evidence/audit/labels.md), [paper](../paper/legacy_cvpr_draft/main_updated.tex). | Rewrite the abstract, contributions, dataset section and every results table from one authoritative versioned manifest and prediction set. Treat supplied PDFs as historical until this is complete. |
+| P1 | Duplicates reduce effective sample size: historical audit found 564 byte-unique polyp normals among 800 files, plus additional source/near-duplicate structure. | Deduplicate before splitting. Report patients, volumes, source scans, duplicate clusters and edited siblings. Check perceptual candidates with pixel/anatomical verification; a perceptual hash alone is insufficient. |
+| P1 | Many purported masks are filled rectangles. Large polyp boxes and box-based edits can make localization misleading. [Census](evidence/audit/census.md), [labels audit](evidence/audit/labels.md). | Label each annotation as edit region, lesion segmentation, bounding rectangle or inferred box. Audit large boxes and lesion placement. Report box mIoU and IoU@0.5; claim segmentation only for independently verified pixel masks. |
+| P1 | Extension forgeries use one editor per manipulation type, confounding editor and task. | Add multiple independent editors for both insertion and removal, with source-balanced authentic controls. Hold out an editor and test on an independent source/site. Preserve seed, prompt, model revision, input source, transform and failure/QC records. |
+| P1 | Successful image editing and clinical plausibility are not established by the forgery label. Kidney placement uses a soft-tissue heuristic; removal detection is particularly weak. | Have blinded qualified readers assess lesion presence/removal, anatomical placement, realism, diagnostic effect and annotation validity. Include unedited pathology and benign controls. Record agreement, adjudication and rejection reasons. Compare single-image detection with paired change verification as separate tasks. A plausible removed lesion need not be inferable from the post-edit image alone. |
+| P1 | MF-Clean reduces measured shortcuts but residual cues remain: historical 16-feature probe balanced accuracy was 55.43% in CF and 63.53% in CM. [Probe report](evidence/v3/shortcut_mfclean.md). | Test boundary-only, outside-box and interior-only inputs, sham composites, alternate feathering/encoding and unseen construction pipelines. Compare independently generated local edits. Describe the release as shortcut-controlled, with measured residuals. |
+| P1 | Current method evidence does not establish the original RL/interpolation story. See results below. | Retrain matched CNN/ViT and VLM baselines with identical source splits, supervision and budgets. Compare continued SFT, balanced continued SFT and RL using the same extra data. Repeat across seeds and report paired source-group confidence intervals. |
+| P1 | Structured output parsing and template fluency do not establish medically correct or faithful reasoning. | Measure clinician-rated claim correctness and grounding; test whether explanations change appropriately under region interventions. Align intensity-label definitions with prompt wording. Report failures over all fakes, not only correctly detected cases. |
+| P2 | Public code is available, but full data packaging, licenses, source permissions, original removal generation, prompts/provenance completeness and checkpoint distribution remain unfinished. | Produce a dataset card, per-source rights record, versioned relative-path manifest, download/checksum instructions and clean-environment reproduction. Recover the original removal-generation pipeline or document the exact external artifact/version used. |
+
+## What the latest saved results support
+
+The [generated results table](RESULTS.md) reads the aggregate JSON files directly. MF-Clean `test_core` has **2,756 images in 1,008 source groups**. Balanced accuracy is the mean of real recall and aggregate fake recall, not the mean across real/implant/removal. Historical reports are retained as dated evidence and can be superseded by newer metric files.
+
+- Cross-Forgery SFT, seed 42: **76.23%** balanced accuracy. Ordinary image-normalized GRPO: **77.81%**. Twin-pooled GRPO: **77.74%**. A second matched CF seed gives **77.70% versus 77.43%**; the higher-learning-rate matched pair gives **77.92% versus 77.23%**. These CF runs do not demonstrate a twin-pooling benefit.
+- **The balanced continued-SFT control is already complete:** **79.93%** balanced accuracy, **77.36%** accuracy, **71.97%** removal recall. This supersedes older notes saying that control was queued. A fresh paired rescore shows a **+2.12 percentage-point** advantage over the corresponding GRPO run, with a **95% paired source-group bootstrap interval of [+1.24, +2.97]**. The included predictions reproduce this [comparison report](../results/reproduced_balanced_sft_vs_grpo.md); one control run alone does not establish an across-seed conclusion.
+- In-Domain image/twin GRPO reaches **82.71%/82.99%** balanced accuracy in the saved runs. The small point difference is not evidence of a reproducible general method advantage without a matched uncertainty analysis and replication.
+- Some historical significance tables include image-level McNemar p-values. Correlated source siblings undermine that independence assumption. Prefer paired group bootstrap intervals; do not infer superiority from overlapping/unoverlapping marginal intervals alone.
+- Frozen MedForge-Reasoner evaluated on MF-Clean is a useful distribution-shift baseline. It cannot by itself establish a fair training-method advantage over an upstream method that has not been retrained on the same clean data.
+
+## Work already completed
+
+The release contains kidney/colon implantation and annotation code; original SFT/replay/RL/interpolation code; reproducible scoring with source-group bootstrap; extensive source, duplicate, shortcut and label audits; MF-Clean construction; SFT/RL pool separation; structured evidence fields; sampler/reward tests; and saved aggregate metrics plus selected per-image predictions. The clean rebuild is meaningful progress, even though it does not validate the old claims.
+
+The fresh release audit verifies file counts, actual format signatures, polyp-normal byte duplicates, original extension train/evaluation overlap, and disjointness of **declared** MF-Clean groups. It does not prove that unknown patient identities are independent or redo the complete historical image-level/clinical audit. The historical MF-Clean report also notes missing twins and near-duplicate twins that differ outside the edit; retain those qualifications.
+
+## Recommended order of work
+
+1. **Freeze the scientific record:** choose the dataset identity, reconcile counts, withdraw contaminated headlines and generate a consistent results ledger. Keep the legacy draft clearly marked.
+2. **Repair the extension:** same-source kidney and colon controls, patient/source grouping, deduplication, common encoding, multiple editors, quality rejection criteria and clinical annotation checks. Keep this experimental until the checks pass.
+3. **Validate MF-Clean independently:** sham/alternate-construction tests, held-out editor and source, matched detector retraining, and three-seed balanced SFT/RL comparisons.
+4. **Establish clinical relevance:** blinded reader validation and diagnosis-change checks with appropriate oversight documentation. Report artifact realism and clinical lesion validity separately.
+5. **Finish the release and manuscript:** relative paths, hashes, source permissions/licenses, annotation governance, documented compute, reproducible commands and a dataset version tied to each table. Then choose whether a benchmark/audit paper or a supported method paper is the right contribution.
+
+## CVPR-specific checks
+
+The official [CVPR 2027 author guidelines](https://cvpr.thecvf.com/Conferences/2027/AuthorGuidelines) require an eight-page main paper, a statement of LLM use, and appropriate anonymization; they also expect a claimed dataset contribution to be available by camera-ready. Review the current rules when preparing the submission. This public supervisor repository is not an anonymized supplementary artifact, and publication here does not establish submission acceptance. The original [MedForge paper](https://arxiv.org/abs/2603.18577) must be clearly credited and distinguished from the extension and audit contributions.

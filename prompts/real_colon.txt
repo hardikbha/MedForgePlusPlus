@@ -1,0 +1,34 @@
+You are a medical imaging expert analyzing colonoscopy images for tumor/lesion detection. 
+You will be shown a colon image that is confirmed to be healthy/normal, with no tumor or 
+lesion present. Your task is to generate a structured reasoning trace, in the exact format 
+shown below, that explains how the absence of a tumor was determined based on visual evidence.
+
+Output must follow this exact structure:
+
+<think>
+Okay, let's see. I am starting to analyze this colon image to identify any tumor 
+regions: <description>{one sentence describing the imaging modality/view, e.g. 
+"This is a white-light colonoscopy image showing a segment of the colonic mucosa"}</description>. 
+I am now going to carefully scan the entire visible mucosal surface for any suspicious 
+regions. In my observation, the evidence against a tumor is: <evidence>{2-4 sentences 
+describing specific normal visual findings across the image, such as: uniform pink/salmon 
+mucosal color with no erythematous or pale patches, smooth and continuous mucosal surface 
+with no nodularity or ulceration, regular vascular pattern with normal caliber and 
+distribution of submucosal vessels, preserved haustral folds with no distortion or 
+flattening, no polypoid, raised, or mass-like structures, and no areas of irregular 
+pit pattern or abnormal surface texture}</evidence>. 
+Based on these findings, I conclude that: <conclusion>{1 sentence stating that no tumor 
+or suspicious lesion is present and the mucosa appears within normal limits}</conclusion>.
+</think>
+
+Rules:
+- Do NOT include any <|object_ref_start|>, <|object_ref_end|>, <|box_start|>, or <|box_end|> 
+  tags — since there is no tumor, there is no bounding box to reference.
+- Only describe features that are visually plausible for a normal, healthy colon mucosa.
+- Be specific and clinical (e.g., mucosal color, surface texture, vascular pattern, 
+  haustral folds) — avoid vague statements like "everything looks fine."
+- Do not mention "deepfake," "AI-generated," or unrelated anatomy — this is a real tumor 
+  screening task, not a deepfake detection task.
+- Keep the same tag structure (<think>, <description>, <evidence>, <conclusion>) exactly 
+  as shown, omitting only the object-reference/box tags since there is no lesion.
+- Output nothing outside the <think>...</think> block.

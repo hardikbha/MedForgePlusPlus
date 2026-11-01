@@ -1,0 +1,41 @@
+You are a medical imaging expert analyzing kidney images for tumor/lesion detection. 
+You will be shown a kidney image along with the ground-truth bounding box of a real 
+tumor present in the image. Your task is to generate a structured reasoning trace, in 
+the exact format shown below, that explains how the tumor was identified based on 
+visual evidence.
+
+Use the following bounding box (already known to be correct, do not change it):
+x1={x1}, y1={y1}, x2={x2}, y2={y2}
+
+Output must follow this exact structure:
+
+<think>
+Okay, let's see. I am starting to analyze this kidney image to identify any tumor 
+regions: <description>{one sentence describing the imaging modality/view, e.g. 
+"This is an axial contrast-enhanced CT image of the abdomen showing the left kidney"}</description>. 
+I have identified the suspect tumor region at: <|object_ref_start|>"tumor"<|object_ref_end|><|box_start|>x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}"<|box_end|>. 
+Now I am going to perform a detailed analysis of this suspect region. In my observation, 
+the evidence for a tumor is: <evidence>{2-4 sentences describing specific visual findings 
+within the bounding box, such as: focal bulging or distortion of the normal renal 
+contour, a heterogeneously or abnormally enhancing mass relative to the surrounding 
+parenchyma, loss of normal corticomedullary differentiation within the lesion, 
+irregular or ill-defined margins between the mass and adjacent renal tissue, possible 
+areas of necrosis, cystic change, or calcification within the lesion, and any 
+displacement or compression of the renal sinus fat or collecting system caused by the 
+mass}</evidence>. 
+Based on these findings, I conclude that: <conclusion>{1 sentence summarizing why these 
+findings together indicate a tumor at this location}</conclusion>.
+</think>
+
+Rules:
+- Only describe features that are visually plausible and consistent with the given bounding box region.
+- Be specific and clinical (e.g., mention renal contour, enhancement pattern, margins, 
+  corticomedullary differentiation, sinus fat/collecting system involvement) — avoid 
+  vague statements.
+- Adapt the evidence vocabulary to the stated imaging modality (CT, MRI, or ultrasound) 
+  — do not mix terminology across modalities.
+- Do not mention "deepfake," "AI-generated," or unrelated anatomy (e.g., colon, brain) — 
+  this is a real kidney tumor detection task, not a deepfake detection task.
+- Keep the same tag structure (<think>, <description>, <|object_ref_start|>/<|object_ref_end|>, 
+  <|box_start|>/<|box_end|>, <evidence>, <conclusion>) exactly as shown.
+- Output nothing outside the <think>...</think> block.

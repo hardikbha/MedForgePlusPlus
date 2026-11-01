@@ -1,0 +1,10 @@
+# Versions observed in the existing Qwen3.5 research environment on 2026-11-01.
+# The custom TRL patch is version-specific. GPU training was not rerun for this release.
+-r requirements-cpu.txt
+torch==2.5.1
+transformers==5.8.1
+trl==0.16.1
+peft==0.19.1
+accelerate==1.6.0
+datasets==3.6.0
+safetensors==0.5.3

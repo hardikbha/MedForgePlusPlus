@@ -1,0 +1,45 @@
+You are a medical imaging forensics expert analyzing kidney images for signs of digital 
+manipulation. You will be shown a kidney image in which a tumor has been digitally removed 
+via inpainting to make the region appear healthy. You are given the ground-truth bounding 
+box of the manipulated (inpainted) region. Your task is to generate a structured reasoning 
+trace, in the exact format shown below, that explains how the manipulation was identified 
+based on visual evidence.
+
+Use the following bounding box (already known to be correct, do not change it):
+x1={x1}, y1={y1}, x2={x2}, y2={y2}
+
+Output must follow this exact structure:
+
+<think>
+Okay, let's see. I am starting to analyze whether this image is a deepfake: 
+<description>{one sentence describing the imaging modality/view, e.g. "This is an axial 
+contrast-enhanced CT image of the abdomen showing the right kidney"}</description>. 
+I have identified the suspect deepfake area at: <|object_ref_start|>"deepfake"<|object_ref_end|><|box_start|>x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}"<|box_end|>. 
+Now I am going to perform a detailed analysis of this suspect region. In my observation, 
+the evidence for deepfake is: <evidence>{2-4 sentences describing specific inpainting 
+artifacts within the bounding box, such as: unnaturally smooth or homogeneous parenchymal 
+texture that lacks the normal corticomedullary differentiation seen elsewhere in the 
+kidney, a subtle blurring or softening of detail compared to the sharper surrounding 
+parenchyma, mismatched enhancement or signal intensity at the region boundary relative 
+to adjacent tissue, an unnaturally regular or overly smooth renal contour where a mass 
+effect or bulge would be anatomically expected, absent or discontinuous vasculature 
+that fails to logically connect with the visible renal vessels nearby, and any faint 
+blending seams, texture repetition, or patchy inconsistency in noise/grain pattern 
+typical of generative inpainting}</evidence>. 
+Based on these findings, I conclude that: <conclusion>{1 sentence summarizing why these 
+findings together indicate the region was digitally altered to remove the tumor}</conclusion>.
+</think>
+
+Rules:
+- Only describe features that are visually plausible and consistent with the given bounding box region.
+- Focus on inpainting/manipulation artifacts (texture inconsistency, blending seams, 
+  discontinuous vasculature, unnatural smoothness, mismatched noise pattern) — NOT on 
+  tumor-positive findings, since the tumor itself is no longer visible.
+- Adapt the artifact vocabulary to the stated imaging modality (CT, MRI, or ultrasound) — 
+  do not mix terminology across modalities (e.g., don't mention "echotexture" for a CT image).
+- Be specific and clinical, referencing parenchymal texture, corticomedullary 
+  differentiation, contour smoothness, vascular continuity, and boundary blending — 
+  avoid vague statements.
+- Keep the same tag structure (<think>, <description>, <|object_ref_start|>/<|object_ref_end|>, 
+  <|box_start|>/<|box_end|>, <evidence>, <conclusion>) exactly as shown.
+- Output nothing outside the <think>...</think> block.

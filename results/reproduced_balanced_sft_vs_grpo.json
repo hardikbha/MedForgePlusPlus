@@ -1,0 +1,4446 @@
+{
+ "A": {
+  "file": "gen_test_ct_image_1697.jsonl",
+  "overall": {
+   "counts": {
+    "n": 2756,
+    "n_real": 1008,
+    "n_fake": 1748,
+    "n_implant": 924,
+    "n_removal": 824,
+    "n_fakeu": 0,
+    "n_boxed": 1748,
+    "n_pairs": 1471,
+    "parsed": 2756,
+    "n_v3": 2756,
+    "groups": 1008
+   },
+   "point": {
+    "acc": 0.7456458635703919,
+    "acc_legacy": 0.7456458635703919,
+    "rec_real": 0.8988095238095238,
+    "rec_fake": 0.6573226544622426,
+    "bal_acc": 0.7780660891358833,
+    "rec_implant": 0.6396103896103896,
+    "rec_removal": 0.6771844660194175,
+    "rec_fake_untyped": null,
+    "bal_acc_typebal": 0.7786034758122138,
+    "f1_real": 0.721050537206526,
+    "f1_fake": 0.7662554184728243,
+    "f1_macro": 0.7436529778396752,
+    "f1_macro_legacy": 0.7436529778396752,
+    "mIoU": 0.46993230216643017,
+    "mIoU_gated": 0.46993230216643017,
+    "IoU@0.5": 0.5062929061784897,
+    "twin": 0.5581237253569,
+    "twin_fake_flagged": 0.6437797416723318,
+    "twin_real_cleared": 0.9048266485384092,
+    "parse_rate": 1.0,
+    "well_formed_rate": 1.0,
+    "box_rate_pred_fake": 1.0,
+    "box_on_pred_real_rate": 0.0,
+    "v3_format_rate": 1.0,
+    "evidence_verdict_consistent": 1.0,
+    "field_type": 0.5312046444121916,
+    "field_type_fakes": 0.31922196796338675,
+    "field_location": 0.6549346879535559,
+    "field_location_fakes": 0.5143020594965675,
+    "field_size": 0.6378809869375908,
+    "field_size_fakes": 0.4874141876430206,
+    "field_intensity": null,
+    "field_intensity_fakes": null
+   },
+   "ci95": {
+    "acc": [
+     0.7291629623044097,
+     0.7615851188113013
+    ],
+    "bal_acc": [
+     0.7645456910756969,
+     0.7928652150718778
+    ],
+    "bal_acc_typebal": [
+     0.7652226628695125,
+     0.793015227688532
+    ],
+    "f1_macro": [
+     0.7274606080211444,
+     0.7593522836954402
+    ],
+    "rec_real": [
+     0.8799603174603174,
+     0.9176835317460317
+    ],
+    "rec_fake": [
+     0.6335587513883747,
+     0.6800011467889908
+    ],
+    "rec_implant": [
+     0.6028420161266149,
+     0.6737314378415054
+    ],
+    "rec_removal": [
+     0.6456034523937473,
+     0.7086926871372032
+    ],
+    "mIoU": [
+     0.44807913494231244,
+     0.4913323631572229
+    ],
+    "mIoU_gated": [
+     0.44807913494231244,
+     0.4913323631572229
+    ],
+    "IoU@0.5": [
+     0.4807637299771167,
+     0.5337097631339204
+    ],
+    "twin": [
+     0.5312634183695174,
+     0.5865192881894855
+    ],
+    "acc_legacy": [
+     0.7291629623044097,
+     0.7615851188113013
+    ],
+    "field_type": [
+     0.5045451375681501,
+     0.5591119530517279
+    ],
+    "field_location": [
+     0.6362302692479571,
+     0.6731394372057259
+    ],
+    "field_size": [
+     0.6194879089615932,
+     0.65676802879204
+    ],
+    "field_intensity": [
+     null,
+     null
+    ]
+   }
+  },
+  "per_organ": {
+   "brain-mri": {
+    "counts": {
+     "n": 1060,
+     "n_real": 388,
+     "n_fake": 672,
+     "n_implant": 355,
+     "n_removal": 317,
+     "n_fakeu": 0,
+     "n_boxed": 672,
+     "n_pairs": 672,
+     "parsed": 1060,
+     "n_v3": 1060,
+     "groups": 388
+    },
+    "point": {
+     "acc": 0.6811320754716981,
+     "acc_legacy": 0.6811320754716981,
+     "rec_real": 0.8685567010309279,
+     "rec_fake": 0.5729166666666666,
+     "bal_acc": 0.7207366838487972,
+     "rec_implant": 0.523943661971831,
+     "rec_removal": 0.6277602523659306,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": 0.7222043290999043,
+     "f1_real": 0.66600790513834,
+     "f1_fake": 0.6949458483754513,
+     "f1_macro": 0.6804768767568956,
+     "f1_macro_legacy": 0.6804768767568956,
+     "mIoU": 0.3640974387845858,
+     "mIoU_gated": 0.3640974387845858,
+     "IoU@0.5": 0.39285714285714285,
+     "twin": 0.47619047619047616,
+     "twin_fake_flagged": 0.5729166666666666,
+     "twin_real_cleared": 0.8883928571428571,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.5056603773584906,
+     "field_type_fakes": 0.2961309523809524,
+     "field_location": 0.6066037735849057,
+     "field_location_fakes": 0.45535714285714285,
+     "field_size": 0.5877358490566038,
+     "field_size_fakes": 0.4255952380952381,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.6549749355984126,
+      0.7060572382229477
+     ],
+     "bal_acc": [
+      0.6982261163114287,
+      0.7400089175656004
+     ],
+     "bal_acc_typebal": [
+      0.7009585624333877,
+      0.7419272396355966
+     ],
+     "f1_macro": [
+      0.6542091272783129,
+      0.7049247421729953
+     ],
+     "rec_real": [
+      0.8350515463917526,
+      0.9020618556701031
+     ],
+     "rec_fake": [
+      0.5332367655666935,
+      0.611923669837914
+     ],
+     "rec_implant": [
+      0.46812087912087913,
+      0.5768198757763975
+     ],
+     "rec_removal": [
+      0.5718837535014005,
+      0.681413060730512
+     ],
+     "mIoU": [
+      0.3339138340361755,
+      0.39576424600465954
+     ],
+     "mIoU_gated": [
+      0.3339138340361755,
+      0.39576424600465954
+     ],
+     "IoU@0.5": [
+      0.35541571774904496,
+      0.4300656114718615
+     ],
+     "twin": [
+      0.43854691363677994,
+      0.5119891467065868
+     ],
+     "acc_legacy": [
+      0.6549749355984126,
+      0.7060572382229477
+     ],
+     "field_type": [
+      0.46529939311133706,
+      0.5489850217195312
+     ],
+     "field_location": [
+      0.5782441031907298,
+      0.6349100349969569
+     ],
+     "field_size": [
+      0.5601145038167938,
+      0.6163494318181818
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "chest-xray": {
+    "counts": {
+     "n": 808,
+     "n_real": 332,
+     "n_fake": 476,
+     "n_implant": 180,
+     "n_removal": 296,
+     "n_fakeu": 0,
+     "n_boxed": 476,
+     "n_pairs": 476,
+     "parsed": 808,
+     "n_v3": 808,
+     "groups": 332
+    },
+    "point": {
+     "acc": 0.7363861386138614,
+     "acc_legacy": 0.7363861386138614,
+     "rec_real": 0.8644578313253012,
+     "rec_fake": 0.6470588235294118,
+     "bal_acc": 0.7557583274273565,
+     "rec_implant": 0.6444444444444445,
+     "rec_removal": 0.6486486486486487,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": 0.7555021889359239,
+     "f1_real": 0.7293519695044473,
+     "f1_fake": 0.7430639324487334,
+     "f1_macro": 0.7362079509765903,
+     "f1_macro_legacy": 0.7362079509765903,
+     "mIoU": 0.4155754476047595,
+     "mIoU_gated": 0.4155754476047595,
+     "IoU@0.5": 0.43487394957983194,
+     "twin": 0.5336134453781513,
+     "twin_fake_flagged": 0.6470588235294118,
+     "twin_real_cleared": 0.8802521008403361,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.5928217821782178,
+     "field_type_fakes": 0.40336134453781514,
+     "field_location": 0.620049504950495,
+     "field_location_fakes": 0.4495798319327731,
+     "field_size": 0.6101485148514851,
+     "field_size_fakes": 0.4327731092436975,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.7077130733116648,
+      0.7636850296257407
+     ],
+     "bal_acc": [
+      0.7294692707067936,
+      0.7813686318550062
+     ],
+     "bal_acc_typebal": [
+      0.7259679744091752,
+      0.7812592773827096
+     ],
+     "f1_macro": [
+      0.7074266110852897,
+      0.763150103461298
+     ],
+     "rec_real": [
+      0.8252259036144579,
+      0.9006024096385542
+     ],
+     "rec_fake": [
+      0.603974206777466,
+      0.6921649565765513
+     ],
+     "rec_implant": [
+      0.5621621621621622,
+      0.7210566188197768
+     ],
+     "rec_removal": [
+      0.5938566552901023,
+      0.7050847457627119
+     ],
+     "mIoU": [
+      0.37878964598011183,
+      0.45121250889219516
+     ],
+     "mIoU_gated": [
+      0.37878964598011183,
+      0.45121250889219516
+     ],
+     "IoU@0.5": [
+      0.3909957627118644,
+      0.47868990619503615
+     ],
+     "twin": [
+      0.4828038167938931,
+      0.5840712992759454
+     ],
+     "acc_legacy": [
+      0.7077130733116648,
+      0.7636850296257407
+     ],
+     "field_type": [
+      0.5486045597484277,
+      0.6391789492053264
+     ],
+     "field_location": [
+      0.5898882404036078,
+      0.650277971384235
+     ],
+     "field_size": [
+      0.5783523787313433,
+      0.6435689975247525
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "fundus": {
+    "counts": {
+     "n": 888,
+     "n_real": 288,
+     "n_fake": 600,
+     "n_implant": 389,
+     "n_removal": 211,
+     "n_fakeu": 0,
+     "n_boxed": 600,
+     "n_pairs": 323,
+     "parsed": 888,
+     "n_v3": 888,
+     "groups": 288
+    },
+    "point": {
+     "acc": 0.831081081081081,
+     "acc_legacy": 0.831081081081081,
+     "rec_real": 0.9791666666666666,
+     "rec_fake": 0.76,
+     "bal_acc": 0.8695833333333334,
+     "rec_implant": 0.7429305912596401,
+     "rec_removal": 0.7914691943127962,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": 0.8731832797264424,
+     "f1_real": 0.7899159663865546,
+     "f1_fake": 0.8587570621468926,
+     "f1_macro": 0.8243365142667236,
+     "f1_macro_legacy": 0.8243365142667236,
+     "mIoU": 0.6315904537730233,
+     "mIoU_gated": 0.6315904537730233,
+     "IoU@0.5": 0.69,
+     "twin": 0.7647058823529411,
+     "twin_fake_flagged": 0.7863777089783281,
+     "twin_real_cleared": 0.9752321981424149,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.5056306306306306,
+     "field_type_fakes": 0.2783333333333333,
+     "field_location": 0.7443693693693694,
+     "field_location_fakes": 0.6316666666666667,
+     "field_size": 0.722972972972973,
+     "field_size_fakes": 0.6,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.8073570427369987,
+      0.8566701877934273
+     ],
+     "bal_acc": [
+      0.8516079814859854,
+      0.8889171038286183
+     ],
+     "bal_acc_typebal": [
+      0.8534381190979599,
+      0.8924024250002464
+     ],
+     "f1_macro": [
+      0.8005933717972772,
+      0.8503648361107752
+     ],
+     "rec_real": [
+      0.9618055555555556,
+      0.9930555555555556
+     ],
+     "rec_fake": [
+      0.7254901960784313,
+      0.7938987427031882
+     ],
+     "rec_implant": [
+      0.6987306115172044,
+      0.7848837209302325
+     ],
+     "rec_removal": [
+      0.7355208333333334,
+      0.8472300074738416
+     ],
+     "mIoU": [
+      0.5974551690507117,
+      0.6666922941755519
+     ],
+     "mIoU_gated": [
+      0.5974551690507117,
+      0.6666922941755519
+     ],
+     "IoU@0.5": [
+      0.649984756097561,
+      0.7320290616246498
+     ],
+     "twin": [
+      0.7138878205128205,
+      0.8155449366235167
+     ],
+     "acc_legacy": [
+      0.8073570427369987,
+      0.8566701877934273
+     ],
+     "field_type": [
+      0.46046043417366944,
+      0.5619121667805879
+     ],
+     "field_location": [
+      0.7152459056346266,
+      0.7748925597636315
+     ],
+     "field_size": [
+      0.6947858917364017,
+      0.7534908757093579
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   }
+  },
+  "per_generator": {
+   "flux.1-dev": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 99,
+     "n_removal": 76,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 145,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.37142857142857144,
+     "acc_legacy": 0.37142857142857144,
+     "rec_real": null,
+     "rec_fake": 0.37142857142857144,
+     "bal_acc": null,
+     "rec_implant": 0.32323232323232326,
+     "rec_removal": 0.4342105263157895,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.5416666666666666,
+     "f1_macro": 0.2708333333333333,
+     "f1_macro_legacy": 0.2708333333333333,
+     "mIoU": 0.2007976111689277,
+     "mIoU_gated": 0.2007976111689277,
+     "IoU@0.5": 0.21142857142857144,
+     "twin": 0.31724137931034485,
+     "twin_fake_flagged": 0.3793103448275862,
+     "twin_real_cleared": 0.9241379310344827,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.18857142857142858,
+     "field_type_fakes": 0.18857142857142858,
+     "field_location": 0.26285714285714284,
+     "field_location_fakes": 0.26285714285714284,
+     "field_size": 0.2057142857142857,
+     "field_size_fakes": 0.2057142857142857,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.3028571428571429,
+      0.44571428571428573
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.2324561403508772,
+      0.308300395256917
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.3028571428571429,
+      0.44571428571428573
+     ],
+     "rec_implant": [
+      0.23528132992327366,
+      0.4206349642660802
+     ],
+     "rec_removal": [
+      0.32868748008920035,
+      0.5476272015655578
+     ],
+     "mIoU": [
+      0.15607030647642425,
+      0.24896937785009962
+     ],
+     "mIoU_gated": [
+      0.15607030647642425,
+      0.24896937785009962
+     ],
+     "IoU@0.5": [
+      0.15428571428571428,
+      0.2742857142857143
+     ],
+     "twin": [
+      0.2448610365198711,
+      0.39436619718309857
+     ],
+     "acc_legacy": [
+      0.3028571428571429,
+      0.44571428571428573
+     ],
+     "field_type": [
+      0.13714285714285715,
+      0.25142857142857145
+     ],
+     "field_location": [
+      0.2,
+      0.3314285714285714
+     ],
+     "field_size": [
+      0.14857142857142858,
+      0.26857142857142857
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "gemini": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 95,
+     "n_removal": 80,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 146,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.5142857142857142,
+     "acc_legacy": 0.5142857142857142,
+     "rec_real": null,
+     "rec_fake": 0.5142857142857142,
+     "bal_acc": null,
+     "rec_implant": 0.5157894736842106,
+     "rec_removal": 0.5125,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.6792452830188679,
+     "f1_macro": 0.33962264150943394,
+     "f1_macro_legacy": 0.33962264150943394,
+     "mIoU": 0.31708605374954885,
+     "mIoU_gated": 0.31708605374954885,
+     "IoU@0.5": 0.33714285714285713,
+     "twin": 0.4863013698630137,
+     "twin_fake_flagged": 0.547945205479452,
+     "twin_real_cleared": 0.9315068493150684,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.2342857142857143,
+     "field_type_fakes": 0.2342857142857143,
+     "field_location": 0.36,
+     "field_location_fakes": 0.36,
+     "field_size": 0.35428571428571426,
+     "field_size_fakes": 0.35428571428571426,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.44571428571428573,
+      0.5885714285714285
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.308300395256917,
+      0.37050359712230213
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.44571428571428573,
+      0.5885714285714285
+     ],
+     "rec_implant": [
+      0.42263971785132937,
+      0.6171220604703247
+     ],
+     "rec_removal": [
+      0.40694725311762725,
+      0.6250376506024096
+     ],
+     "mIoU": [
+      0.2571625434477349,
+      0.3757108690608015
+     ],
+     "mIoU_gated": [
+      0.2571625434477349,
+      0.3757108690608015
+     ],
+     "IoU@0.5": [
+      0.26285714285714284,
+      0.4114285714285714
+     ],
+     "twin": [
+      0.41093673006800036,
+      0.5704937679769894
+     ],
+     "acc_legacy": [
+      0.44571428571428573,
+      0.5885714285714285
+     ],
+     "field_type": [
+      0.17714285714285713,
+      0.3028571428571429
+     ],
+     "field_location": [
+      0.2857142857142857,
+      0.42857142857142855
+     ],
+     "field_size": [
+      0.28,
+      0.42857142857142855
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "gpt": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 99,
+     "n_removal": 76,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 144,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.5942857142857143,
+     "acc_legacy": 0.5942857142857143,
+     "rec_real": null,
+     "rec_fake": 0.5942857142857143,
+     "bal_acc": null,
+     "rec_implant": 0.5757575757575758,
+     "rec_removal": 0.618421052631579,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.7455197132616488,
+     "f1_macro": 0.3727598566308244,
+     "f1_macro_legacy": 0.3727598566308244,
+     "mIoU": 0.4319663453857066,
+     "mIoU_gated": 0.4319663453857066,
+     "IoU@0.5": 0.48,
+     "twin": 0.4513888888888889,
+     "twin_fake_flagged": 0.5555555555555556,
+     "twin_real_cleared": 0.8680555555555556,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.26857142857142857,
+     "field_type_fakes": 0.26857142857142857,
+     "field_location": 0.4742857142857143,
+     "field_location_fakes": 0.4742857142857143,
+     "field_size": 0.4742857142857143,
+     "field_size_fakes": 0.4742857142857143,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.5142857142857142,
+      0.6629999999999998
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.33962264150943394,
+      0.3986769171021042
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.5142857142857142,
+      0.6629999999999998
+     ],
+     "rec_implant": [
+      0.4838621056362992,
+      0.6739130434782609
+     ],
+     "rec_removal": [
+      0.5056034482758621,
+      0.7307835820895522
+     ],
+     "mIoU": [
+      0.36568501598269554,
+      0.49626916272432475
+     ],
+     "mIoU_gated": [
+      0.36568501598269554,
+      0.49626916272432475
+     ],
+     "IoU@0.5": [
+      0.4057142857142857,
+      0.5544285714285713
+     ],
+     "twin": [
+      0.3616873522458629,
+      0.5333445945945946
+     ],
+     "acc_legacy": [
+      0.5142857142857142,
+      0.6629999999999998
+     ],
+     "field_type": [
+      0.21142857142857144,
+      0.3314285714285714
+     ],
+     "field_location": [
+      0.3942857142857143,
+      0.5485714285714286
+     ],
+     "field_size": [
+      0.3942857142857143,
+      0.5485714285714286
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "qwen": {
+    "counts": {
+     "n": 174,
+     "n_real": 0,
+     "n_fake": 174,
+     "n_implant": 86,
+     "n_removal": 88,
+     "n_fakeu": 0,
+     "n_boxed": 174,
+     "n_pairs": 151,
+     "parsed": 174,
+     "n_v3": 174,
+     "groups": 174
+    },
+    "point": {
+     "acc": 0.8333333333333334,
+     "acc_legacy": 0.8333333333333334,
+     "rec_real": null,
+     "rec_fake": 0.8333333333333334,
+     "bal_acc": null,
+     "rec_implant": 0.813953488372093,
+     "rec_removal": 0.8522727272727273,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.9090909090909091,
+     "f1_macro": 0.45454545454545453,
+     "f1_macro_legacy": 0.45454545454545453,
+     "mIoU": 0.616725605728053,
+     "mIoU_gated": 0.616725605728053,
+     "IoU@0.5": 0.6666666666666666,
+     "twin": 0.7019867549668874,
+     "twin_fake_flagged": 0.8410596026490066,
+     "twin_real_cleared": 0.8609271523178808,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.43103448275862066,
+     "field_type_fakes": 0.43103448275862066,
+     "field_location": 0.632183908045977,
+     "field_location_fakes": 0.632183908045977,
+     "field_size": 0.6379310344827587,
+     "field_size_fakes": 0.6379310344827587,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.7758620689655172,
+      0.8850574712643678
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.4368932038834951,
+      0.4695121951219512
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.7758620689655172,
+      0.8850574712643678
+     ],
+     "rec_implant": [
+      0.7303139458030403,
+      0.8904398415580128
+     ],
+     "rec_removal": [
+      0.7717391304347826,
+      0.9213538224278476
+     ],
+     "mIoU": [
+      0.5618624199553619,
+      0.673033630835748
+     ],
+     "mIoU_gated": [
+      0.5618624199553619,
+      0.673033630835748
+     ],
+     "IoU@0.5": [
+      0.603448275862069,
+      0.735632183908046
+     ],
+     "twin": [
+      0.6308650023511306,
+      0.7677918081494057
+     ],
+     "acc_legacy": [
+      0.7758620689655172,
+      0.8850574712643678
+     ],
+     "field_type": [
+      0.3620689655172414,
+      0.5
+     ],
+     "field_location": [
+      0.5632183908045977,
+      0.7011494252873564
+     ],
+     "field_size": [
+      0.5632183908045977,
+      0.7068965517241379
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "real": {
+    "counts": {
+     "n": 1008,
+     "n_real": 1008,
+     "n_fake": 0,
+     "n_implant": 0,
+     "n_removal": 0,
+     "n_fakeu": 0,
+     "n_boxed": 0,
+     "n_pairs": 0,
+     "parsed": 1008,
+     "n_v3": 1008,
+     "groups": 1008
+    },
+    "point": {
+     "acc": 0.8988095238095238,
+     "acc_legacy": 0.8988095238095238,
+     "rec_real": 0.8988095238095238,
+     "rec_fake": null,
+     "bal_acc": null,
+     "rec_implant": null,
+     "rec_removal": null,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.9467084639498433,
+     "f1_fake": 0.0,
+     "f1_macro": 0.47335423197492166,
+     "f1_macro_legacy": 0.47335423197492166,
+     "mIoU": null,
+     "mIoU_gated": null,
+     "IoU@0.5": null,
+     "twin": null,
+     "twin_fake_flagged": null,
+     "twin_real_cleared": null,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.8988095238095238,
+     "field_type_fakes": null,
+     "field_location": 0.8988095238095238,
+     "field_location_fakes": null,
+     "field_size": 0.8988095238095238,
+     "field_size_fakes": null,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.8799603174603174,
+      0.9176835317460317
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.46807387862796834,
+      0.47853752198119953
+     ],
+     "rec_real": [
+      0.8799603174603174,
+      0.9176835317460317
+     ],
+     "rec_fake": [
+      null,
+      null
+     ],
+     "rec_implant": [
+      null,
+      null
+     ],
+     "rec_removal": [
+      null,
+      null
+     ],
+     "mIoU": [
+      null,
+      null
+     ],
+     "mIoU_gated": [
+      null,
+      null
+     ],
+     "IoU@0.5": [
+      null,
+      null
+     ],
+     "twin": [
+      null,
+      null
+     ],
+     "acc_legacy": [
+      0.8799603174603174,
+      0.9176835317460317
+     ],
+     "field_type": [
+      0.8799603174603174,
+      0.9176835317460317
+     ],
+     "field_location": [
+      0.8799603174603174,
+      0.9176835317460317
+     ],
+     "field_size": [
+      0.8799603174603174,
+      0.9176835317460317
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "seeddream": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 98,
+     "n_removal": 77,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 147,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.8971428571428571,
+     "acc_legacy": 0.8971428571428571,
+     "rec_real": null,
+     "rec_fake": 0.8971428571428571,
+     "bal_acc": null,
+     "rec_implant": 0.9387755102040817,
+     "rec_removal": 0.8441558441558441,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.9457831325301205,
+     "f1_macro": 0.47289156626506024,
+     "f1_macro_legacy": 0.47289156626506024,
+     "mIoU": 0.7497590144374885,
+     "mIoU_gated": 0.7497590144374885,
+     "IoU@0.5": 0.8114285714285714,
+     "twin": 0.8027210884353742,
+     "twin_fake_flagged": 0.8775510204081632,
+     "twin_real_cleared": 0.9183673469387755,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.37142857142857144,
+     "field_type_fakes": 0.37142857142857144,
+     "field_location": 0.7085714285714285,
+     "field_location_fakes": 0.7085714285714285,
+     "field_size": 0.7542857142857143,
+     "field_size_fakes": 0.7542857142857143,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.8514285714285714,
+      0.9371428571428572
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.45987654320987653,
+      0.4837758112094395
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.8514285714285714,
+      0.9371428571428572
+     ],
+     "rec_implant": [
+      0.8888888888888888,
+      0.9805825242718447
+     ],
+     "rec_removal": [
+      0.7536182251340083,
+      0.9259395424836602
+     ],
+     "mIoU": [
+      0.6967179520772112,
+      0.7954936683851045
+     ],
+     "mIoU_gated": [
+      0.6967179520772112,
+      0.7954936683851045
+     ],
+     "IoU@0.5": [
+      0.7485714285714286,
+      0.8685714285714285
+     ],
+     "twin": [
+      0.7391235114926613,
+      0.8649099099099099
+     ],
+     "acc_legacy": [
+      0.8514285714285714,
+      0.9371428571428572
+     ],
+     "field_type": [
+      0.29714285714285715,
+      0.44
+     ],
+     "field_location": [
+      0.64,
+      0.7714285714285715
+     ],
+     "field_size": [
+      0.68,
+      0.8171428571428572
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "stable-diffusion-3.5-large": {
+    "counts": {
+     "n": 174,
+     "n_real": 0,
+     "n_fake": 174,
+     "n_implant": 87,
+     "n_removal": 87,
+     "n_fakeu": 0,
+     "n_boxed": 174,
+     "n_pairs": 144,
+     "parsed": 174,
+     "n_v3": 174,
+     "groups": 174
+    },
+    "point": {
+     "acc": 0.6954022988505747,
+     "acc_legacy": 0.6954022988505747,
+     "rec_real": null,
+     "rec_fake": 0.6954022988505747,
+     "bal_acc": null,
+     "rec_implant": 0.6666666666666666,
+     "rec_removal": 0.7241379310344828,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.8203389830508474,
+     "f1_macro": 0.4101694915254237,
+     "f1_macro_legacy": 0.4101694915254237,
+     "mIoU": 0.44878408099765915,
+     "mIoU_gated": 0.44878408099765915,
+     "IoU@0.5": 0.4885057471264368,
+     "twin": 0.5555555555555556,
+     "twin_fake_flagged": 0.6458333333333334,
+     "twin_real_cleared": 0.8958333333333334,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.3620689655172414,
+     "field_type_fakes": 0.3620689655172414,
+     "field_location": 0.5287356321839081,
+     "field_location_fakes": 0.5287356321839081,
+     "field_size": 0.4942528735632184,
+     "field_size_fakes": 0.4942528735632184,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.6264367816091954,
+      0.764367816091954
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.38515901060070673,
+      0.43322475570032576
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.6264367816091954,
+      0.764367816091954
+     ],
+     "rec_implant": [
+      0.5764705882352941,
+      0.7609489496824621
+     ],
+     "rec_removal": [
+      0.6218786295005807,
+      0.8132275132275132
+     ],
+     "mIoU": [
+      0.3969467522174465,
+      0.5029515685734154
+     ],
+     "mIoU_gated": [
+      0.3969467522174465,
+      0.5029515685734154
+     ],
+     "IoU@0.5": [
+      0.41954022988505746,
+      0.5632183908045977
+     ],
+     "twin": [
+      0.47547846889952156,
+      0.6293897882938979
+     ],
+     "acc_legacy": [
+      0.6264367816091954,
+      0.764367816091954
+     ],
+     "field_type": [
+      0.28160919540229884,
+      0.43103448275862066
+     ],
+     "field_location": [
+      0.4540229885057471,
+      0.5920977011494252
+     ],
+     "field_size": [
+      0.41954022988505746,
+      0.5747126436781609
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "stable-diffusion-3.5-medium": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 91,
+     "n_removal": 84,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 146,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.4857142857142857,
+     "acc_legacy": 0.4857142857142857,
+     "rec_real": null,
+     "rec_fake": 0.4857142857142857,
+     "bal_acc": null,
+     "rec_implant": 0.4725274725274725,
+     "rec_removal": 0.5,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.6538461538461539,
+     "f1_macro": 0.3269230769230769,
+     "f1_macro_legacy": 0.3269230769230769,
+     "mIoU": 0.28681055570654473,
+     "mIoU_gated": 0.28681055570654473,
+     "IoU@0.5": 0.3028571428571429,
+     "twin": 0.4178082191780822,
+     "twin_fake_flagged": 0.4726027397260274,
+     "twin_real_cleared": 0.9383561643835616,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.24,
+     "field_type_fakes": 0.24,
+     "field_location": 0.33714285714285713,
+     "field_location_fakes": 0.33714285714285713,
+     "field_size": 0.2914285714285714,
+     "field_size_fakes": 0.2914285714285714,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.4114285714285714,
+      0.5542857142857143
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.291497975708502,
+      0.35661764705882354
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.4114285714285714,
+      0.5542857142857143
+     ],
+     "rec_implant": [
+      0.36778735632183907,
+      0.5733564356435643
+     ],
+     "rec_removal": [
+      0.391304347826087,
+      0.6081352904628766
+     ],
+     "mIoU": [
+      0.23268833841822628,
+      0.34510866525816486
+     ],
+     "mIoU_gated": [
+      0.23268833841822628,
+      0.34510866525816486
+     ],
+     "IoU@0.5": [
+      0.24,
+      0.37142857142857144
+     ],
+     "twin": [
+      0.3377835002835003,
+      0.4965551495775291
+     ],
+     "acc_legacy": [
+      0.4114285714285714,
+      0.5542857142857143
+     ],
+     "field_type": [
+      0.17714285714285713,
+      0.3028571428571429
+     ],
+     "field_location": [
+      0.26857142857142857,
+      0.4057142857142857
+     ],
+     "field_size": [
+      0.22857142857142856,
+      0.36
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "stable-diffusion-inpainting": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 92,
+     "n_removal": 83,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 153,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.7485714285714286,
+     "acc_legacy": 0.7485714285714286,
+     "rec_real": null,
+     "rec_fake": 0.7485714285714286,
+     "bal_acc": null,
+     "rec_implant": 0.6956521739130435,
+     "rec_removal": 0.8072289156626506,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.8562091503267973,
+     "f1_macro": 0.42810457516339867,
+     "f1_macro_legacy": 0.42810457516339867,
+     "mIoU": 0.5678475710730899,
+     "mIoU_gated": 0.5678475710730899,
+     "IoU@0.5": 0.6114285714285714,
+     "twin": 0.6470588235294118,
+     "twin_fake_flagged": 0.7254901960784313,
+     "twin_real_cleared": 0.9150326797385621,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.38285714285714284,
+     "field_type_fakes": 0.38285714285714284,
+     "field_location": 0.6457142857142857,
+     "field_location_fakes": 0.6457142857142857,
+     "field_size": 0.5714285714285714,
+     "field_size_fakes": 0.5714285714285714,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.6857142857142857,
+      0.8114285714285714
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.4067796610169492,
+      0.4479495268138801
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.6857142857142857,
+      0.8114285714285714
+     ],
+     "rec_implant": [
+      0.5998936170212765,
+      0.7872340425531915
+     ],
+     "rec_removal": [
+      0.7162085380835381,
+      0.8918918918918919
+     ],
+     "mIoU": [
+      0.51133646699333,
+      0.6241506824186398
+     ],
+     "mIoU_gated": [
+      0.51133646699333,
+      0.6241506824186398
+     ],
+     "IoU@0.5": [
+      0.5428571428571428,
+      0.680142857142857
+     ],
+     "twin": [
+      0.5714046021093001,
+      0.7261146496815286
+     ],
+     "acc_legacy": [
+      0.6857142857142857,
+      0.8114285714285714
+     ],
+     "field_type": [
+      0.3142857142857143,
+      0.45714285714285713
+     ],
+     "field_location": [
+      0.5712857142857143,
+      0.7142857142857143
+     ],
+     "field_size": [
+      0.49714285714285716,
+      0.640142857142857
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "stable-diffusion-xl-1.0-inpainting-0.1": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 94,
+     "n_removal": 81,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 143,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.6685714285714286,
+     "acc_legacy": 0.6685714285714286,
+     "rec_real": null,
+     "rec_fake": 0.6685714285714286,
+     "bal_acc": null,
+     "rec_implant": 0.6276595744680851,
+     "rec_removal": 0.7160493827160493,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.8013698630136986,
+     "f1_macro": 0.4006849315068493,
+     "f1_macro_legacy": 0.4006849315068493,
+     "mIoU": 0.44344056580085434,
+     "mIoU_gated": 0.44344056580085434,
+     "IoU@0.5": 0.4742857142857143,
+     "twin": 0.5174825174825175,
+     "twin_fake_flagged": 0.6223776223776224,
+     "twin_real_cleared": 0.8881118881118881,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.3314285714285714,
+     "field_type_fakes": 0.3314285714285714,
+     "field_location": 0.52,
+     "field_location_fakes": 0.52,
+     "field_size": 0.44571428571428573,
+     "field_size_fakes": 0.44571428571428573,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.6,
+      0.7372857142857141
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.375,
+      0.42438929033649697
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.6,
+      0.7372857142857141
+     ],
+     "rec_implant": [
+      0.5360467490047973,
+      0.7250068681318681
+     ],
+     "rec_removal": [
+      0.6075949367088608,
+      0.8152594917330066
+     ],
+     "mIoU": [
+      0.3873079574017835,
+      0.5039228608022323
+     ],
+     "mIoU_gated": [
+      0.3873079574017835,
+      0.5039228608022323
+     ],
+     "IoU@0.5": [
+      0.4,
+      0.5485714285714286
+     ],
+     "twin": [
+      0.4318140941792021,
+      0.6014321295143212
+     ],
+     "acc_legacy": [
+      0.6,
+      0.7372857142857141
+     ],
+     "field_type": [
+      0.26285714285714284,
+      0.400142857142857
+     ],
+     "field_location": [
+      0.4514285714285714,
+      0.5944285714285713
+     ],
+     "field_size": [
+      0.37142857142857144,
+      0.5257142857142857
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "step1x-edit": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 83,
+     "n_removal": 92,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 152,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.7657142857142857,
+     "acc_legacy": 0.7657142857142857,
+     "rec_real": null,
+     "rec_fake": 0.7657142857142857,
+     "bal_acc": null,
+     "rec_implant": 0.8072289156626506,
+     "rec_removal": 0.7282608695652174,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.8673139158576052,
+     "f1_macro": 0.4336569579288026,
+     "f1_macro_legacy": 0.4336569579288026,
+     "mIoU": 0.6368235895158234,
+     "mIoU_gated": 0.6368235895158234,
+     "IoU@0.5": 0.68,
+     "twin": 0.6644736842105263,
+     "twin_fake_flagged": 0.75,
+     "twin_real_cleared": 0.9078947368421053,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.38285714285714284,
+     "field_type_fakes": 0.38285714285714284,
+     "field_location": 0.6742857142857143,
+     "field_location_fakes": 0.6742857142857143,
+     "field_size": 0.6457142857142857,
+     "field_size_fakes": 0.6457142857142857,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.7028571428571428,
+      0.8285714285714286
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.412751677852349,
+      0.453125
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.7028571428571428,
+      0.8285714285714286
+     ],
+     "rec_implant": [
+      0.72,
+      0.8902439024390244
+     ],
+     "rec_removal": [
+      0.6373626373626373,
+      0.8132179675994109
+     ],
+     "mIoU": [
+      0.5755626303685702,
+      0.6978623475780994
+     ],
+     "mIoU_gated": [
+      0.5755626303685702,
+      0.6978623475780994
+     ],
+     "IoU@0.5": [
+      0.6114285714285714,
+      0.7485714285714286
+     ],
+     "twin": [
+      0.5893840640456032,
+      0.738562091503268
+     ],
+     "acc_legacy": [
+      0.7028571428571428,
+      0.8285714285714286
+     ],
+     "field_type": [
+      0.3142857142857143,
+      0.4515714285714284
+     ],
+     "field_location": [
+      0.6,
+      0.7428571428571429
+     ],
+     "field_size": [
+      0.5714285714285714,
+      0.72
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   }
+  },
+  "per_class": {
+   "implant": {
+    "counts": {
+     "n": 924,
+     "n_real": 0,
+     "n_fake": 924,
+     "n_implant": 924,
+     "n_removal": 0,
+     "n_fakeu": 0,
+     "n_boxed": 924,
+     "n_pairs": 730,
+     "parsed": 924,
+     "n_v3": 924,
+     "groups": 185
+    },
+    "point": {
+     "acc": 0.6396103896103896,
+     "acc_legacy": 0.6396103896103896,
+     "rec_real": null,
+     "rec_fake": 0.6396103896103896,
+     "bal_acc": null,
+     "rec_implant": 0.6396103896103896,
+     "rec_removal": null,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.7801980198019802,
+     "f1_macro": 0.3900990099009901,
+     "f1_macro_legacy": 0.3900990099009901,
+     "mIoU": 0.47767043719923213,
+     "mIoU_gated": 0.47767043719923213,
+     "IoU@0.5": 0.5194805194805194,
+     "twin": 0.5602739726027397,
+     "twin_fake_flagged": 0.6219178082191781,
+     "twin_real_cleared": 0.9315068493150684,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.0,
+     "field_type_fakes": 0.0,
+     "field_location": 0.5108225108225108,
+     "field_location_fakes": 0.5108225108225108,
+     "field_size": 0.487012987012987,
+     "field_size_fakes": 0.487012987012987,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.6043243243243244,
+      0.6731690066690067
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.37668463611859837,
+      0.40233174467075156
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.6043243243243244,
+      0.6731690066690067
+     ],
+     "rec_implant": [
+      0.6043243243243244,
+      0.6731690066690067
+     ],
+     "rec_removal": [
+      null,
+      null
+     ],
+     "mIoU": [
+      0.44329337230653815,
+      0.5088114533648265
+     ],
+     "mIoU_gated": [
+      0.44329337230653815,
+      0.5088114533648265
+     ],
+     "IoU@0.5": [
+      0.48,
+      0.5595389645565702
+     ],
+     "twin": [
+      0.5164701803051318,
+      0.6045448334682297
+     ],
+     "acc_legacy": [
+      0.6043243243243244,
+      0.6731690066690067
+     ],
+     "field_type": [
+      0.0,
+      0.0
+     ],
+     "field_location": [
+      0.4761505791505791,
+      0.5433023868023867
+     ],
+     "field_size": [
+      0.44972700652982345,
+      0.5233065057008719
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "real": {
+    "counts": {
+     "n": 1008,
+     "n_real": 1008,
+     "n_fake": 0,
+     "n_implant": 0,
+     "n_removal": 0,
+     "n_fakeu": 0,
+     "n_boxed": 0,
+     "n_pairs": 0,
+     "parsed": 1008,
+     "n_v3": 1008,
+     "groups": 1008
+    },
+    "point": {
+     "acc": 0.8988095238095238,
+     "acc_legacy": 0.8988095238095238,
+     "rec_real": 0.8988095238095238,
+     "rec_fake": null,
+     "bal_acc": null,
+     "rec_implant": null,
+     "rec_removal": null,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.9467084639498433,
+     "f1_fake": 0.0,
+     "f1_macro": 0.47335423197492166,
+     "f1_macro_legacy": 0.47335423197492166,
+     "mIoU": null,
+     "mIoU_gated": null,
+     "IoU@0.5": null,
+     "twin": null,
+     "twin_fake_flagged": null,
+     "twin_real_cleared": null,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.8988095238095238,
+     "field_type_fakes": null,
+     "field_location": 0.8988095238095238,
+     "field_location_fakes": null,
+     "field_size": 0.8988095238095238,
+     "field_size_fakes": null,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.8799603174603174,
+      0.9176835317460317
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.46807387862796834,
+      0.47853752198119953
+     ],
+     "rec_real": [
+      0.8799603174603174,
+      0.9176835317460317
+     ],
+     "rec_fake": [
+      null,
+      null
+     ],
+     "rec_implant": [
+      null,
+      null
+     ],
+     "rec_removal": [
+      null,
+      null
+     ],
+     "mIoU": [
+      null,
+      null
+     ],
+     "mIoU_gated": [
+      null,
+      null
+     ],
+     "IoU@0.5": [
+      null,
+      null
+     ],
+     "twin": [
+      null,
+      null
+     ],
+     "acc_legacy": [
+      0.8799603174603174,
+      0.9176835317460317
+     ],
+     "field_type": [
+      0.8799603174603174,
+      0.9176835317460317
+     ],
+     "field_location": [
+      0.8799603174603174,
+      0.9176835317460317
+     ],
+     "field_size": [
+      0.8799603174603174,
+      0.9176835317460317
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "removal": {
+    "counts": {
+     "n": 824,
+     "n_real": 0,
+     "n_fake": 824,
+     "n_implant": 0,
+     "n_removal": 824,
+     "n_fakeu": 0,
+     "n_boxed": 824,
+     "n_pairs": 741,
+     "parsed": 824,
+     "n_v3": 824,
+     "groups": 824
+    },
+    "point": {
+     "acc": 0.6771844660194175,
+     "acc_legacy": 0.6771844660194175,
+     "rec_real": null,
+     "rec_fake": 0.6771844660194175,
+     "bal_acc": null,
+     "rec_implant": null,
+     "rec_removal": 0.6771844660194175,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.8075253256150506,
+     "f1_macro": 0.4037626628075253,
+     "f1_macro_legacy": 0.4037626628075253,
+     "mIoU": 0.4612550730762507,
+     "mIoU_gated": 0.4612550730762507,
+     "IoU@0.5": 0.49150485436893204,
+     "twin": 0.5560053981106613,
+     "twin_fake_flagged": 0.6653171390013495,
+     "twin_real_cleared": 0.8785425101214575,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.6771844660194175,
+     "field_type_fakes": 0.6771844660194175,
+     "field_location": 0.5182038834951457,
+     "field_location_fakes": 0.5182038834951457,
+     "field_size": 0.4878640776699029,
+     "field_size_fakes": 0.4878640776699029,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.6444174757281553,
+      0.7063106796116505
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.3918819188191882,
+      0.4139402560455192
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.6444174757281553,
+      0.7063106796116505
+     ],
+     "rec_implant": [
+      null,
+      null
+     ],
+     "rec_removal": [
+      0.6444174757281553,
+      0.7063106796116505
+     ],
+     "mIoU": [
+      0.43210576210449864,
+      0.4889056278127807
+     ],
+     "mIoU_gated": [
+      0.43210576210449864,
+      0.4889056278127807
+     ],
+     "IoU@0.5": [
+      0.457493932038835,
+      0.5254854368932039
+     ],
+     "twin": [
+      0.5190204503947213,
+      0.5899277121264422
+     ],
+     "acc_legacy": [
+      0.6444174757281553,
+      0.7063106796116505
+     ],
+     "field_type": [
+      0.6444174757281553,
+      0.7063106796116505
+     ],
+     "field_location": [
+      0.4842233009708738,
+      0.5497572815533981
+     ],
+     "field_size": [
+      0.4538834951456311,
+      0.5218446601941747
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   }
+  },
+  "formats": {
+   "v3": 2756
+  },
+  "fields_source": {
+   "derived": 2756
+  },
+  "truncated_rate": 0.0,
+  "resolver_fallback": {}
+ },
+ "B": {
+  "file": "gen_test_contsft_cf_bal.jsonl",
+  "overall": {
+   "counts": {
+    "n": 2756,
+    "n_real": 1008,
+    "n_fake": 1748,
+    "n_implant": 924,
+    "n_removal": 824,
+    "n_fakeu": 0,
+    "n_boxed": 1748,
+    "n_pairs": 1471,
+    "parsed": 2756,
+    "n_v3": 2756,
+    "groups": 1008
+   },
+   "point": {
+    "acc": 0.7735849056603774,
+    "acc_legacy": 0.7735849056603774,
+    "rec_real": 0.8948412698412699,
+    "rec_fake": 0.7036613272311213,
+    "bal_acc": 0.7992512985361956,
+    "rec_implant": 0.6893939393939394,
+    "rec_removal": 0.7196601941747572,
+    "rec_fake_untyped": null,
+    "bal_acc_typebal": 0.7996841683128091,
+    "f1_real": 0.742998352553542,
+    "f1_fake": 0.7976653696498055,
+    "f1_macro": 0.7703318611016737,
+    "f1_macro_legacy": 0.7703318611016737,
+    "mIoU": 0.4994655454835491,
+    "mIoU_gated": 0.4994655454835491,
+    "IoU@0.5": 0.5394736842105263,
+    "twin": 0.5961930659415363,
+    "twin_fake_flagged": 0.6927260367097213,
+    "twin_real_cleared": 0.8905506458191706,
+    "parse_rate": 1.0,
+    "well_formed_rate": 1.0,
+    "box_rate_pred_fake": 1.0,
+    "box_on_pred_real_rate": 0.0,
+    "v3_format_rate": 1.0,
+    "evidence_verdict_consistent": 1.0,
+    "field_type": 0.5424528301886793,
+    "field_type_fakes": 0.3392448512585812,
+    "field_location": 0.7057329462989841,
+    "field_location_fakes": 0.5966819221967964,
+    "field_size": 0.6650943396226415,
+    "field_size_fakes": 0.532608695652174,
+    "field_intensity": null,
+    "field_intensity_fakes": null
+   },
+   "ci95": {
+    "acc": [
+     0.7580876423149905,
+     0.7893431077250177
+    ],
+    "bal_acc": [
+     0.7856878117881324,
+     0.8130045907664908
+    ],
+    "bal_acc_typebal": [
+     0.7861814325355267,
+     0.8132865824950896
+    ],
+    "f1_macro": [
+     0.7551776440077355,
+     0.7861957524754577
+    ],
+    "rec_real": [
+     0.8759920634920635,
+     0.9136904761904762
+    ],
+    "rec_fake": [
+     0.6804894358066502,
+     0.7270048864129256
+    ],
+    "rec_implant": [
+     0.6544956466849506,
+     0.7260010416666667
+    ],
+    "rec_removal": [
+     0.6889126632625087,
+     0.7500074671445639
+    ],
+    "mIoU": [
+     0.4770953689582563,
+     0.5209079797935449
+    ],
+    "mIoU_gated": [
+     0.4770953689582563,
+     0.5209079797935449
+    ],
+    "IoU@0.5": [
+     0.5127439213794706,
+     0.5657603831006087
+    ],
+    "twin": [
+     0.5682536016358397,
+     0.6269386550020123
+    ],
+    "acc_legacy": [
+     0.7580876423149905,
+     0.7893431077250177
+    ],
+    "field_type": [
+     0.5142506368083012,
+     0.5708014731438654
+    ],
+    "field_location": [
+     0.6881113566491326,
+     0.7236684801118827
+    ],
+    "field_size": [
+     0.6463746321380339,
+     0.6829916488877616
+    ],
+    "field_intensity": [
+     null,
+     null
+    ]
+   }
+  },
+  "per_organ": {
+   "brain-mri": {
+    "counts": {
+     "n": 1060,
+     "n_real": 388,
+     "n_fake": 672,
+     "n_implant": 355,
+     "n_removal": 317,
+     "n_fakeu": 0,
+     "n_boxed": 672,
+     "n_pairs": 672,
+     "parsed": 1060,
+     "n_v3": 1060,
+     "groups": 388
+    },
+    "point": {
+     "acc": 0.7132075471698113,
+     "acc_legacy": 0.7132075471698113,
+     "rec_real": 0.8273195876288659,
+     "rec_fake": 0.6473214285714286,
+     "bal_acc": 0.7373205081001473,
+     "rec_implant": 0.6056338028169014,
+     "rec_removal": 0.694006309148265,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": 0.7385698218057246,
+     "f1_real": 0.678646934460888,
+     "f1_fake": 0.7410562180579217,
+     "f1_macro": 0.7098515762594049,
+     "f1_macro_legacy": 0.7098515762594049,
+     "mIoU": 0.39695367058033604,
+     "mIoU_gated": 0.39695367058033604,
+     "IoU@0.5": 0.4330357142857143,
+     "twin": 0.5089285714285714,
+     "twin_fake_flagged": 0.6473214285714286,
+     "twin_real_cleared": 0.8407738095238095,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.5103773584905661,
+     "field_type_fakes": 0.3273809523809524,
+     "field_location": 0.6481132075471698,
+     "field_location_fakes": 0.5446428571428571,
+     "field_size": 0.6018867924528302,
+     "field_size_fakes": 0.47172619047619047,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.6874943996415771,
+      0.7377830988989328
+     ],
+     "bal_acc": [
+      0.7141976938624763,
+      0.7603023480580198
+     ],
+     "bal_acc_typebal": [
+      0.7153927305829929,
+      0.7610604314492383
+     ],
+     "f1_macro": [
+      0.6844217500869346,
+      0.7339228714552419
+     ],
+     "rec_real": [
+      0.788659793814433,
+      0.865979381443299
+     ],
+     "rec_fake": [
+      0.6079873251748252,
+      0.6856287425149701
+     ],
+     "rec_implant": [
+      0.5544052366915206,
+      0.659168593651461
+     ],
+     "rec_removal": [
+      0.6404744838070314,
+      0.7411031669716802
+     ],
+     "mIoU": [
+      0.3669929955047803,
+      0.42757805814615907
+     ],
+     "mIoU_gated": [
+      0.3669929955047803,
+      0.42757805814615907
+     ],
+     "IoU@0.5": [
+      0.39607193479801556,
+      0.4707846021381933
+     ],
+     "twin": [
+      0.46570664869721473,
+      0.5509395424836602
+     ],
+     "acc_legacy": [
+      0.6874943996415771,
+      0.7377830988989328
+     ],
+     "field_type": [
+      0.4692873197227945,
+      0.5543532177363699
+     ],
+     "field_location": [
+      0.6192657853732453,
+      0.6747227870434838
+     ],
+     "field_size": [
+      0.5741750407387289,
+      0.6283531376203789
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "chest-xray": {
+    "counts": {
+     "n": 808,
+     "n_real": 332,
+     "n_fake": 476,
+     "n_implant": 180,
+     "n_removal": 296,
+     "n_fakeu": 0,
+     "n_boxed": 476,
+     "n_pairs": 476,
+     "parsed": 808,
+     "n_v3": 808,
+     "groups": 332
+    },
+    "point": {
+     "acc": 0.7660891089108911,
+     "acc_legacy": 0.7660891089108911,
+     "rec_real": 0.9006024096385542,
+     "rec_fake": 0.6722689075630253,
+     "bal_acc": 0.7864356586007897,
+     "rec_implant": 0.6666666666666666,
+     "rec_removal": 0.6756756756756757,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": 0.7858867904048628,
+     "f1_real": 0.7598475222363406,
+     "f1_fake": 0.7720144752714113,
+     "f1_macro": 0.7659309987538759,
+     "f1_macro_legacy": 0.7659309987538759,
+     "mIoU": 0.44506258457744957,
+     "mIoU_gated": 0.44506258457744957,
+     "IoU@0.5": 0.47478991596638653,
+     "twin": 0.5861344537815126,
+     "twin_fake_flagged": 0.6722689075630253,
+     "twin_real_cleared": 0.9054621848739496,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.6175742574257426,
+     "field_type_fakes": 0.42016806722689076,
+     "field_location": 0.6844059405940595,
+     "field_location_fakes": 0.5336134453781513,
+     "field_size": 0.6410891089108911,
+     "field_size_fakes": 0.46008403361344535,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.7380923763736265,
+      0.7934810479375697
+     ],
+     "bal_acc": [
+      0.7594090069957249,
+      0.8121612681814899
+     ],
+     "bal_acc_typebal": [
+      0.7596678391701032,
+      0.813328036622971
+     ],
+     "f1_macro": [
+      0.7377937193406134,
+      0.7927538176193513
+     ],
+     "rec_real": [
+      0.8674698795180723,
+      0.9307228915662651
+     ],
+     "rec_fake": [
+      0.628099173553719,
+      0.71484375
+     ],
+     "rec_implant": [
+      0.5818039772727273,
+      0.7478341384863124
+     ],
+     "rec_removal": [
+      0.625,
+      0.7251175466703816
+     ],
+     "mIoU": [
+      0.4047506563616056,
+      0.48099256566256127
+     ],
+     "mIoU_gated": [
+      0.4047506563616056,
+      0.48099256566256127
+     ],
+     "IoU@0.5": [
+      0.42584316307833253,
+      0.5202800424391334
+     ],
+     "twin": [
+      0.5341880341880342,
+      0.6395589083221218
+     ],
+     "acc_legacy": [
+      0.7380923763736265,
+      0.7934810479375697
+     ],
+     "field_type": [
+      0.5712518888659935,
+      0.6632862375719518
+     ],
+     "field_location": [
+      0.6543017199331073,
+      0.7128252551020409
+     ],
+     "field_size": [
+      0.6102904775771696,
+      0.6713395658495523
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "fundus": {
+    "counts": {
+     "n": 888,
+     "n_real": 288,
+     "n_fake": 600,
+     "n_implant": 389,
+     "n_removal": 211,
+     "n_fakeu": 0,
+     "n_boxed": 600,
+     "n_pairs": 323,
+     "parsed": 888,
+     "n_v3": 888,
+     "groups": 288
+    },
+    "point": {
+     "acc": 0.8524774774774775,
+     "acc_legacy": 0.8524774774774775,
+     "rec_real": 0.9791666666666666,
+     "rec_fake": 0.7916666666666666,
+     "bal_acc": 0.8854166666666666,
+     "rec_implant": 0.7763496143958869,
+     "rec_removal": 0.8199052132701422,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": 0.8886470402498405,
+     "f1_real": 0.8115107913669065,
+     "f1_fake": 0.8788159111933395,
+     "f1_macro": 0.845163351280123,
+     "f1_macro_legacy": 0.845163351280123,
+     "mIoU": 0.6574385276939871,
+     "mIoU_gated": 0.6574385276939871,
+     "IoU@0.5": 0.71,
+     "twin": 0.7925696594427245,
+     "twin_fake_flagged": 0.8173374613003096,
+     "twin_real_cleared": 0.9721362229102167,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.5123873873873874,
+     "field_type_fakes": 0.28833333333333333,
+     "field_location": 0.793918918918919,
+     "field_location_fakes": 0.705,
+     "field_size": 0.7623873873873874,
+     "field_size_fakes": 0.6583333333333333,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.82847533632287,
+      0.8761795260557053
+     ],
+     "bal_acc": [
+      0.8675631324584744,
+      0.903485094170647
+     ],
+     "bal_acc_typebal": [
+      0.8700988140171075,
+      0.9067001810234047
+     ],
+     "f1_macro": [
+      0.8209353176034959,
+      0.8696445719067344
+     ],
+     "rec_real": [
+      0.9618055555555556,
+      0.9930555555555556
+     ],
+     "rec_fake": [
+      0.7584364102005231,
+      0.82483855430284
+     ],
+     "rec_implant": [
+      0.7335161348803481,
+      0.8179744532566136
+     ],
+     "rec_removal": [
+      0.7644034090909091,
+      0.8750144009216589
+     ],
+     "mIoU": [
+      0.6245349001974642,
+      0.6912173411347367
+     ],
+     "mIoU_gated": [
+      0.6245349001974642,
+      0.6912173411347367
+     ],
+     "IoU@0.5": [
+      0.6703787464342933,
+      0.7500403225806451
+     ],
+     "twin": [
+      0.7435736677115987,
+      0.8363650392817059
+     ],
+     "acc_legacy": [
+      0.82847533632287,
+      0.8761795260557053
+     ],
+     "field_type": [
+      0.4677015493697479,
+      0.5679666813768756
+     ],
+     "field_location": [
+      0.7685549348758955,
+      0.8214326298701299
+     ],
+     "field_size": [
+      0.7363631588999235,
+      0.7899073091517139
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   }
+  },
+  "per_generator": {
+   "flux.1-dev": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 99,
+     "n_removal": 76,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 145,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.5028571428571429,
+     "acc_legacy": 0.5028571428571429,
+     "rec_real": null,
+     "rec_fake": 0.5028571428571429,
+     "bal_acc": null,
+     "rec_implant": 0.494949494949495,
+     "rec_removal": 0.5131578947368421,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.6692015209125475,
+     "f1_macro": 0.33460076045627374,
+     "f1_macro_legacy": 0.33460076045627374,
+     "mIoU": 0.25168002944951595,
+     "mIoU_gated": 0.25168002944951595,
+     "IoU@0.5": 0.24,
+     "twin": 0.42758620689655175,
+     "twin_fake_flagged": 0.5172413793103449,
+     "twin_real_cleared": 0.903448275862069,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.22285714285714286,
+     "field_type_fakes": 0.22285714285714286,
+     "field_location": 0.41714285714285715,
+     "field_location_fakes": 0.41714285714285715,
+     "field_size": 0.2742857142857143,
+     "field_size_fakes": 0.2742857142857143,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.4342857142857143,
+      0.5771428571428572
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.30278884462151395,
+      0.36594202898550726
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.4342857142857143,
+      0.5771428571428572
+     ],
+     "rec_implant": [
+      0.4044943820224719,
+      0.594362084456424
+     ],
+     "rec_removal": [
+      0.4084507042253521,
+      0.6267051282051282
+     ],
+     "mIoU": [
+      0.2042548659183227,
+      0.3007656776960054
+     ],
+     "mIoU_gated": [
+      0.2042548659183227,
+      0.3007656776960054
+     ],
+     "IoU@0.5": [
+      0.18285714285714286,
+      0.3028571428571429
+     ],
+     "twin": [
+      0.3529305966991113,
+      0.5100705382824271
+     ],
+     "acc_legacy": [
+      0.4342857142857143,
+      0.5771428571428572
+     ],
+     "field_type": [
+      0.1657142857142857,
+      0.2858571428571427
+     ],
+     "field_location": [
+      0.34285714285714286,
+      0.49157142857142844
+     ],
+     "field_size": [
+      0.2057142857142857,
+      0.34285714285714286
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "gemini": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 95,
+     "n_removal": 80,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 146,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.5542857142857143,
+     "acc_legacy": 0.5542857142857143,
+     "rec_real": null,
+     "rec_fake": 0.5542857142857143,
+     "bal_acc": null,
+     "rec_implant": 0.5473684210526316,
+     "rec_removal": 0.5625,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.7132352941176471,
+     "f1_macro": 0.35661764705882354,
+     "f1_macro_legacy": 0.35661764705882354,
+     "mIoU": 0.33724750267670567,
+     "mIoU_gated": 0.33724750267670567,
+     "IoU@0.5": 0.37142857142857144,
+     "twin": 0.4931506849315068,
+     "twin_fake_flagged": 0.5821917808219178,
+     "twin_real_cleared": 0.9041095890410958,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.2571428571428571,
+     "field_type_fakes": 0.2571428571428571,
+     "field_location": 0.4342857142857143,
+     "field_location_fakes": 0.4342857142857143,
+     "field_size": 0.38285714285714284,
+     "field_size_fakes": 0.38285714285714284,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.48,
+      0.6342857142857142
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.32432432432432434,
+      0.3881118881118881
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.48,
+      0.6342857142857142
+     ],
+     "rec_implant": [
+      0.45051020408163267,
+      0.650539090444558
+     ],
+     "rec_removal": [
+      0.46050741076830004,
+      0.6591720779220778
+     ],
+     "mIoU": [
+      0.2788519521944263,
+      0.3930164802384313
+     ],
+     "mIoU_gated": [
+      0.2788519521944263,
+      0.3930164802384313
+     ],
+     "IoU@0.5": [
+      0.29714285714285715,
+      0.44571428571428573
+     ],
+     "twin": [
+      0.4160750683569476,
+      0.5751678753693258
+     ],
+     "acc_legacy": [
+      0.48,
+      0.6342857142857142
+     ],
+     "field_type": [
+      0.2,
+      0.32
+     ],
+     "field_location": [
+      0.3655714285714286,
+      0.5029999999999999
+     ],
+     "field_size": [
+      0.30857142857142855,
+      0.45714285714285713
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "gpt": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 99,
+     "n_removal": 76,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 144,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.6114285714285714,
+     "acc_legacy": 0.6114285714285714,
+     "rec_real": null,
+     "rec_fake": 0.6114285714285714,
+     "bal_acc": null,
+     "rec_implant": 0.5959595959595959,
+     "rec_removal": 0.631578947368421,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.7588652482269503,
+     "f1_macro": 0.37943262411347517,
+     "f1_macro_legacy": 0.37943262411347517,
+     "mIoU": 0.45998895147536734,
+     "mIoU_gated": 0.45998895147536734,
+     "IoU@0.5": 0.5028571428571429,
+     "twin": 0.4722222222222222,
+     "twin_fake_flagged": 0.5694444444444444,
+     "twin_real_cleared": 0.8819444444444444,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.2742857142857143,
+     "field_type_fakes": 0.2742857142857143,
+     "field_location": 0.5542857142857143,
+     "field_location_fakes": 0.5542857142857143,
+     "field_size": 0.49714285714285716,
+     "field_size_fakes": 0.49714285714285716,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.537,
+      0.6857142857142857
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.3493816928369306,
+      0.4067796610169492
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.537,
+      0.6857142857142857
+     ],
+     "rec_implant": [
+      0.5,
+      0.6893373786407767
+     ],
+     "rec_removal": [
+      0.5189873417721519,
+      0.7464835680751174
+     ],
+     "mIoU": [
+      0.3938348035105873,
+      0.5241320590995309
+     ],
+     "mIoU_gated": [
+      0.3938348035105873,
+      0.5241320590995309
+     ],
+     "IoU@0.5": [
+      0.4228571428571429,
+      0.5771428571428572
+     ],
+     "twin": [
+      0.388878896882494,
+      0.5547945205479452
+     ],
+     "acc_legacy": [
+      0.537,
+      0.6857142857142857
+     ],
+     "field_type": [
+      0.217,
+      0.34285714285714286
+     ],
+     "field_location": [
+      0.4742857142857143,
+      0.6285714285714286
+     ],
+     "field_size": [
+      0.4228571428571429,
+      0.5714285714285714
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "qwen": {
+    "counts": {
+     "n": 174,
+     "n_real": 0,
+     "n_fake": 174,
+     "n_implant": 86,
+     "n_removal": 88,
+     "n_fakeu": 0,
+     "n_boxed": 174,
+     "n_pairs": 151,
+     "parsed": 174,
+     "n_v3": 174,
+     "groups": 174
+    },
+    "point": {
+     "acc": 0.8505747126436781,
+     "acc_legacy": 0.8505747126436781,
+     "rec_real": null,
+     "rec_fake": 0.8505747126436781,
+     "bal_acc": null,
+     "rec_implant": 0.813953488372093,
+     "rec_removal": 0.8863636363636364,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.9192546583850931,
+     "f1_macro": 0.45962732919254656,
+     "f1_macro_legacy": 0.45962732919254656,
+     "mIoU": 0.6417463412381254,
+     "mIoU_gated": 0.6417463412381254,
+     "IoU@0.5": 0.7241379310344828,
+     "twin": 0.7417218543046358,
+     "twin_fake_flagged": 0.8675496688741722,
+     "twin_real_cleared": 0.8741721854304636,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.4482758620689655,
+     "field_type_fakes": 0.4482758620689655,
+     "field_location": 0.7586206896551724,
+     "field_location_fakes": 0.7586206896551724,
+     "field_size": 0.7126436781609196,
+     "field_size_fakes": 0.7126436781609196,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.7987068965517241,
+      0.9022988505747126
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.44404491275497665,
+      0.4743202416918429
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.7987068965517241,
+      0.9022988505747126
+     ],
+     "rec_implant": [
+      0.7244809992962703,
+      0.8904398415580128
+     ],
+     "rec_removal": [
+      0.8105263157894737,
+      0.950030487804878
+     ],
+     "mIoU": [
+      0.5879734859290819,
+      0.693477465379736
+     ],
+     "mIoU_gated": [
+      0.5879734859290819,
+      0.693477465379736
+     ],
+     "IoU@0.5": [
+      0.6609195402298851,
+      0.7873563218390804
+     ],
+     "twin": [
+      0.6708336692735629,
+      0.8079538238229157
+     ],
+     "acc_legacy": [
+      0.7987068965517241,
+      0.9022988505747126
+     ],
+     "field_type": [
+      0.3735632183908046,
+      0.5172413793103449
+     ],
+     "field_location": [
+      0.6896551724137931,
+      0.8218390804597702
+     ],
+     "field_size": [
+      0.6494252873563219,
+      0.7816091954022989
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "real": {
+    "counts": {
+     "n": 1008,
+     "n_real": 1008,
+     "n_fake": 0,
+     "n_implant": 0,
+     "n_removal": 0,
+     "n_fakeu": 0,
+     "n_boxed": 0,
+     "n_pairs": 0,
+     "parsed": 1008,
+     "n_v3": 1008,
+     "groups": 1008
+    },
+    "point": {
+     "acc": 0.8948412698412699,
+     "acc_legacy": 0.8948412698412699,
+     "rec_real": 0.8948412698412699,
+     "rec_fake": null,
+     "bal_acc": null,
+     "rec_implant": null,
+     "rec_removal": null,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.9445026178010472,
+     "f1_fake": 0.0,
+     "f1_macro": 0.4722513089005236,
+     "f1_macro_legacy": 0.4722513089005236,
+     "mIoU": null,
+     "mIoU_gated": null,
+     "IoU@0.5": null,
+     "twin": null,
+     "twin_fake_flagged": null,
+     "twin_real_cleared": null,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.8948412698412699,
+     "field_type_fakes": null,
+     "field_location": 0.8948412698412699,
+     "field_location_fakes": null,
+     "field_size": 0.8948412698412699,
+     "field_size_fakes": null,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.8759920634920635,
+      0.9136904761904762
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.46694870438921204,
+      0.4774494556765163
+     ],
+     "rec_real": [
+      0.8759920634920635,
+      0.9136904761904762
+     ],
+     "rec_fake": [
+      null,
+      null
+     ],
+     "rec_implant": [
+      null,
+      null
+     ],
+     "rec_removal": [
+      null,
+      null
+     ],
+     "mIoU": [
+      null,
+      null
+     ],
+     "mIoU_gated": [
+      null,
+      null
+     ],
+     "IoU@0.5": [
+      null,
+      null
+     ],
+     "twin": [
+      null,
+      null
+     ],
+     "acc_legacy": [
+      0.8759920634920635,
+      0.9136904761904762
+     ],
+     "field_type": [
+      0.8759920634920635,
+      0.9136904761904762
+     ],
+     "field_location": [
+      0.8759920634920635,
+      0.9136904761904762
+     ],
+     "field_size": [
+      0.8759920634920635,
+      0.9136904761904762
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "seeddream": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 98,
+     "n_removal": 77,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 147,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.8971428571428571,
+     "acc_legacy": 0.8971428571428571,
+     "rec_real": null,
+     "rec_fake": 0.8971428571428571,
+     "bal_acc": null,
+     "rec_implant": 0.9285714285714286,
+     "rec_removal": 0.8571428571428571,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.9457831325301205,
+     "f1_macro": 0.47289156626506024,
+     "f1_macro_legacy": 0.47289156626506024,
+     "mIoU": 0.7644904393523473,
+     "mIoU_gated": 0.7644904393523473,
+     "IoU@0.5": 0.8228571428571428,
+     "twin": 0.7891156462585034,
+     "twin_fake_flagged": 0.8775510204081632,
+     "twin_real_cleared": 0.8843537414965986,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.37714285714285717,
+     "field_type_fakes": 0.37714285714285717,
+     "field_location": 0.72,
+     "field_location_fakes": 0.72,
+     "field_size": 0.7885714285714286,
+     "field_size_fakes": 0.7885714285714286,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.8514285714285714,
+      0.9371428571428572
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.45987654320987653,
+      0.4837758112094395
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.8514285714285714,
+      0.9371428571428572
+     ],
+     "rec_implant": [
+      0.875,
+      0.9782667134174848
+     ],
+     "rec_removal": [
+      0.7733181818181818,
+      0.9302406330749354
+     ],
+     "mIoU": [
+      0.7111055863434439,
+      0.8110309529742052
+     ],
+     "mIoU_gated": [
+      0.7111055863434439,
+      0.8110309529742052
+     ],
+     "IoU@0.5": [
+      0.7657142857142857,
+      0.8742857142857143
+     ],
+     "twin": [
+      0.7207597402597402,
+      0.8531468531468531
+     ],
+     "acc_legacy": [
+      0.8514285714285714,
+      0.9371428571428572
+     ],
+     "field_type": [
+      0.29714285714285715,
+      0.44571428571428573
+     ],
+     "field_location": [
+      0.6514285714285715,
+      0.7828571428571428
+     ],
+     "field_size": [
+      0.7255714285714286,
+      0.8514285714285714
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "stable-diffusion-3.5-large": {
+    "counts": {
+     "n": 174,
+     "n_real": 0,
+     "n_fake": 174,
+     "n_implant": 87,
+     "n_removal": 87,
+     "n_fakeu": 0,
+     "n_boxed": 174,
+     "n_pairs": 144,
+     "parsed": 174,
+     "n_v3": 174,
+     "groups": 174
+    },
+    "point": {
+     "acc": 0.7413793103448276,
+     "acc_legacy": 0.7413793103448276,
+     "rec_real": null,
+     "rec_fake": 0.7413793103448276,
+     "bal_acc": null,
+     "rec_implant": 0.7241379310344828,
+     "rec_removal": 0.7586206896551724,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.8514851485148515,
+     "f1_macro": 0.42574257425742573,
+     "f1_macro_legacy": 0.42574257425742573,
+     "mIoU": 0.48639885309342057,
+     "mIoU_gated": 0.48639885309342057,
+     "IoU@0.5": 0.5344827586206896,
+     "twin": 0.6041666666666666,
+     "twin_fake_flagged": 0.7013888888888888,
+     "twin_real_cleared": 0.8888888888888888,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.3793103448275862,
+     "field_type_fakes": 0.3793103448275862,
+     "field_location": 0.5977011494252874,
+     "field_location_fakes": 0.5977011494252874,
+     "field_size": 0.5172413793103449,
+     "field_size_fakes": 0.5172413793103449,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.6781609195402298,
+      0.8045977011494253
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.4041095890410959,
+      0.445859872611465
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.6781609195402298,
+      0.8045977011494253
+     ],
+     "rec_implant": [
+      0.6343817204301075,
+      0.8170731707317073
+     ],
+     "rec_removal": [
+      0.6593406593406593,
+      0.8444642857142857
+     ],
+     "mIoU": [
+      0.4331952220979079,
+      0.5407705908139435
+     ],
+     "mIoU_gated": [
+      0.4331952220979079,
+      0.5407705908139435
+     ],
+     "IoU@0.5": [
+      0.46551724137931033,
+      0.603448275862069
+     ],
+     "twin": [
+      0.5247973657548125,
+      0.6761069843719852
+     ],
+     "acc_legacy": [
+      0.6781609195402298,
+      0.8045977011494253
+     ],
+     "field_type": [
+      0.3045977011494253,
+      0.4482758620689655
+     ],
+     "field_location": [
+      0.5229885057471264,
+      0.6666666666666666
+     ],
+     "field_size": [
+      0.4482758620689655,
+      0.5863505747126435
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "stable-diffusion-3.5-medium": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 91,
+     "n_removal": 84,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 146,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.5828571428571429,
+     "acc_legacy": 0.5828571428571429,
+     "rec_real": null,
+     "rec_fake": 0.5828571428571429,
+     "bal_acc": null,
+     "rec_implant": 0.5604395604395604,
+     "rec_removal": 0.6071428571428571,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.7364620938628159,
+     "f1_macro": 0.36823104693140796,
+     "f1_macro_legacy": 0.36823104693140796,
+     "mIoU": 0.34267352871212775,
+     "mIoU_gated": 0.34267352871212775,
+     "IoU@0.5": 0.36,
+     "twin": 0.4657534246575342,
+     "twin_fake_flagged": 0.5616438356164384,
+     "twin_real_cleared": 0.8972602739726028,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.2914285714285714,
+     "field_type_fakes": 0.2914285714285714,
+     "field_location": 0.46285714285714286,
+     "field_location_fakes": 0.46285714285714286,
+     "field_size": 0.35428571428571426,
+     "field_size_fakes": 0.35428571428571426,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.5085714285714286,
+      0.6571428571428571
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.3371212121212121,
+      0.39655172413793105
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.5085714285714286,
+      0.6571428571428571
+     ],
+     "rec_implant": [
+      0.45739952718676125,
+      0.6590909090909091
+     ],
+     "rec_removal": [
+      0.5,
+      0.7195243902439024
+     ],
+     "mIoU": [
+      0.28498728149265895,
+      0.40108442153021007
+     ],
+     "mIoU_gated": [
+      0.28498728149265895,
+      0.40108442153021007
+     ],
+     "IoU@0.5": [
+      0.2914285714285714,
+      0.4342857142857143
+     ],
+     "twin": [
+      0.3851839339339339,
+      0.5479789697086629
+     ],
+     "acc_legacy": [
+      0.5085714285714286,
+      0.6571428571428571
+     ],
+     "field_type": [
+      0.22285714285714286,
+      0.3657142857142857
+     ],
+     "field_location": [
+      0.38857142857142857,
+      0.5371428571428571
+     ],
+     "field_size": [
+      0.28,
+      0.4228571428571429
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "stable-diffusion-inpainting": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 92,
+     "n_removal": 83,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 153,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.7885714285714286,
+     "acc_legacy": 0.7885714285714286,
+     "rec_real": null,
+     "rec_fake": 0.7885714285714286,
+     "bal_acc": null,
+     "rec_implant": 0.7391304347826086,
+     "rec_removal": 0.8433734939759037,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.8817891373801917,
+     "f1_macro": 0.44089456869009586,
+     "f1_macro_legacy": 0.44089456869009586,
+     "mIoU": 0.5863068756390734,
+     "mIoU_gated": 0.5863068756390734,
+     "IoU@0.5": 0.6514285714285715,
+     "twin": 0.6862745098039216,
+     "twin_fake_flagged": 0.7712418300653595,
+     "twin_real_cleared": 0.8954248366013072,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.4,
+     "field_type_fakes": 0.4,
+     "field_location": 0.6971428571428572,
+     "field_location_fakes": 0.6971428571428572,
+     "field_size": 0.6057142857142858,
+     "field_size_fakes": 0.6057142857142858,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.7257142857142858,
+      0.8457142857142858
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.4205298013245033,
+      0.4582043343653251
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.7257142857142858,
+      0.8457142857142858
+     ],
+     "rec_implant": [
+      0.6444224422442245,
+      0.8255813953488372
+     ],
+     "rec_removal": [
+      0.758574091332712,
+      0.9213483146067416
+     ],
+     "mIoU": [
+      0.52965026262741,
+      0.6440744562327211
+     ],
+     "mIoU_gated": [
+      0.52965026262741,
+      0.6440744562327211
+     ],
+     "IoU@0.5": [
+      0.5828571428571429,
+      0.72
+     ],
+     "twin": [
+      0.6139240506329114,
+      0.7594998356074306
+     ],
+     "acc_legacy": [
+      0.7257142857142858,
+      0.8457142857142858
+     ],
+     "field_type": [
+      0.32571428571428573,
+      0.4742857142857143
+     ],
+     "field_location": [
+      0.6285714285714286,
+      0.76
+     ],
+     "field_size": [
+      0.5427142857142857,
+      0.6742857142857143
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "stable-diffusion-xl-1.0-inpainting-0.1": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 94,
+     "n_removal": 81,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 143,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.7257142857142858,
+     "acc_legacy": 0.7257142857142858,
+     "rec_real": null,
+     "rec_fake": 0.7257142857142858,
+     "bal_acc": null,
+     "rec_implant": 0.6808510638297872,
+     "rec_removal": 0.7777777777777778,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.8410596026490066,
+     "f1_macro": 0.4205298013245033,
+     "f1_macro_legacy": 0.4205298013245033,
+     "mIoU": 0.47075756021119164,
+     "mIoU_gated": 0.47075756021119164,
+     "IoU@0.5": 0.5028571428571429,
+     "twin": 0.6013986013986014,
+     "twin_fake_flagged": 0.6993006993006993,
+     "twin_real_cleared": 0.8811188811188811,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.36,
+     "field_type_fakes": 0.36,
+     "field_location": 0.6171428571428571,
+     "field_location_fakes": 0.6171428571428571,
+     "field_size": 0.5085714285714286,
+     "field_size_fakes": 0.5085714285714286,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.6628571428571428,
+      0.7885714285714286
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.39862542955326463,
+      0.44089456869009586
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.6628571428571428,
+      0.7885714285714286
+     ],
+     "rec_implant": [
+      0.5869460702341137,
+      0.7676767676767676
+     ],
+     "rec_removal": [
+      0.6813186813186813,
+      0.86843671679198
+     ],
+     "mIoU": [
+      0.4131467598840876,
+      0.5268226098959413
+     ],
+     "mIoU_gated": [
+      0.4131467598840876,
+      0.5268226098959413
+     ],
+     "IoU@0.5": [
+      0.42857142857142855,
+      0.5771428571428572
+     ],
+     "twin": [
+      0.5220430672268908,
+      0.6824579525568735
+     ],
+     "acc_legacy": [
+      0.6628571428571428,
+      0.7885714285714286
+     ],
+     "field_type": [
+      0.2914285714285714,
+      0.42857142857142855
+     ],
+     "field_location": [
+      0.5485714285714286,
+      0.6857142857142857
+     ],
+     "field_size": [
+      0.4342857142857143,
+      0.5771428571428572
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "step1x-edit": {
+    "counts": {
+     "n": 175,
+     "n_real": 0,
+     "n_fake": 175,
+     "n_implant": 83,
+     "n_removal": 92,
+     "n_fakeu": 0,
+     "n_boxed": 175,
+     "n_pairs": 152,
+     "parsed": 175,
+     "n_v3": 175,
+     "groups": 175
+    },
+    "point": {
+     "acc": 0.7828571428571428,
+     "acc_legacy": 0.7828571428571428,
+     "rec_real": null,
+     "rec_fake": 0.7828571428571428,
+     "bal_acc": null,
+     "rec_implant": 0.8433734939759037,
+     "rec_removal": 0.7282608695652174,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.8782051282051282,
+     "f1_macro": 0.4391025641025641,
+     "f1_macro_legacy": 0.4391025641025641,
+     "mIoU": 0.6541037392925546,
+     "mIoU_gated": 0.6541037392925546,
+     "IoU@0.5": 0.6857142857142857,
+     "twin": 0.6644736842105263,
+     "twin_fake_flagged": 0.7631578947368421,
+     "twin_real_cleared": 0.8947368421052632,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.38285714285714284,
+     "field_type_fakes": 0.38285714285714284,
+     "field_location": 0.7085714285714285,
+     "field_location_fakes": 0.7085714285714285,
+     "field_size": 0.6857142857142857,
+     "field_size_fakes": 0.6857142857142857,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.7255714285714286,
+      0.8457142857142858
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.4204816725704605,
+      0.4582043343653251
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.7255714285714286,
+      0.8457142857142858
+     ],
+     "rec_implant": [
+      0.76040625,
+      0.9221238001129305
+     ],
+     "rec_removal": [
+      0.6353728341584158,
+      0.8152173913043478
+     ],
+     "mIoU": [
+      0.5942824129783061,
+      0.7132986870936805
+     ],
+     "mIoU_gated": [
+      0.5942824129783061,
+      0.7132986870936805
+     ],
+     "IoU@0.5": [
+      0.6114285714285714,
+      0.7542857142857143
+     ],
+     "twin": [
+      0.5897350993377484,
+      0.7400064935064935
+     ],
+     "acc_legacy": [
+      0.7255714285714286,
+      0.8457142857142858
+     ],
+     "field_type": [
+      0.30857142857142855,
+      0.45714285714285713
+     ],
+     "field_location": [
+      0.64,
+      0.7771428571428571
+     ],
+     "field_size": [
+      0.6114285714285714,
+      0.7542857142857143
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   }
+  },
+  "per_class": {
+   "implant": {
+    "counts": {
+     "n": 924,
+     "n_real": 0,
+     "n_fake": 924,
+     "n_implant": 924,
+     "n_removal": 0,
+     "n_fakeu": 0,
+     "n_boxed": 924,
+     "n_pairs": 730,
+     "parsed": 924,
+     "n_v3": 924,
+     "groups": 185
+    },
+    "point": {
+     "acc": 0.6893939393939394,
+     "acc_legacy": 0.6893939393939394,
+     "rec_real": null,
+     "rec_fake": 0.6893939393939394,
+     "bal_acc": null,
+     "rec_implant": 0.6893939393939394,
+     "rec_removal": null,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.8161434977578476,
+     "f1_macro": 0.4080717488789238,
+     "f1_macro_legacy": 0.4080717488789238,
+     "mIoU": 0.5044606157150701,
+     "mIoU_gated": 0.5044606157150701,
+     "IoU@0.5": 0.5422077922077922,
+     "twin": 0.5945205479452055,
+     "twin_fake_flagged": 0.6767123287671233,
+     "twin_real_cleared": 0.9041095890410958,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.0,
+     "field_type_fakes": 0.0,
+     "field_location": 0.6028138528138528,
+     "field_location_fakes": 0.6028138528138528,
+     "field_size": 0.5422077922077922,
+     "field_size_fakes": 0.5422077922077922,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.6569264069264069,
+      0.7221891891891892
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.3964728935336381,
+      0.41934369587459563
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.6569264069264069,
+      0.7221891891891892
+     ],
+     "rec_implant": [
+      0.6569264069264069,
+      0.7221891891891892
+     ],
+     "rec_removal": [
+      null,
+      null
+     ],
+     "mIoU": [
+      0.46885128695870504,
+      0.5367020666866418
+     ],
+     "mIoU_gated": [
+      0.46885128695870504,
+      0.5367020666866418
+     ],
+     "IoU@0.5": [
+      0.5016216216216216,
+      0.5785596152673618
+     ],
+     "twin": [
+      0.5449697935895285,
+      0.642107677450507
+     ],
+     "acc_legacy": [
+      0.6569264069264069,
+      0.7221891891891892
+     ],
+     "field_type": [
+      0.0,
+      0.0
+     ],
+     "field_location": [
+      0.5708108108108109,
+      0.6356928746928746
+     ],
+     "field_size": [
+      0.5059588299024919,
+      0.5768398268398268
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "real": {
+    "counts": {
+     "n": 1008,
+     "n_real": 1008,
+     "n_fake": 0,
+     "n_implant": 0,
+     "n_removal": 0,
+     "n_fakeu": 0,
+     "n_boxed": 0,
+     "n_pairs": 0,
+     "parsed": 1008,
+     "n_v3": 1008,
+     "groups": 1008
+    },
+    "point": {
+     "acc": 0.8948412698412699,
+     "acc_legacy": 0.8948412698412699,
+     "rec_real": 0.8948412698412699,
+     "rec_fake": null,
+     "bal_acc": null,
+     "rec_implant": null,
+     "rec_removal": null,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.9445026178010472,
+     "f1_fake": 0.0,
+     "f1_macro": 0.4722513089005236,
+     "f1_macro_legacy": 0.4722513089005236,
+     "mIoU": null,
+     "mIoU_gated": null,
+     "IoU@0.5": null,
+     "twin": null,
+     "twin_fake_flagged": null,
+     "twin_real_cleared": null,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.8948412698412699,
+     "field_type_fakes": null,
+     "field_location": 0.8948412698412699,
+     "field_location_fakes": null,
+     "field_size": 0.8948412698412699,
+     "field_size_fakes": null,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.8759920634920635,
+      0.9136904761904762
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.46694870438921204,
+      0.4774494556765163
+     ],
+     "rec_real": [
+      0.8759920634920635,
+      0.9136904761904762
+     ],
+     "rec_fake": [
+      null,
+      null
+     ],
+     "rec_implant": [
+      null,
+      null
+     ],
+     "rec_removal": [
+      null,
+      null
+     ],
+     "mIoU": [
+      null,
+      null
+     ],
+     "mIoU_gated": [
+      null,
+      null
+     ],
+     "IoU@0.5": [
+      null,
+      null
+     ],
+     "twin": [
+      null,
+      null
+     ],
+     "acc_legacy": [
+      0.8759920634920635,
+      0.9136904761904762
+     ],
+     "field_type": [
+      0.8759920634920635,
+      0.9136904761904762
+     ],
+     "field_location": [
+      0.8759920634920635,
+      0.9136904761904762
+     ],
+     "field_size": [
+      0.8759920634920635,
+      0.9136904761904762
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   },
+   "removal": {
+    "counts": {
+     "n": 824,
+     "n_real": 0,
+     "n_fake": 824,
+     "n_implant": 0,
+     "n_removal": 824,
+     "n_fakeu": 0,
+     "n_boxed": 824,
+     "n_pairs": 741,
+     "parsed": 824,
+     "n_v3": 824,
+     "groups": 824
+    },
+    "point": {
+     "acc": 0.7196601941747572,
+     "acc_legacy": 0.7196601941747572,
+     "rec_real": null,
+     "rec_fake": 0.7196601941747572,
+     "bal_acc": null,
+     "rec_implant": null,
+     "rec_removal": 0.7196601941747572,
+     "rec_fake_untyped": null,
+     "bal_acc_typebal": null,
+     "f1_real": 0.0,
+     "f1_fake": 0.8369795342272407,
+     "f1_macro": 0.41848976711362035,
+     "f1_macro_legacy": 0.41848976711362035,
+     "mIoU": 0.49386427740839733,
+     "mIoU_gated": 0.49386427740839733,
+     "IoU@0.5": 0.5364077669902912,
+     "twin": 0.5978407557354926,
+     "twin_fake_flagged": 0.708502024291498,
+     "twin_real_cleared": 0.8771929824561403,
+     "parse_rate": 1.0,
+     "well_formed_rate": 1.0,
+     "box_rate_pred_fake": 1.0,
+     "box_on_pred_real_rate": 0.0,
+     "v3_format_rate": 1.0,
+     "evidence_verdict_consistent": 1.0,
+     "field_type": 0.7196601941747572,
+     "field_type_fakes": 0.7196601941747572,
+     "field_location": 0.5898058252427184,
+     "field_location_fakes": 0.5898058252427184,
+     "field_size": 0.5218446601941747,
+     "field_size_fakes": 0.5218446601941747,
+     "field_intensity": null,
+     "field_intensity_fakes": null
+    },
+    "ci95": {
+     "acc": [
+      0.6893203883495146,
+      0.7475728155339806
+     ],
+     "bal_acc": [
+      null,
+      null
+     ],
+     "bal_acc_typebal": [
+      null,
+      null
+     ],
+     "f1_macro": [
+      0.40804597701149425,
+      0.42777777777777776
+     ],
+     "rec_real": [
+      null,
+      null
+     ],
+     "rec_fake": [
+      0.6893203883495146,
+      0.7475728155339806
+     ],
+     "rec_implant": [
+      null,
+      null
+     ],
+     "rec_removal": [
+      0.6893203883495146,
+      0.7475728155339806
+     ],
+     "mIoU": [
+      0.46548751331506794,
+      0.519092322816949
+     ],
+     "mIoU_gated": [
+      0.46548751331506794,
+      0.519092322816949
+     ],
+     "IoU@0.5": [
+      0.5012135922330098,
+      0.5679611650485437
+     ],
+     "twin": [
+      0.5640964673913044,
+      0.6312978753145093
+     ],
+     "acc_legacy": [
+      0.6893203883495146,
+      0.7475728155339806
+     ],
+     "field_type": [
+      0.6893203883495146,
+      0.7475728155339806
+     ],
+     "field_location": [
+      0.5570388349514563,
+      0.6213592233009708
+     ],
+     "field_size": [
+      0.4866504854368932,
+      0.5533980582524272
+     ],
+     "field_intensity": [
+      null,
+      null
+     ]
+    }
+   }
+  },
+  "formats": {
+   "v3": 2756
+  },
+  "fields_source": {
+   "derived": 2756
+  },
+  "truncated_rate": 0.0,
+  "resolver_fallback": {}
+ },
+ "paired": {
+  "n_common": 2756,
+  "n_only_A": 0,
+  "n_only_B": 0,
+  "groups": 1008,
+  "gt_mismatch": 0,
+  "gt_counts": {
+   "real": 1008,
+   "deepfake": 1748
+  },
+  "mcnemar": {
+   "b_A_only_correct": 54,
+   "c_B_only_correct": 131,
+   "p_exact": 1.4381866584936897e-08
+  },
+  "diff": {
+   "acc": {
+    "A": 0.7456458635703919,
+    "B": 0.7735849056603774,
+    "B_minus_A": 0.027939042089985544,
+    "ci95": [
+     0.019174375891165316,
+     0.03642317279312567
+    ]
+   },
+   "bal_acc": {
+    "A": 0.7780660891358833,
+    "B": 0.7992512985361956,
+    "B_minus_A": 0.02118520940031232,
+    "ci95": [
+     0.01237531031000104,
+     0.029697137643108613
+    ]
+   },
+   "f1_macro": {
+    "A": 0.7436529778396752,
+    "B": 0.7703318611016737,
+    "B_minus_A": 0.02667888326199852,
+    "ci95": [
+     0.018004714903266793,
+     0.03513031400753319
+    ]
+   },
+   "rec_real": {
+    "A": 0.8988095238095238,
+    "B": 0.8948412698412699,
+    "B_minus_A": -0.003968253968253954,
+    "ci95": [
+     -0.017857142857142794,
+     0.009920634920634996
+    ]
+   },
+   "rec_fake": {
+    "A": 0.6573226544622426,
+    "B": 0.7036613272311213,
+    "B_minus_A": 0.04633867276887871,
+    "ci95": [
+     0.033746221349638866,
+     0.060047302215728515
+    ]
+   },
+   "mIoU": {
+    "A": 0.46993230216643017,
+    "B": 0.4994655454835491,
+    "B_minus_A": 0.02953324331711893,
+    "ci95": [
+     0.02268320334399191,
+     0.03667003760939269
+    ]
+   },
+   "IoU@0.5": {
+    "A": 0.5062929061784897,
+    "B": 0.5394736842105263,
+    "B_minus_A": 0.03318077803203667,
+    "ci95": [
+     0.021499947175658528,
+     0.0447258374226584
+    ]
+   },
+   "twin": {
+    "A": 0.5581237253569,
+    "B": 0.5961930659415363,
+    "B_minus_A": 0.03806934058463629,
+    "ci95": [
+     0.02095269148747884,
+     0.053469914588025365
+    ]
+   }
+  }
+ }
+}

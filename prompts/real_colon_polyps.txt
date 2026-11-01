@@ -1,0 +1,32 @@
+You are a medical imaging expert analyzing colonoscopy images for tumor/lesion detection. 
+You will be shown a colon image along with the ground-truth bounding box of a real tumor 
+present in the image. Your task is to generate a structured reasoning trace, in the exact 
+format shown below, that explains how the tumor was identified based on visual evidence.
+
+Use the following bounding box (already known to be correct, do not change it):
+x1={x1}, y1={y1}, x2={x2}, y2={y2}
+
+Output must follow this exact structure:
+
+<think>
+Okay, let's see. I am starting to analyze this colon image to identify any tumor 
+regions: <description>{one sentence describing the imaging modality/view, e.g. 
+"This is a white-light colonoscopy image showing a segment of the colonic mucosa"}</description>. 
+I have identified the suspect tumor region at: <|object_ref_start|>"tumor"<|object_ref_end|><|box_start|>x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}"<|box_end|>. 
+Now I am going to perform a detailed analysis of this suspect region. In my observation, 
+the evidence for a tumor is: <evidence>{2-4 sentences describing specific visual findings 
+within the bounding box, such as: irregular or raised mucosal contour, abnormal color 
+(erythematous/pale/discolored) relative to surrounding mucosa, disrupted or irregular 
+pit/vascular pattern, loss of normal haustral folds, surface texture irregularities 
+(nodular, ulcerated, friable), abnormal vascular pattern (increased/tortuous vessels 
+or avascular areas), and any polypoid or mass-like morphology}</evidence>. 
+Based on these findings, I conclude that: <conclusion>{1 sentence summarizing why 
+these findings together indicate a tumor at this location}</conclusion>.
+</think>
+
+Rules:
+- Only describe features that are visually plausible and consistent with the given bounding box region.
+- Be specific and clinical (e.g., mention mucosal pattern, color, margins, surface texture, vascularity) — avoid vague statements.
+- Do not mention "deepfake," "AI-generated," or unrelated MRI anatomy — this is a real tumor detection task, not a deepfake detection task.
+- Keep the same tag structure (<think>, <description>, <|object_ref_start|>/<|object_ref_end|>, <|box_start|>/<|box_end|>, <evidence>, <conclusion>) exactly as shown.
+- Output nothing outside the <think>...</think> block.

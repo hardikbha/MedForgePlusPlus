@@ -1,0 +1,156 @@
+\begin{thebibliography}{21}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bai et~al.(2024)Bai, Bai, Yang, Wang, Tan, Wang, Lin, Zhou, and
+  Zhou]{qwenvl2024}
+Jinze Bai, Shuai Bai, Shusheng Yang, Shijie Wang, Sinan Tan, Peng Wang, Junyang
+  Lin, Chang Zhou, and Jingren Zhou.
+\newblock Qwen-vl: A versatile vision-language model for understanding,
+  localization, text reading, and beyond.
+\newblock \emph{arXiv preprint arXiv:2308.12966}, 2024.
+
+\bibitem[Chen et~al.(2026)Chen, He, Lei, Pu, Zhang, Xu, and Feng]{medforge2026}
+Zhihui Chen, Kai He, Qingyuan Lei, Bin Pu, Jian Zhang, Yuling Xu, and Mengling
+  Feng.
+\newblock Medforge: Interpretable medical deepfake detection via forgery-aware
+  reasoning.
+\newblock In \emph{Proceedings of the 64th Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pages 25672--25692,
+  2026.
+
+\bibitem[Gambetti et~al.(2025)Gambetti, Han, Shen, and
+  Soares]{explainable_medical_ai_2025}
+Alessandro Gambetti, Qingpeng Han, Haocheng Shen, and Carlos Soares.
+\newblock A survey on human-centered evaluation of explainable ai methods in
+  clinical decision support systems.
+\newblock \emph{arXiv preprint arXiv:2502.09849}, 2025.
+
+\bibitem[Helff et~al.(2026)Helff, Delfosse, Steinmann, H{\"a}rle, Shindo,
+  Schramowski, Stammer, Kersting, and Friedrich]{rewardhacking2026}
+Lukas Helff, Quentin Delfosse, David Steinmann, Ruben H{\"a}rle, Hikaru Shindo,
+  Patrick Schramowski, Wolfgang Stammer, Kristian Kersting, and Felix
+  Friedrich.
+\newblock Llms gaming verifiers: Rlvr can lead to reward hacking.
+\newblock \emph{arXiv preprint arXiv:2604.15149}, 2026.
+
+\bibitem[Huang et~al.(2025)Huang, Li, Li, Wen, He, Zhang, Fei, Yang, Huang,
+  Peng, and Cheng]{benchmark_diversity_2025}
+Zhenglin Huang, Tianxiao Li, Xiangtai Li, Haiquan Wen, Yiwei He, Jiangning
+  Zhang, Hao Fei, Xi Yang, Xiaowei Huang, Bei Peng, and Guangliang Cheng.
+\newblock So-fake: Benchmarking and explaining social media image forgery
+  detection.
+\newblock \emph{arXiv preprint arXiv:2505.18660}, 2025.
+
+\bibitem[Li et~al.(2026)Li, Xu, and Chen]{vigil2026}
+Xinghan Li, Junhao Xu, and Jingjing Chen.
+\newblock Vigil: Part-grounded structured reasoning for generalizable deepfake
+  detection.
+\newblock \emph{arXiv preprint arXiv:2603.21526}, 2026.
+
+\bibitem[Lin et~al.(2025)Lin, Yan, Chen, Ye, Zhang, Zhou, Jin, Li, Yao, and
+  Ding]{seeingbeforereasoning2025}
+Kaiqing Lin, Zhiyuan Yan, Ruoxin Chen, Junyan Ye, Ke-Yue Zhang, Yue Zhou, Peng
+  Jin, Bin Li, Taiping Yao, and Shouhong Ding.
+\newblock Seeing before reasoning: A unified framework for generalizable and
+  explainable fake image detection.
+\newblock \emph{arXiv preprint arXiv:2509.25502}, 2025.
+
+\bibitem[Mehrjardi et~al.(2023)Mehrjardi, Latif, Zarchi, and
+  Sheikhpour]{medical_forgery_survey_2023}
+F.~Z. Mehrjardi, A.~M. Latif, M.~S. Zarchi, and R. Sheikhpour.
+\newblock A survey on deep learning-based image forgery detection.
+\newblock \emph{Pattern Recognition}, 144:\penalty0 109778, 2023.
+
+\bibitem[Nandi and Natarajan(2026)]{biotampernet2026}
+Soumyaroop Nandi and Prem Natarajan.
+\newblock Biotampernet: Affinity-guided state-space model detecting tampered
+  biomedical images.
+\newblock \emph{arXiv preprint arXiv:2602.01435}, 2026.
+
+\bibitem[Pei et~al.(2024)Pei, Zhang, Hu, Zhang, Wang, Wu, Zhai, Yang, and
+  Tao]{natural_deepfake_survey_2024}
+Gan Pei, Jiangning Zhang, Menghan Hu, Zhenyu Zhang, Chengjie Wang, Yunsheng Wu,
+  Guangtao Zhai, Jian Yang, and Dacheng Tao.
+\newblock Deepfake generation and detection: A benchmark and survey.
+\newblock \emph{arXiv preprint arXiv:2403.17881}, 2024.
+
+\bibitem[{Qwen Team}(2025)]{qwen3vl2025}
+{Qwen Team}.
+\newblock Qwen3-vl technical report.
+\newblock \emph{arXiv preprint arXiv:2511.21631}, 2025.
+
+\bibitem[Rosenbacke et~al.(2024)Rosenbacke, Melhus, McKee, and
+  Stuckler]{clinical_trust_ai_2024}
+Rikard Rosenbacke, {\AA}sa Melhus, Martin McKee, and David Stuckler.
+\newblock How explainable artificial intelligence can increase or decrease
+  clinicians' trust in ai applications in health care: Systematic review.
+\newblock \emph{JMIR AI}, 3:\penalty0 e53207, 2024.
+
+\bibitem[Schulman et~al.(2017)Schulman, Wolski, Dhariwal, Radford, and
+  Klimov]{ppo2017}
+John Schulman, Filip Wolski, Prafulla Dhariwal, Alec Radford, and Oleg Klimov.
+\newblock Proximal policy optimization algorithms.
+\newblock \emph{arXiv preprint arXiv:1707.06347}, 2017.
+
+\bibitem[Shao et~al.(2024)Shao, Wang, Zhu, Xu, Song, Bi, Zhang, Zhang, Li, Wu,
+  and Guo]{grpo2024}
+Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Xiao Bi, Haowei
+  Zhang, Mingchuan Zhang, Y.K. Li, Y. Wu, and Daya Guo.
+\newblock Deepseekmath: Pushing the limits of mathematical reasoning in open
+  language models.
+\newblock \emph{arXiv preprint arXiv:2402.03300}, 2024.
+
+\bibitem[Su et~al.(2024)Su, Guo, Yang, Wang, Coenen, and
+  Huang]{medical_domain_shift_2024}
+Zixian Su, Jingwei Guo, Xi Yang, Qiufeng Wang, Frans Coenen, and Kaizhu Huang.
+\newblock Navigating distribution shifts in medical image analysis: A survey.
+\newblock \emph{arXiv preprint arXiv:2411.05824}, 2024.
+
+\bibitem[Tan et~al.(2024)Tan, Zhao, Wei, Gu, Liu, and
+  Wei]{frequency_artifact_detection_2024}
+Chuangchuang Tan, Yao Zhao, Shikui Wei, Guanghua Gu, Ping Liu, and Yunchao Wei.
+\newblock Frequency-aware deepfake detection: Improving generalizability
+  through frequency space learning.
+\newblock \emph{arXiv preprint arXiv:2403.07240}, 2024.
+\newblock Presented at AAAI 2024.
+
+\bibitem[Yang et~al.(2024)Yang, Zhou, Li, and
+  Liu]{ood_generalization_survey_2024}
+Jingkang Yang, Kaiyang Zhou, Yixuan Li, and Ziwei Liu.
+\newblock Generalized out-of-distribution detection: A survey.
+\newblock \emph{International Journal of Computer Vision}, 132\penalty0
+  (12):\penalty0 5635--5662, 2024.
+\newblock Originally released as arXiv:2110.11334, 2021.
+
+\bibitem[Zhang et~al.(2022)Zhang, Huang, Liu, Han, and Xiang]{ctgan2022}
+Jianyi Zhang, Xuanxi Huang, Yaqi Liu, Yuyang Han, and Zixiao Xiang.
+\newblock Gan-based medical image small region forgery detection via a
+  two-stage cascade framework.
+\newblock \emph{arXiv preprint arXiv:2205.15170}, 2022.
+
+\bibitem[Zhang et~al.(2026)Zhang, Weng, Fu, Chen, Li, He, and Fu]{fmsd2026}
+Xiang Zhang, Wenliang Weng, Daoyong Fu, Beijing Chen, Ziqiang Li, Ziwen He, and
+  Zhangjie Fu.
+\newblock Generalizable deepfake detection based on forgery-aware layer masking
+  and multi-artifact subspace decomposition.
+\newblock \emph{arXiv preprint arXiv:2601.01041}, 2026.
+
+\bibitem[Zheng et~al.(2025)Zheng, Liu, Li, Chen, Yu, Gao, Dang, Liu, Men, Yang,
+  Zhou, and Lin]{gspo2025}
+Chujie Zheng, Shixuan Liu, Mingze Li, Xiong-Hui Chen, Bowen Yu, Chang Gao, Kai
+  Dang, Yuqiong Liu, Rui Men, An Yang, Jingren Zhou, and Junyang Lin.
+\newblock Group sequence policy optimization.
+\newblock \emph{arXiv preprint arXiv:2507.18071}, 2025.
+
+\bibitem[Zhu et~al.(2026)Zhu, Zhang, Zhang, Zhang, and
+  Wang]{medical_benchmark_survey_2026}
+Pengyu Zhu, Xiaojing Zhang, Kunbo Zhang, Chunyan Zhang, and Zhenyu Wang.
+\newblock A comprehensive survey of medical image segmentation: Challenges,
+  benchmarks, and beyond.
+\newblock \emph{arXiv preprint arXiv:2606.16153}, 2026.
+
+\end{thebibliography}

@@ -1,0 +1,122 @@
+{
+  "audit_date": "2026-11-01",
+  "scope": "read-only filesystem and manifest checks; no model training",
+  "medforge90k": {
+    "mapping_items": 95276,
+    "present_by_type": {
+      "edit": 32394,
+      "remove": 30892,
+      "real": 31701
+    },
+    "missing_by_type": {
+      "real": 289
+    },
+    "present_total": 94987
+  },
+  "addition": {
+    "kidney_normal": {
+      "files": 1000,
+      "actual_formats": {
+        "PNG": 1000
+      }
+    },
+    "kidney_real_tumor": {
+      "files": 1000,
+      "actual_formats": {
+        "PNG": 1000
+      }
+    },
+    "kidney_removal": {
+      "files": 1000,
+      "actual_formats": {
+        "PNG": 1000
+      }
+    },
+    "polyp_normal": {
+      "files": 800,
+      "actual_formats": {
+        "PNG": 800
+      },
+      "unique_byte_hashes": 564,
+      "redundant_byte_duplicates": 236
+    },
+    "polyp_real": {
+      "files": 1000,
+      "actual_formats": {
+        "PNG": 1000
+      }
+    },
+    "polyp_removal": {
+      "files": 1000,
+      "actual_formats": {
+        "PNG": 1000
+      }
+    },
+    "colon_inject": {
+      "files": 1000,
+      "actual_formats": {
+        "JPEG": 1000
+      }
+    },
+    "kidney_inject": {
+      "files": 1000,
+      "actual_formats": {
+        "JPEG": 1000
+      }
+    }
+  },
+  "legacy_eval_overlap": {
+    "eval_images": 800,
+    "circe_sft_v2.jsonl": {
+      "unique_train_images": 7800,
+      "eval_paths_in_train": 800
+    },
+    "circe_sft_v3.jsonl": {
+      "unique_train_images": 7800,
+      "eval_paths_in_train": 800
+    }
+  },
+  "mfclean": {
+    "train_all": {
+      "rows": 46080,
+      "groups": 11283,
+      "types": {
+        "real": 12678,
+        "edit": 16826,
+        "remove": 16576
+      }
+    },
+    "select_core": {
+      "rows": 1420,
+      "groups": 526,
+      "types": {
+        "real": 526,
+        "edit": 460,
+        "remove": 434
+      }
+    },
+    "test_core": {
+      "rows": 2756,
+      "groups": 1008,
+      "types": {
+        "real": 1008,
+        "remove": 824,
+        "edit": 924
+      }
+    },
+    "pairwise_overlap": {
+      "train_all__select_core": {
+        "groups": 0,
+        "image_paths": 0
+      },
+      "train_all__test_core": {
+        "groups": 0,
+        "image_paths": 0
+      },
+      "select_core__test_core": {
+        "groups": 0,
+        "image_paths": 0
+      }
+    }
+  }
+}

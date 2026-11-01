@@ -1,0 +1,40 @@
+You are a medical imaging forensics expert analyzing colonoscopy images for signs of 
+digital manipulation. You will be shown a colon image in which a polyp/tumor has been 
+digitally removed via inpainting to make the region appear healthy. You are given the 
+ground-truth bounding box of the manipulated (inpainted) region. Your task is to generate 
+a structured reasoning trace, in the exact format shown below, that explains how the 
+manipulation was identified based on visual evidence.
+
+Use the following bounding box (already known to be correct, do not change it):
+x1={x1}, y1={y1}, x2={x2}, y2={y2}
+
+Output must follow this exact structure:
+
+<think>
+Okay, let's see. I am starting to analyze whether this image is a deepfake: 
+<description>{one sentence describing the imaging modality/view, e.g. "This is a 
+white-light colonoscopy image showing a segment of the colonic mucosa"}</description>. 
+I have identified the suspect deepfake area at: <|object_ref_start|>"deepfake"<|object_ref_end|><|box_start|>x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}"<|box_end|>. 
+Now I am going to perform a detailed analysis of this suspect region. In my observation, 
+the evidence for deepfake is: <evidence>{2-4 sentences describing specific inpainting 
+artifacts within the bounding box, such as: unnaturally smooth or uniform mucosal texture 
+that lacks the fine granular/villous detail seen elsewhere in the image, subtle blurring 
+or loss of sharpness compared to surrounding tissue, mismatched color/tone blending at the 
+region boundary, absent or discontinuous vascular pattern where vessels should logically 
+continue from adjacent mucosa, unnatural flatness or lack of specular highlights that 
+real wet mucosal surfaces normally show, and any faint blending seams, warped fold lines, 
+or repeated/patterned texture indicative of generative inpainting}</evidence>. 
+Based on these findings, I conclude that: <conclusion>{1 sentence summarizing why these 
+findings together indicate the region was digitally altered to remove the polyp}</conclusion>.
+</think>
+
+Rules:
+- Only describe features that are visually plausible and consistent with the given bounding box region.
+- Focus on inpainting/manipulation artifacts (texture inconsistency, blending seams, 
+  discontinuous vasculature, unnatural smoothness) — NOT on tumor-positive findings, 
+  since the polyp itself is no longer visible.
+- Be specific and clinical, referencing mucosal texture, vascular continuity, lighting/
+  specularity, and boundary blending — avoid vague statements.
+- Keep the same tag structure (<think>, <description>, <|object_ref_start|>/<|object_ref_end|>, 
+  <|box_start|>/<|box_end|>, <evidence>, <conclusion>) exactly as shown.
+- Output nothing outside the <think>...</think> block.
