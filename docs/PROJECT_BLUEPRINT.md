@@ -12,6 +12,8 @@ The user requested: an independent technical review of the repository and PDFs; 
 
 Change 1 now has code checks, tests and a [protocol](SPLIT_PROTOCOL.md). **The private-data rebuild, final split freeze, retraining and new test inference are not complete.** Public predictions permit rescoring, not reconstruction of source provenance. Access to the private data host/manifests is the next execution dependency. The configured GitHub accounts lack upstream write permission; publication uses a fork/PR rather than claiming upstream main was changed.
 
+Publication milestone: implementation commit `3e564fa` is pushed on [`hardiksharma6555/MedForgePlusPlus:fix/split-protocol`](https://github.com/hardiksharma6555/MedForgePlusPlus/tree/fix/split-protocol), with [draft upstream PR #1](https://github.com/hardikbha/MedForgePlusPlus/pull/1). It was not merged by this session. GitHub fork creation initially hit transport errors; retrying with HTTP/2 disabled succeeded. The local working repository is `MedForgePlusPlus/` beneath the user's `fairness_cvpr` workspace.
+
 ## Names and attribution
 
 | Name | Meaning | Claim boundary |
@@ -153,13 +155,13 @@ The [priority action plan](REVIEW_ACTION_PLAN.md) maps concerns to corrections, 
 
 Change 1 adds [split_protocol.py](../v3/split_protocol.py), [select_checkpoint.py](../v3/select_checkpoint.py), builder integration, annotation-resume correction and [regression tests](../tests/test_split_protocol.py). It checks declared identity consistency, records provenance where known, freezes exact manifest bytes, and rejects test predictions during selection. It does not automatically enforce every legacy training entry point or retrospectively cleanse exposed results. Follow the complete [split protocol](SPLIT_PROTOCOL.md) on the data host.
 
-The new regression suite passed **15 tests** on CPU. This is code behavior evidence, not the private-data completion gate. Current check results are appended to [VALIDATION](VALIDATION.md). Source snapshot hashes describe the original release; these new files are later work and should not be falsely included in that historical snapshot's provenance.
+The new regression suite passed **15 tests** on CPU; scorer/evaluator self-tests passed, all **131** current Python files parsed, and new documentation links and diff checks passed. This is code behavior evidence, not the private-data completion gate. Current check results are appended to [VALIDATION](VALIDATION.md). Source snapshot hashes describe the original release; these new files are later work and should not be falsely included in that historical snapshot's provenance.
 
 ## Roadmap, hypotheses and open questions
 
 | Order | Work / hypothesis | Evidence to obtain |
 |---|---|---|
-| Now | Finish publishing review plan, memory and split safeguards; obtain data-host access | Reviewed code/PR, private-data location and runnable environment |
+| Now | Review published draft PR #1; obtain data-host access | Reviewed code/PR, private-data location and runnable environment |
 | Next | Can source/patient/duplicate grouping eliminate measured leakage? | Full-data lineage table, unknown-ID coverage, duplicate decisions, new versioned split lock and successful pool checks |
 | Next | Does balanced continued SFT explain the gain attributed to RL? | Matched three-or-more-seed experiment; identical base/continuation eligibility; configs, steps, image exposure, FLOPs/time and grouped CIs |
 | Next | Do paste-back edges or nonclinical traces drive MF-Clean performance? | Boundary-only/outside-mask/sham controls, alternate compositing/encoding, unseen editors and source-matched authentic controls |
