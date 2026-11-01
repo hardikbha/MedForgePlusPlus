@@ -52,6 +52,7 @@ import argparse, collections, hashlib, io, json, math, os, random, sys
 import numpy as np
 from PIL import Image
 from concurrent.futures import ProcessPoolExecutor
+from v3.split_protocol import audit_directory, require_pass
 
 V3 = _release_path('CIRCE/v3')
 CIRCE = _release_path('CIRCE/circe')
@@ -364,6 +365,8 @@ def selftest(out, mfclean, log):
         return cond
 
     train = read_jsonl(f"{mfclean}/train_all.jsonl")
+    # Validate before indexing by image (a dict would silently hide duplicates).
+    audit_directory(mfclean)
     by_img = {r["image"]: r for r in train}
     for name in ("select_core", "test_core"):
         for r in read_jsonl(f"{mfclean}/{name}.jsonl"):
@@ -519,9 +522,12 @@ def main():
     import build_mfclean as BM   # read-only import: constants must agree with the builder that made the data
     assert BM.GRAY == GRAY and BM.Q == Q and BM.CM_HOLDOUT == CM_HOLDOUT, "constants drifted from build_mfclean.py"
     if args.selftest_only:
-        selftest(out, args.mfclean, log)
+        require_pass(selftest(out, args.mfclean, log))
         return
 
+    # Stop before pixel processing or output writes if any declared split leaks.
+    split_audit = audit_directory(args.mfclean)
+    log(f"[split] PASS: {split_audit['audit']['counts']}")
     train = read_jsonl(f"{args.mfclean}/train_all.jsonl")
     evals = {n: read_jsonl(f"{args.mfclean}/{n}.jsonl") for n in ("select_core", "test_core")}
     stats_json = json.load(open(f"{args.mfclean}/stats.json")) if os.path.exists(f"{args.mfclean}/stats.json") else {}

@@ -47,6 +47,8 @@ python scripts/audit_local_data.py \
 
 MF-Clean construction requires the original upstream images/mapping **and** the hash/thumbnail artifacts produced by `v3_audit/scripts/census_hash.py` under `v3_audit/data/`. The census expects the extension folders too. It creates `image_hashes.tsv` and `thumbs32.npy`; use the same corpus enumeration for both. Then `v3/build_mfclean.py` builds the clean image and split manifests; `v3/build_sft_v3.py` constructs the SFT/RL pools. Study their `--help` options and reports before rebuilding; construction writes outputs and can be expensive.
 
+Follow the [split protocol](SPLIT_PROTOCOL.md) to audit/freeze those manifests and select checkpoints using validation only. The builders now reject declared identity overlaps, and `--selftest_only` propagates failure. New synthetic regression tests run with `python -m unittest discover -s tests -v`. These safeguards have not been run against the private full dataset in this independent follow-up.
+
 The early `construction/legacy/build_medforgepp.py` describes a different mixed corpus and must not be used to recreate the paper's kidney/colon release. Original removal images were ingested as external artifacts; their complete generation implementation and version record are still missing from this snapshot.
 
 ## Training environment

@@ -8,13 +8,13 @@ Fixes measured by the v3 audit (~/CIRCE/v3_audit/shortcut.md, labels.md):
      image (real and fake) decoded and re-encoded once as JPEG q90 4:4:4.
   3. real sub-populations never edited     -> reals kept only from "families" (organ, disease folder, filename
      shape) that contain at least one forgery source.
-  4. exact / near duplicate reals          -> union-find on md5 and on identical 64-bit dHash; one image kept
+  4. exact / near duplicate reals          -> union-find on md5 and dHash<=4 plus thumbnail MAE<=3; one image kept
      per duplicate cluster; all members share a group.
   5. source leakage across splits          -> GROUP = duplicate cluster of the authentic source scan (fundus:
-     additionally merged by patient id left/right). Groups are split 60/10/30 (train/select/test) by a
+     additionally merged by patient id left/right). Groups are split 55/15/30 (train/select/test) by a
      deterministic hash, so a forgery, its source, and every sibling forgery always share a split.
-  6. twin-structured evaluation            -> select/test "core" sets contain, per group, the source real plus
-     2 forgeries from different generators (round-robin), so every evaluated fake has its twin real.
+  6. twin-structured evaluation            -> select/test "core" sets keep one real per group and round-robin
+     generator samples. Some fake twins are absent; the split audit reports this coverage limitation.
 
 Outputs (all under OUT):
   img/<rel path>.jpg                     re-encoded images (reals, composites)
@@ -31,6 +31,7 @@ import argparse, collections, hashlib, json, os, re, sys
 import numpy as np
 from PIL import Image, ImageFilter
 from concurrent.futures import ProcessPoolExecutor
+from v3.split_protocol import validate_splits
 
 MF = _release_path('AAAI/MedForge++/medforge90k_full/')
 HASHES = _release_path('CIRCE/v3_audit/data/image_hashes.tsv')
@@ -51,6 +52,20 @@ def family(rel):
     # rel like real/<organ>/<disease>/<file>
     parts = rel.split("/")
     return (parts[1], parts[2] if len(parts) > 3 else "", fname_shape(parts[-1]))
+
+
+def known_patient_id(source, organ):
+    """Only filename patient conventions already used by the grouping code."""
+    stem = os.path.splitext(os.path.basename(source))[0]
+    if organ == "fundus":
+        match = re.match(r"^(\d+)_(left|right)(_eyepacs)?$", stem)
+        if match:
+            return "medforge90k:fundus:" + ("E:" if match.group(3) else "O:") + match.group(1)
+    if organ == "brain-mri":
+        match = re.match(r"^(YG_[A-Z0-9]+)_", stem)
+        if match:
+            return "medforge90k:brain:" + match.group(1)
+    return None
 
 
 class UF:
@@ -111,8 +126,9 @@ def work(job):
     kind, row, out = job
     try:
         dst = out + "/img/" + os.path.splitext(row["rel"])[0] + ".jpg"
-        if os.path.exists(dst) and os.path.getsize(dst) > 0:
-            return {"ok": True, "image": dst, "box": row.get("box_px")}
+        cached = os.path.exists(dst) and os.path.getsize(dst) > 0
+        if cached and kind == "real":
+            return {"ok": True, "image": dst}
         if kind == "real":
             a = np.asarray(Image.open(MF + row["rel"]).convert("RGB"), dtype=np.float32)
             save_jpeg(a, row["organ"], dst)
@@ -130,7 +146,9 @@ def work(job):
             box = [int(box[0] * sx), int(box[1] * sy), int(box[2] * sx), int(box[3] * sy)]
         al = feather_alpha(f.shape[:2], box, DIL, FEATHER)
         comp = al * f + (1 - al) * r
-        save_jpeg(comp, row["organ"], dst)
+        # Reconstruct the annotation even on resume; input rows have no box_px.
+        if not cached:
+            save_jpeg(comp, row["organ"], dst)
         H, W = f.shape[:2]
         box1024 = [int(box[0] * 1024 / W), int(box[1] * 1024 / H), int(box[2] * 1024 / W), int(box[3] * 1024 / H)]
         return {"ok": True, "image": dst, "box": box1024}
@@ -298,6 +316,8 @@ def main():
                 print(f"  [{i+1}/{len(mat)}]", flush=True)
     fails = collections.Counter(o.get("why", "?") for o in res.values() if not o["ok"])
     stats["materialise_failures"] = dict(fails)
+    if fails:
+        raise RuntimeError(f"Materialisation failed; refusing to publish partial split manifests: {dict(fails)}")
 
     def evrow(r):
         o = res.get(r["rel"])
@@ -306,7 +326,16 @@ def main():
         twin = res.get(r["twin_rel"]) if r.get("twin_rel") else None
         return {"image": o["image"], "type": r["type"], "gen": r["gen"], "box": o.get("box"),
                 "organ": r["organ"], "group": r["group"], "split": r["split"], "disease": r["disease"],
-                "twin": twin["image"] if twin and twin["ok"] else None, "orig": MF + r["rel"]}
+                "twin": twin["image"] if twin and twin["ok"] else None, "orig": MF + r["rel"],
+                "source_id": "medforge90k:" + r["src_rel"],
+                "duplicate_cluster": "medforge90k:" + dup.f(r["src_rel"]),
+                "patient_id": known_patient_id(r["src_rel"], r["organ"]),
+                "content_md5": md5[r["rel"]]}
+
+    partitions = {"train": [evrow(r) for r in rows if r["split"] == "train"],
+                  "select": [evrow(r) for r in core["select"]],
+                  "test": [evrow(r) for r in core["test"]]}
+    stats["split_audit"] = validate_splits(partitions)
 
     def dump(name, rs):
         out = [x for x in (evrow(r) for r in rs) if x]

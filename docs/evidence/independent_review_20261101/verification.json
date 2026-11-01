@@ -1,0 +1,54 @@
+{
+  "repository": "https://github.com/hardikbha/MedForgePlusPlus",
+  "commit": "1bcbc7393e8e0a3cbb803abf2747a1c1da0517d7",
+  "review_date": "2026-11-01",
+  "checks_run": {
+    "python_AST_files": 127,
+    "stats_self_test": "PASS; private legacy metadata branch skipped",
+    "eval_self_test": "PASS; synthetic CPU evaluation only",
+    "saved_prediction_files_rescored": 8,
+    "primary_point_metrics": [
+      "acc",
+      "bal_acc",
+      "f1_macro",
+      "mIoU",
+      "IoU@0.5",
+      "twin"
+    ],
+    "max_difference_from_archived_primary_point_metrics": 0.0,
+    "result_release_sha256_checks": 49,
+    "result_hash_mismatches": 0,
+    "independent_verdict_tally": {
+      "balanced_continued_sft": {
+        "correct_real": 902,
+        "n_real": 1008,
+        "correct_fake": 1230,
+        "n_fake": 1748
+      },
+      "image_GRPO": {
+        "correct_real": 906,
+        "n_real": 1008,
+        "correct_fake": 1149,
+        "n_fake": 1748
+      }
+    },
+    "synthetic_MF_Clean_work_reuse": {
+      "first_box": [
+        320,
+        320,
+        624,
+        624
+      ],
+      "second_box": null,
+      "downstream_mitigation": "v3/build_sft_v3.py:310 recover_box exists"
+    }
+  },
+  "not_run": [
+    "GPU training",
+    "real-model inference",
+    "raw-data census",
+    "full dataset rebuild",
+    "clinical validation",
+    "processor-dependent CT-GRPO test suite"
+  ]
+}
