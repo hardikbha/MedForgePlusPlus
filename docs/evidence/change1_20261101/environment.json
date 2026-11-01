@@ -1,0 +1,21 @@
+{
+  "base_commit": "fd894354bebc50595a6d7206058eea84a61997d0",
+  "cuda_visible_devices": "",
+  "host": "gpu01",
+  "packages": {
+    "Pillow": "11.3.0",
+    "accelerate": "1.10.1",
+    "datasets": "4.8.4",
+    "numpy": "2.2.6",
+    "pandas": "3.0.1",
+    "peft": "0.17.1",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.17.1",
+    "torch": "2.7.0+cu126",
+    "transformers": "5.15.1",
+    "trl": "0.22.2"
+  },
+  "pbs_job_id": "43937.mgmt01",
+  "python": "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+  "version": "3.12.11 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:09:17) [GCC 11.2.0]"
+}

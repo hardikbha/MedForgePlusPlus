@@ -1,0 +1,655 @@
+[
+  {
+    "label": "unit_tests_base",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T11:08:40.173249+00:00",
+    "seconds": 1.6809086799621582,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/unit_tests_base.log"
+  },
+  {
+    "label": "stats_selftest_base",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/stats_v3.py",
+      "--self_test"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T11:08:41.857063+00:00",
+    "seconds": 7.498579978942871,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/stats_selftest_base.log"
+  },
+  {
+    "label": "eval_selftest_base",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/eval_v3.py",
+      "--self_test"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T11:08:49.356094+00:00",
+    "seconds": 0.27162861824035645,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/eval_selftest_base.log"
+  },
+  {
+    "label": "historical_declared_split",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/split_protocol.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/AAAI/MedForge++/mfclean"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T11:08:49.628372+00:00",
+    "seconds": 0.5960338115692139,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/historical_declared_split.log"
+  },
+  {
+    "label": "historical_v3data_b_selftest",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/build_sft_v3.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/AAAI/MedForge++/mfclean",
+      "--out",
+      "/home/sachin.chaudhary/AAAI/MedForge++/mfclean/v3data_b",
+      "--report",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/historical_selftest_report.md",
+      "--selftest_only"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T11:08:50.224887+00:00",
+    "seconds": 17.91291356086731,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/historical_v3data_b_selftest.log"
+  },
+  {
+    "label": "raw_identity_audit",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "-u",
+      "scripts/private_split_audit.py",
+      "--data-root",
+      "/home/sachin.chaudhary/AAAI/MedForge++",
+      "--workspace",
+      "/home/sachin.chaudhary",
+      "--historical-hashes",
+      "/home/sachin.chaudhary/CIRCE/v3_audit/data/image_hashes.tsv",
+      "--out",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/private_identity",
+      "--workers",
+      "4"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T11:09:30.233637+00:00",
+    "seconds": 1791.8043780326843,
+    "returncode": -15,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/raw_identity_audit.log"
+  },
+  {
+    "label": "source_metadata_inventory",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/resource_inventory_job.py"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T11:43:10.878418+00:00",
+    "seconds": 8.684946775436401,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/source_metadata_inventory.log"
+  },
+  {
+    "label": "raw_identity_audit_resumed",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "-u",
+      "scripts/resume_identity_audit.py",
+      "--data-root",
+      "/home/sachin.chaudhary/AAAI/MedForge++",
+      "--historical-hashes",
+      "/home/sachin.chaudhary/CIRCE/v3_audit/data/image_hashes.tsv",
+      "--out",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/private_identity",
+      "--workers",
+      "4"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T11:39:22.216322+00:00",
+    "seconds": 269.2137277126312,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/raw_identity_audit_resumed.log"
+  },
+  {
+    "label": "unit_tests_rebuild",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T11:44:01.072207+00:00",
+    "seconds": 0.893221378326416,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/unit_tests_rebuild.log"
+  },
+  {
+    "label": "raw_identity_audit_r2",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "-u",
+      "scripts/resume_identity_audit.py",
+      "--data-root",
+      "/home/sachin.chaudhary/AAAI/MedForge++",
+      "--historical-hashes",
+      "/home/sachin.chaudhary/CIRCE/v3_audit/data/image_hashes.tsv",
+      "--out",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/private_identity_r2",
+      "--workers",
+      "2"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T11:51:02.094392+00:00",
+    "seconds": 522.7287588119507,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/raw_identity_audit_r2.log"
+  },
+  {
+    "label": "r2_unit_tests_rebuild",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:00:11.823710+00:00",
+    "seconds": 1.3211050033569336,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r2_unit_tests_rebuild.log"
+  },
+  {
+    "label": "r2_rebuild_v2",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "-u",
+      "scripts/rebuild_split_protocol.py",
+      "--audit-dir",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/private_identity_r2",
+      "--data-root",
+      "/home/sachin.chaudhary/AAAI/MedForge++",
+      "--workspace",
+      "/home/sachin.chaudhary",
+      "--out",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101",
+      "--extension-out",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r2_20261101",
+      "--workers",
+      "4",
+      "--reuse-mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2_20261101"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:00:13.146260+00:00",
+    "seconds": 90.81431221961975,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r2_rebuild_v2.log"
+  },
+  {
+    "label": "r2_mfclean_build_pools",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "-u",
+      "v3/build_sft_v3.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101",
+      "--out",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101/v3data_v2",
+      "--report",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/reports/mfclean_pool_build.md",
+      "--workers",
+      "4",
+      "--cap",
+      "4",
+      "--cap_edit",
+      "16",
+      "--T",
+      "1.0"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:01:43.961364+00:00",
+    "seconds": 735.1477925777435,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r2_mfclean_build_pools.log"
+  },
+  {
+    "label": "r2_mfclean_selftest_actual_output",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/build_sft_v3.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101",
+      "--out",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101/v3data_v2",
+      "--report",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/reports/mfclean_pool_selftest.md",
+      "--selftest_only"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:13:59.112310+00:00",
+    "seconds": 5.164691925048828,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r2_mfclean_selftest_actual_output.log"
+  },
+  {
+    "label": "r2_mfclean_continuation_eligibility",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "scripts/prepare_continuation_pools.py",
+      "--pools",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101/v3data_v2"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:14:04.277622+00:00",
+    "seconds": 0.725496768951416,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r2_mfclean_continuation_eligibility.log"
+  },
+  {
+    "label": "r2_extension_build_pools",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "-u",
+      "v3/build_sft_v3.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r2_20261101",
+      "--out",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r2_20261101/v3data_v2",
+      "--report",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/reports/extension_pool_build.md",
+      "--workers",
+      "4",
+      "--cap",
+      "4",
+      "--cap_edit",
+      "16",
+      "--T",
+      "1.0"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:14:05.003666+00:00",
+    "seconds": 103.93467092514038,
+    "returncode": 1,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r2_extension_build_pools.log"
+  },
+  {
+    "label": "r3_unit_tests",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:18:01.968712+00:00",
+    "seconds": 0.48942136764526367,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r3_unit_tests.log"
+  },
+  {
+    "label": "r3_stats_selftest",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/stats_v3.py",
+      "--self_test"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:18:02.459719+00:00",
+    "seconds": 2.4329144954681396,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r3_stats_selftest.log"
+  },
+  {
+    "label": "r3_eval_selftest",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/eval_v3.py",
+      "--self_test"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:18:04.893117+00:00",
+    "seconds": 0.33119821548461914,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r3_eval_selftest.log"
+  },
+  {
+    "label": "r3_mfclean_selftest_actual_output",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/build_sft_v3.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101",
+      "--out",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101/v3data_v2",
+      "--report",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/reports/mfclean_pool_selftest_final.md",
+      "--selftest_only"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:18:05.487777+00:00",
+    "seconds": 5.3175225257873535,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r3_mfclean_selftest_actual_output.log"
+  },
+  {
+    "label": "r3_extension_build_pools",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "-u",
+      "v3/build_sft_v3.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r3_20261101",
+      "--out",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r3_20261101/v3data_v2",
+      "--report",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/reports/extension_pool_build_r3.md",
+      "--workers",
+      "4",
+      "--cap",
+      "4",
+      "--cap_edit",
+      "16",
+      "--T",
+      "1.0"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:18:10.805882+00:00",
+    "seconds": 119.36843848228455,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r3_extension_build_pools.log"
+  },
+  {
+    "label": "r3_extension_selftest_actual_output",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/build_sft_v3.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r3_20261101",
+      "--out",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r3_20261101/v3data_v2",
+      "--report",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/reports/extension_pool_selftest_final.md",
+      "--selftest_only"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:20:10.175088+00:00",
+    "seconds": 1.0193581581115723,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r3_extension_selftest_actual_output.log"
+  },
+  {
+    "label": "r3_extension_continuation_eligibility",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "scripts/prepare_continuation_pools.py",
+      "--pools",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r3_20261101/v3data_v2"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:20:11.194994+00:00",
+    "seconds": 0.22653412818908691,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r3_extension_continuation_eligibility.log"
+  },
+  {
+    "label": "r3_stage_exposure_checks",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "-u",
+      "scripts/audit_training_exposure.py",
+      "--data-root",
+      "/home/sachin.chaudhary/AAAI/MedForge++",
+      "--audit-dir",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/private_identity_r2",
+      "--mfclean-new",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101",
+      "--extension-new",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r3_20261101",
+      "--out",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/reports/training_exposure.json"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:20:11.422019+00:00",
+    "seconds": 17.25874400138855,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r3_stage_exposure_checks.log"
+  },
+  {
+    "label": "r3_mfclean_freeze",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/split_protocol.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101",
+      "--freeze",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/split-lock.json"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:20:29.468472+00:00",
+    "seconds": 1.235672950744629,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r3_mfclean_freeze.log"
+  },
+  {
+    "label": "r3_mfclean_verify_lock",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/split_protocol.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101",
+      "--verify-lock",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/split-lock.json"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:20:30.705800+00:00",
+    "seconds": 1.3742377758026123,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r3_mfclean_verify_lock.log"
+  },
+  {
+    "label": "r3_extension_freeze",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/split_protocol.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r3_20261101",
+      "--freeze",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/extension-split-lock.json"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:20:32.082428+00:00",
+    "seconds": 0.2184584140777588,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r3_extension_freeze.log"
+  },
+  {
+    "label": "r3_extension_verify_lock",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/split_protocol.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r3_20261101",
+      "--verify-lock",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/extension-split-lock.json"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:20:32.301805+00:00",
+    "seconds": 0.22500133514404297,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/r3_extension_verify_lock.log"
+  },
+  {
+    "label": "final_stage_exposure_with_consumer_provenance",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "-u",
+      "scripts/audit_training_exposure.py",
+      "--data-root",
+      "/home/sachin.chaudhary/AAAI/MedForge++",
+      "--audit-dir",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/private_identity_r2",
+      "--mfclean-new",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101",
+      "--extension-new",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r3_20261101",
+      "--out",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/reports/training_exposure.json"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:23:12.065437+00:00",
+    "seconds": 16.031130075454712,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/final_stage_exposure_with_consumer_provenance.log"
+  },
+  {
+    "label": "final_mfclean_lock_verify",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/split_protocol.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101",
+      "--verify-lock",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/split-lock.json"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:23:28.097911+00:00",
+    "seconds": 1.4636821746826172,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/final_mfclean_lock_verify.log"
+  },
+  {
+    "label": "final_extension_lock_verify",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/split_protocol.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r3_20261101",
+      "--verify-lock",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/extension-split-lock.json"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:23:29.562172+00:00",
+    "seconds": 0.19277501106262207,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/final_extension_lock_verify.log"
+  },
+  {
+    "label": "final_materialized_pixel_provenance",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "-u",
+      "scripts/verify_rebuilt_artifacts.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101",
+      "--extension",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r3_20261101",
+      "--out",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/reports/materialized_provenance.json",
+      "--workers",
+      "4",
+      "--identities",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/private_identity_r2/identity_records_normalized.jsonl"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:20:51.967411+00:00",
+    "seconds": 267.2327425479889,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/final_materialized_pixel_provenance.log"
+  },
+  {
+    "label": "generate_split_audit_report",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "scripts/report_split_execution.py",
+      "--run",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run",
+      "--data-root",
+      "/home/sachin.chaudhary/AAAI/MedForge++"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:25:32.218527+00:00",
+    "seconds": 4.254636764526367,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/generate_split_audit_report.log"
+  },
+  {
+    "label": "release_unit_tests",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:27:52.321926+00:00",
+    "seconds": 0.6958985328674316,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/release_unit_tests.log"
+  },
+  {
+    "label": "release_mfclean_lock_verify",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/split_protocol.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101",
+      "--verify-lock",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/split-lock.json"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:27:53.021185+00:00",
+    "seconds": 1.0296034812927246,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/release_mfclean_lock_verify.log"
+  },
+  {
+    "label": "release_extension_lock_verify",
+    "command": [
+      "/home/sachin.chaudhary/.conda/envs/aiface/bin/python",
+      "v3/split_protocol.py",
+      "--mfclean",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r3_20261101",
+      "--verify-lock",
+      "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/extension-split-lock.json"
+    ],
+    "cwd": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout",
+    "started_utc": "2026-11-01T12:27:54.051450+00:00",
+    "seconds": 0.16670775413513184,
+    "returncode": 0,
+    "log": "/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/logs/release_extension_lock_verify.log"
+  }
+]

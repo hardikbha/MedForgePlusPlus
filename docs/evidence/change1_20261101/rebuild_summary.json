@@ -1,0 +1,187 @@
+{
+  "extension": {
+    "added_exact_source_reals": 1000,
+    "box_repairs": 15,
+    "evaluation_status": "exploratory; regrouping and a new directory do not erase previous model/developer exposure",
+    "extension_limitations": "No source/format/editor/clinical repair; unknown patient/video identities remain unknown",
+    "historical_rows_moved_between_splits": 0,
+    "historical_rows_preserved": 7800,
+    "image_storage": "References unchanged versioned r2 image copies, verified by materialized SHA256",
+    "missing_ring_policy": "source_delta_no_ring; exactly zero or unavailable change -> none (unknown), never fabricated surrounding contrast",
+    "population": "extension split-only",
+    "protocol_version": "change1-extension-v2r3-20261101",
+    "quarantined_rows": 0,
+    "render_failures": 0,
+    "reused_same_input_renderings": 0,
+    "split_audit": {
+      "counts": {
+        "select": {
+          "groups": 354,
+          "rows": 1110,
+          "types": {
+            "edit": 238,
+            "real": 591,
+            "remove": 281
+          }
+        },
+        "test": {
+          "groups": 877,
+          "rows": 2484,
+          "types": {
+            "edit": 592,
+            "real": 1360,
+            "remove": 532
+          }
+        },
+        "train": {
+          "groups": 1694,
+          "rows": 5206,
+          "types": {
+            "edit": 1170,
+            "real": 2849,
+            "remove": 1187
+          }
+        }
+      },
+      "fake_rows": 4000,
+      "fake_rows_without_twin": 0,
+      "identity_coverage_rows": {
+        "select": {
+          "content_md5": 1110,
+          "duplicate_cluster": 1110,
+          "group": 1110,
+          "input_sha256": 1110,
+          "materialized_sha256": 1110,
+          "orig": 1110,
+          "patient_id": 0,
+          "source_id": 1110,
+          "source_sha256": 1110,
+          "study_id": 0,
+          "video_id": 0,
+          "volume_id": 423
+        },
+        "test": {
+          "content_md5": 2484,
+          "duplicate_cluster": 2484,
+          "group": 2484,
+          "input_sha256": 2484,
+          "materialized_sha256": 2484,
+          "orig": 2484,
+          "patient_id": 0,
+          "source_id": 2484,
+          "source_sha256": 2484,
+          "study_id": 0,
+          "video_id": 0,
+          "volume_id": 761
+        },
+        "train": {
+          "content_md5": 5206,
+          "duplicate_cluster": 5206,
+          "group": 5206,
+          "input_sha256": 5206,
+          "materialized_sha256": 5206,
+          "orig": 5206,
+          "patient_id": 0,
+          "source_id": 5206,
+          "source_sha256": 5206,
+          "study_id": 0,
+          "video_id": 0,
+          "volume_id": 1816
+        }
+      },
+      "scope": "Declared metadata only; raw pixels and unknown patient identities not verified",
+      "status": "PASS"
+    }
+  },
+  "mfclean": {
+    "added_exact_source_reals": 286,
+    "evaluation_status": "exploratory; regrouping and a new directory do not erase previous model/developer exposure",
+    "extension_limitations": null,
+    "historical_rows_moved_between_splits": 4,
+    "historical_rows_preserved": 50256,
+    "population": "historical MF-Clean population plus exact-source twins",
+    "protocol_version": "change1-v2r2-20261101",
+    "quarantined_rows": 0,
+    "render_failures": 0,
+    "reused_same_input_renderings": 50542,
+    "split_audit": {
+      "counts": {
+        "select": {
+          "groups": 525,
+          "rows": 1482,
+          "types": {
+            "edit": 460,
+            "real": 589,
+            "remove": 433
+          }
+        },
+        "test": {
+          "groups": 1007,
+          "rows": 2905,
+          "types": {
+            "edit": 924,
+            "real": 1157,
+            "remove": 824
+          }
+        },
+        "train": {
+          "groups": 11283,
+          "rows": 46155,
+          "types": {
+            "edit": 16826,
+            "real": 12752,
+            "remove": 16577
+          }
+        }
+      },
+      "fake_rows": 36044,
+      "fake_rows_without_twin": 0,
+      "identity_coverage_rows": {
+        "select": {
+          "content_md5": 1482,
+          "duplicate_cluster": 1482,
+          "group": 1482,
+          "input_sha256": 1482,
+          "materialized_sha256": 1482,
+          "orig": 1482,
+          "patient_id": 481,
+          "source_id": 1482,
+          "source_sha256": 1482,
+          "study_id": 0,
+          "video_id": 0,
+          "volume_id": 0
+        },
+        "test": {
+          "content_md5": 2905,
+          "duplicate_cluster": 2905,
+          "group": 2905,
+          "input_sha256": 2905,
+          "materialized_sha256": 2905,
+          "orig": 2905,
+          "patient_id": 1013,
+          "source_id": 2905,
+          "source_sha256": 2905,
+          "study_id": 0,
+          "video_id": 0,
+          "volume_id": 0
+        },
+        "train": {
+          "content_md5": 46155,
+          "duplicate_cluster": 46155,
+          "group": 46155,
+          "input_sha256": 46155,
+          "materialized_sha256": 46155,
+          "orig": 46155,
+          "patient_id": 13426,
+          "source_id": 46155,
+          "source_sha256": 46155,
+          "study_id": 0,
+          "video_id": 0,
+          "volume_id": 0
+        }
+      },
+      "scope": "Declared metadata only; raw pixels and unknown patient identities not verified",
+      "status": "PASS"
+    }
+  }
+}

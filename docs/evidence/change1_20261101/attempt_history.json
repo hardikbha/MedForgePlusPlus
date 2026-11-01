@@ -1,0 +1,37 @@
+[
+  {
+    "attempt": "worker_setup_1",
+    "status": "failed_before_tests",
+    "reason": "git executable missing on compute node"
+  },
+  {
+    "attempt": "worker_setup_2",
+    "status": "failed_before_tests",
+    "reason": "PATH correction could not supply an absent git executable; wrapper subsequently read verified HEAD"
+  },
+  {
+    "attempt": "initial_raw_audit",
+    "status": "intentionally_interrupted_after_complete_census",
+    "reason": "Resume same full-pixel rule with vectorized candidate search; original raw checkpoint preserved"
+  },
+  {
+    "attempt": "first_source_lookup",
+    "status": "superseded_unfrozen",
+    "reason": "Kidney generator normalizes spaces to underscores; all 1,000 source links then recovered and raw files checked"
+  },
+  {
+    "attempt": "source_complete_extension_r2_pool",
+    "status": "failed_preserved",
+    "reason": "No surrounding ring for some full-frame boxes; fixed explicitly in extension v2r3, without deleting images"
+  },
+  {
+    "attempt": "report_wrapper_marker",
+    "status": "failed_after_report_and_memory_generation",
+    "reason": "undefined write_json helper in final snapshot-write line; completed snapshot/marker with json.dumps; data validations unchanged"
+  },
+  {
+    "attempt": "final_v2r2_mfclean_and_v2r3_extension",
+    "status": "passed",
+    "reason": "All final pool, stage, independent raw/materialized provenance and lock checks passed"
+  }
+]

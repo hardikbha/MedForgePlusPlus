@@ -1,0 +1,182 @@
+[
+  {
+    "label": "unit_tests_base",
+    "returncode": 0,
+    "seconds": 1.6809086799621582
+  },
+  {
+    "label": "stats_selftest_base",
+    "returncode": 0,
+    "seconds": 7.498579978942871
+  },
+  {
+    "label": "eval_selftest_base",
+    "returncode": 0,
+    "seconds": 0.27162861824035645
+  },
+  {
+    "label": "historical_declared_split",
+    "returncode": 0,
+    "seconds": 0.5960338115692139
+  },
+  {
+    "label": "historical_v3data_b_selftest",
+    "returncode": 0,
+    "seconds": 17.91291356086731
+  },
+  {
+    "label": "raw_identity_audit",
+    "returncode": -15,
+    "seconds": 1791.8043780326843
+  },
+  {
+    "label": "source_metadata_inventory",
+    "returncode": 0,
+    "seconds": 8.684946775436401
+  },
+  {
+    "label": "raw_identity_audit_resumed",
+    "returncode": 0,
+    "seconds": 269.2137277126312
+  },
+  {
+    "label": "unit_tests_rebuild",
+    "returncode": 0,
+    "seconds": 0.893221378326416
+  },
+  {
+    "label": "raw_identity_audit_r2",
+    "returncode": 0,
+    "seconds": 522.7287588119507
+  },
+  {
+    "label": "r2_unit_tests_rebuild",
+    "returncode": 0,
+    "seconds": 1.3211050033569336
+  },
+  {
+    "label": "r2_rebuild_v2",
+    "returncode": 0,
+    "seconds": 90.81431221961975
+  },
+  {
+    "label": "r2_mfclean_build_pools",
+    "returncode": 0,
+    "seconds": 735.1477925777435
+  },
+  {
+    "label": "r2_mfclean_selftest_actual_output",
+    "returncode": 0,
+    "seconds": 5.164691925048828
+  },
+  {
+    "label": "r2_mfclean_continuation_eligibility",
+    "returncode": 0,
+    "seconds": 0.725496768951416
+  },
+  {
+    "label": "r2_extension_build_pools",
+    "returncode": 1,
+    "seconds": 103.93467092514038
+  },
+  {
+    "label": "r3_unit_tests",
+    "returncode": 0,
+    "seconds": 0.48942136764526367
+  },
+  {
+    "label": "r3_stats_selftest",
+    "returncode": 0,
+    "seconds": 2.4329144954681396
+  },
+  {
+    "label": "r3_eval_selftest",
+    "returncode": 0,
+    "seconds": 0.33119821548461914
+  },
+  {
+    "label": "r3_mfclean_selftest_actual_output",
+    "returncode": 0,
+    "seconds": 5.3175225257873535
+  },
+  {
+    "label": "r3_extension_build_pools",
+    "returncode": 0,
+    "seconds": 119.36843848228455
+  },
+  {
+    "label": "r3_extension_selftest_actual_output",
+    "returncode": 0,
+    "seconds": 1.0193581581115723
+  },
+  {
+    "label": "r3_extension_continuation_eligibility",
+    "returncode": 0,
+    "seconds": 0.22653412818908691
+  },
+  {
+    "label": "r3_stage_exposure_checks",
+    "returncode": 0,
+    "seconds": 17.25874400138855
+  },
+  {
+    "label": "r3_mfclean_freeze",
+    "returncode": 0,
+    "seconds": 1.235672950744629
+  },
+  {
+    "label": "r3_mfclean_verify_lock",
+    "returncode": 0,
+    "seconds": 1.3742377758026123
+  },
+  {
+    "label": "r3_extension_freeze",
+    "returncode": 0,
+    "seconds": 0.2184584140777588
+  },
+  {
+    "label": "r3_extension_verify_lock",
+    "returncode": 0,
+    "seconds": 0.22500133514404297
+  },
+  {
+    "label": "final_stage_exposure_with_consumer_provenance",
+    "returncode": 0,
+    "seconds": 16.031130075454712
+  },
+  {
+    "label": "final_mfclean_lock_verify",
+    "returncode": 0,
+    "seconds": 1.4636821746826172
+  },
+  {
+    "label": "final_extension_lock_verify",
+    "returncode": 0,
+    "seconds": 0.19277501106262207
+  },
+  {
+    "label": "final_materialized_pixel_provenance",
+    "returncode": 0,
+    "seconds": 267.2327425479889
+  },
+  {
+    "label": "generate_split_audit_report",
+    "returncode": 0,
+    "seconds": 4.254636764526367
+  },
+  {
+    "label": "release_unit_tests",
+    "returncode": 0,
+    "seconds": 0.6958985328674316
+  },
+  {
+    "label": "release_mfclean_lock_verify",
+    "returncode": 0,
+    "seconds": 1.0296034812927246
+  },
+  {
+    "label": "release_extension_lock_verify",
+    "returncode": 0,
+    "seconds": 0.16670775413513184
+  }
+]

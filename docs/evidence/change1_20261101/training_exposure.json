@@ -1,0 +1,4631 @@
+{
+  "files": [
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "circe_sft_full.jsonl",
+      "generators": {
+        "lama": 2000,
+        "real": 3800
+      },
+      "groups": 1964,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 5800,
+      "reference_types": {
+        "real": 3800,
+        "remove": 2000
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 3800,
+        "remove": 2000
+      },
+      "unique_image_paths": 5800,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 249,
+          "test": 582
+        },
+        "legacy_extension": {
+          "test": 288
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "circe_sft_v2.jsonl",
+      "generators": {
+        "flux.1-kontext": 2000,
+        "lama": 2000,
+        "real": 3800
+      },
+      "groups": 2925,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 7800,
+      "reference_types": {
+        "edit": 2000,
+        "real": 3800,
+        "remove": 2000
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 2000,
+        "real": 3800,
+        "remove": 2000
+      },
+      "unique_image_paths": 7800,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 354,
+          "test": 877
+        },
+        "legacy_extension": {
+          "test": 383
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "circe_sft_v3.jsonl",
+      "generators": {
+        "flux.1-kontext": 2000,
+        "lama": 2000,
+        "real": 3800
+      },
+      "groups": 2925,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 7800,
+      "reference_types": {
+        "edit": 2000,
+        "real": 3800,
+        "remove": 2000
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 2000,
+        "real": 3800,
+        "remove": 2000
+      },
+      "unique_image_paths": 7800,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 354,
+          "test": 877
+        },
+        "legacy_extension": {
+          "test": 383
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "mf90k_replay.jsonl",
+      "generators": {
+        "flux.1-dev": 43,
+        "gemini": 45,
+        "gpt": 52,
+        "qwen": 42,
+        "real": 226,
+        "stable-diffusion-3.5-large": 60,
+        "stable-diffusion-3.5-medium": 41,
+        "stable-diffusion-inpainting": 43,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 48
+      },
+      "groups": 557,
+      "intentional_or_historical_repeated_references": 670,
+      "reference_rows": 1270,
+      "reference_types": {
+        "edit": 488,
+        "real": 254,
+        "remove": 528
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 182,
+        "real": 226,
+        "remove": 192
+      },
+      "unique_image_paths": 600,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 293,
+          "test": 226
+        },
+        "mfclean": {
+          "select": 54,
+          "test": 139
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "mf90k_train.jsonl",
+      "generators": {
+        "flux.1-dev": 6207,
+        "gemini": 6217,
+        "gpt": 6150,
+        "qwen": 6182,
+        "real": 30749,
+        "stable-diffusion-3.5-large": 6216,
+        "stable-diffusion-3.5-medium": 6184,
+        "stable-diffusion-inpainting": 6117,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 6203
+      },
+      "groups": 24596,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 80225,
+      "reference_types": {
+        "edit": 25306,
+        "real": 30749,
+        "remove": 24170
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 25306,
+        "real": 30749,
+        "remove": 24170
+      },
+      "unique_image_paths": 80225,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 3388,
+          "test": 2160
+        },
+        "mfclean": {
+          "select": 525,
+          "test": 1007
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "mf90k_train_eval600.jsonl",
+      "generators": {
+        "flux.1-dev": 43,
+        "gemini": 45,
+        "gpt": 52,
+        "qwen": 42,
+        "real": 226,
+        "stable-diffusion-3.5-large": 60,
+        "stable-diffusion-3.5-medium": 41,
+        "stable-diffusion-inpainting": 43,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 48
+      },
+      "groups": 557,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 600,
+      "reference_types": {
+        "edit": 182,
+        "real": 226,
+        "remove": 192
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 182,
+        "real": 226,
+        "remove": 192
+      },
+      "unique_image_paths": 600,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 293,
+          "test": 226
+        },
+        "mfclean": {
+          "select": 54,
+          "test": 139
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "historical/root",
+      "file": "mfp_crossmodel_replay.jsonl",
+      "generators": {
+        "flux.1-dev": 3569,
+        "qwen": 3545,
+        "real": 17604,
+        "seeddream": 3432,
+        "stable-diffusion-3.5-large": 3468,
+        "stable-diffusion-inpainting": 3527,
+        "step1x-edit": 3389
+      },
+      "groups": 16297,
+      "intentional_or_historical_repeated_references": 38534,
+      "reference_rows": 77068,
+      "reference_types": {
+        "edit": 21286,
+        "real": 35208,
+        "remove": 20574
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 10643,
+        "real": 17604,
+        "remove": 10287
+      },
+      "unique_image_paths": 38534,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 3417,
+          "test": 1547
+        },
+        "mfclean": {
+          "select": 525,
+          "test": 1006
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "mfp_indomain_replay.jsonl",
+      "generators": {
+        "flux.1-dev": 3569,
+        "gemini": 3647,
+        "gpt": 3458,
+        "qwen": 3545,
+        "real": 17604,
+        "seeddream": 3432,
+        "stable-diffusion-3.5-large": 3468,
+        "stable-diffusion-3.5-medium": 3556,
+        "stable-diffusion-inpainting": 3527,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 3571,
+        "step1x-edit": 3389
+      },
+      "groups": 16305,
+      "intentional_or_historical_repeated_references": 47280,
+      "reference_rows": 100046,
+      "reference_types": {
+        "edit": 30368,
+        "real": 35208,
+        "remove": 34470
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 17927,
+        "real": 17604,
+        "remove": 17235
+      },
+      "unique_image_paths": 52766,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 3419,
+          "test": 1550
+        },
+        "mfclean": {
+          "select": 525,
+          "test": 1007
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 4678,
+      "cf_forbidden_implants": 2339,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "mfp_replay_implant_focus_sft.jsonl",
+      "generators": {
+        "flux.1-dev": 303,
+        "gemini": 353,
+        "gpt": 305,
+        "qwen": 325,
+        "real": 800,
+        "seeddream": 322,
+        "stable-diffusion-3.5-large": 328,
+        "stable-diffusion-3.5-medium": 324,
+        "stable-diffusion-inpainting": 331,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 351,
+        "step1x-edit": 258
+      },
+      "groups": 2020,
+      "intentional_or_historical_repeated_references": 2400,
+      "reference_rows": 6400,
+      "reference_types": {
+        "edit": 4678,
+        "real": 800,
+        "remove": 922
+      },
+      "regime_evidence": "Confirmed CF replay use: mfp_crossforgery_implant_replay_sft_8b.log line 1; circe/audit_protocol.py; circe/build_strict_failure_replay.py",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 2339,
+        "real": 800,
+        "remove": 861
+      },
+      "unique_image_paths": 4000,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1024,
+          "test": 719
+        },
+        "mfclean": {
+          "select": 194,
+          "test": 416
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "mfp_train_crossforgery.jsonl",
+      "generators": {
+        "flux.1-dev": 1756,
+        "gemini": 1780,
+        "gpt": 1696,
+        "qwen": 1761,
+        "real": 17604,
+        "seeddream": 1696,
+        "stable-diffusion-3.5-large": 1701,
+        "stable-diffusion-3.5-medium": 1737,
+        "stable-diffusion-inpainting": 1731,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 1735,
+        "step1x-edit": 1642
+      },
+      "groups": 16142,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 34839,
+      "reference_types": {
+        "real": 17604,
+        "remove": 17235
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 17604,
+        "remove": 17235
+      },
+      "unique_image_paths": 34839,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 3271,
+          "test": 1422
+        },
+        "mfclean": {
+          "select": 500,
+          "test": 950
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "historical/root",
+      "file": "mfp_train_crossmodel.jsonl",
+      "generators": {
+        "flux.1-dev": 3569,
+        "qwen": 3545,
+        "real": 17604,
+        "seeddream": 3432,
+        "stable-diffusion-3.5-large": 3468,
+        "stable-diffusion-inpainting": 3527,
+        "step1x-edit": 3389
+      },
+      "groups": 16297,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 38534,
+      "reference_types": {
+        "edit": 10643,
+        "real": 17604,
+        "remove": 10287
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 10643,
+        "real": 17604,
+        "remove": 10287
+      },
+      "unique_image_paths": 38534,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 3417,
+          "test": 1547
+        },
+        "mfclean": {
+          "select": 525,
+          "test": 1006
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "mfp_train_indomain.jsonl",
+      "generators": {
+        "flux.1-dev": 3569,
+        "gemini": 3647,
+        "gpt": 3458,
+        "qwen": 3545,
+        "real": 17604,
+        "seeddream": 3432,
+        "stable-diffusion-3.5-large": 3468,
+        "stable-diffusion-3.5-medium": 3556,
+        "stable-diffusion-inpainting": 3527,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 3571,
+        "step1x-edit": 3389
+      },
+      "groups": 16305,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 52766,
+      "reference_types": {
+        "edit": 17927,
+        "real": 17604,
+        "remove": 17235
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 17927,
+        "real": 17604,
+        "remove": 17235
+      },
+      "unique_image_paths": 52766,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 3419,
+          "test": 1550
+        },
+        "mfclean": {
+          "select": 525,
+          "test": 1007
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "mfp_v2_replay_crossforgery_strict.jsonl",
+      "generators": {
+        "flux.1-dev": 70,
+        "gemini": 105,
+        "gpt": 75,
+        "qwen": 103,
+        "real": 800,
+        "seeddream": 82,
+        "stable-diffusion-3.5-large": 90,
+        "stable-diffusion-3.5-medium": 79,
+        "stable-diffusion-inpainting": 93,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 103,
+        "step1x-edit": 61
+      },
+      "groups": 1501,
+      "intentional_or_historical_repeated_references": 61,
+      "reference_rows": 1722,
+      "reference_types": {
+        "real": 800,
+        "remove": 922
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 800,
+        "remove": 861
+      },
+      "unique_image_paths": 1661,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 548,
+          "test": 311
+        },
+        "mfclean": {
+          "select": 113,
+          "test": 243
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "mfp_v2_rl_crossforgery_strict.jsonl",
+      "generators": {
+        "flux.1-dev": 1561,
+        "gemini": 1606,
+        "gpt": 1531,
+        "qwen": 1575,
+        "real": 15886,
+        "seeddream": 1510,
+        "stable-diffusion-3.5-large": 1532,
+        "stable-diffusion-3.5-medium": 1570,
+        "stable-diffusion-inpainting": 1560,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 1564,
+        "step1x-edit": 1461
+      },
+      "groups": 14955,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 31356,
+      "reference_types": {
+        "real": 15886,
+        "remove": 15470
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 15886,
+        "remove": 15470
+      },
+      "unique_image_paths": 31356,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 3131,
+          "test": 1384
+        },
+        "mfclean": {
+          "select": 495,
+          "test": 944
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "historical/root",
+      "file": "mfp_v2_rl_crossmodel.jsonl",
+      "generators": {
+        "flux.1-dev": 3242,
+        "qwen": 3189,
+        "real": 15814,
+        "seeddream": 3098,
+        "stable-diffusion-3.5-large": 3135,
+        "stable-diffusion-inpainting": 3165,
+        "step1x-edit": 3038
+      },
+      "groups": 15072,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 34681,
+      "reference_types": {
+        "edit": 9612,
+        "real": 15814,
+        "remove": 9255
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 9612,
+        "real": 15814,
+        "remove": 9255
+      },
+      "unique_image_paths": 34681,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 3306,
+          "test": 1528
+        },
+        "mfclean": {
+          "select": 524,
+          "test": 1004
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "mfp_v2_rl_indomain.jsonl",
+      "generators": {
+        "flux.1-dev": 3224,
+        "gemini": 3311,
+        "gpt": 3139,
+        "qwen": 3195,
+        "real": 15845,
+        "seeddream": 3053,
+        "stable-diffusion-3.5-large": 3126,
+        "stable-diffusion-3.5-medium": 3190,
+        "stable-diffusion-inpainting": 3188,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 3184,
+        "step1x-edit": 3035
+      },
+      "groups": 15113,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 47490,
+      "reference_types": {
+        "edit": 16157,
+        "real": 15845,
+        "remove": 15488
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 16157,
+        "real": 15845,
+        "remove": 15488
+      },
+      "unique_image_paths": 47490,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 2227,
+          "test": 1534
+        },
+        "mfclean": {
+          "select": 525,
+          "test": 1007
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "mfp_v2_train_crossforgery_strict.jsonl",
+      "generators": {
+        "flux.1-dev": 1561,
+        "gemini": 1606,
+        "gpt": 1531,
+        "qwen": 1575,
+        "real": 15886,
+        "seeddream": 1510,
+        "stable-diffusion-3.5-large": 1532,
+        "stable-diffusion-3.5-medium": 1570,
+        "stable-diffusion-inpainting": 1560,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 1564,
+        "step1x-edit": 1461
+      },
+      "groups": 14955,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 31356,
+      "reference_types": {
+        "real": 15886,
+        "remove": 15470
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 15886,
+        "remove": 15470
+      },
+      "unique_image_paths": 31356,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 3131,
+          "test": 1384
+        },
+        "mfclean": {
+          "select": 495,
+          "test": 944
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "historical/root",
+      "file": "mfp_v2_train_crossmodel.jsonl",
+      "generators": {
+        "flux.1-dev": 3242,
+        "qwen": 3189,
+        "real": 15814,
+        "seeddream": 3098,
+        "stable-diffusion-3.5-large": 3135,
+        "stable-diffusion-inpainting": 3165,
+        "step1x-edit": 3038
+      },
+      "groups": 15072,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 34681,
+      "reference_types": {
+        "edit": 9612,
+        "real": 15814,
+        "remove": 9255
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 9612,
+        "real": 15814,
+        "remove": 9255
+      },
+      "unique_image_paths": 34681,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 3306,
+          "test": 1528
+        },
+        "mfclean": {
+          "select": 524,
+          "test": 1004
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "mfp_v2_train_indomain.jsonl",
+      "generators": {
+        "flux.1-dev": 3224,
+        "gemini": 3311,
+        "gpt": 3139,
+        "qwen": 3195,
+        "real": 15845,
+        "seeddream": 3053,
+        "stable-diffusion-3.5-large": 3126,
+        "stable-diffusion-3.5-medium": 3190,
+        "stable-diffusion-inpainting": 3188,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 3184,
+        "step1x-edit": 3035
+      },
+      "groups": 15113,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 47490,
+      "reference_types": {
+        "edit": 16157,
+        "real": 15845,
+        "remove": 15488
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 16157,
+        "real": 15845,
+        "remove": 15488
+      },
+      "unique_image_paths": 47490,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 2227,
+          "test": 1534
+        },
+        "mfclean": {
+          "select": 525,
+          "test": 1007
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "pfplus_replay_removal_focus_sft.jsonl",
+      "generators": {
+        "flux.1-kontext": 1800,
+        "lama": 1800,
+        "real": 3400
+      },
+      "groups": 2695,
+      "intentional_or_historical_repeated_references": 4500,
+      "reference_rows": 11500,
+      "reference_types": {
+        "edit": 1800,
+        "real": 3400,
+        "remove": 6300
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 1800,
+        "real": 3400,
+        "remove": 1800
+      },
+      "unique_image_paths": 7000,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 327,
+          "test": 809
+        },
+        "legacy_extension": {
+          "test": 153
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "pfplus_replay_v2_balanced_sft.jsonl",
+      "generators": {
+        "flux.1-dev": 199,
+        "flux.1-kontext": 1800,
+        "gemini": 231,
+        "gpt": 206,
+        "lama": 1800,
+        "qwen": 213,
+        "real": 3758,
+        "seeddream": 211,
+        "stable-diffusion-3.5-large": 208,
+        "stable-diffusion-3.5-medium": 229,
+        "stable-diffusion-inpainting": 215,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 231,
+        "step1x-edit": 181
+      },
+      "groups": 3950,
+      "intentional_or_historical_repeated_references": 5018,
+      "reference_rows": 14500,
+      "reference_types": {
+        "edit": 3982,
+        "real": 6458,
+        "remove": 4060
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 3475,
+        "real": 3758,
+        "remove": 2249
+      },
+      "unique_image_paths": 9482,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 327,
+          "test": 809
+        },
+        "legacy_extension": {
+          "test": 153
+        },
+        "legacy_original": {
+          "select": 742,
+          "test": 562
+        },
+        "mfclean": {
+          "select": 145,
+          "test": 293
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "raft_cf_a.jsonl",
+      "generators": {
+        "flux.1-dev": 34,
+        "gemini": 32,
+        "gpt": 26,
+        "qwen": 39,
+        "real": 387,
+        "seeddream": 47,
+        "stable-diffusion-3.5-large": 46,
+        "stable-diffusion-3.5-medium": 36,
+        "stable-diffusion-inpainting": 30,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 42,
+        "step1x-edit": 27
+      },
+      "groups": 717,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 746,
+      "reference_types": {
+        "real": 387,
+        "remove": 359
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 387,
+        "remove": 359
+      },
+      "unique_image_paths": 746,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 280,
+          "test": 156
+        },
+        "mfclean": {
+          "select": 63,
+          "test": 107
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "raft_cf_b.jsonl",
+      "generators": {
+        "flux.1-dev": 30,
+        "gemini": 39,
+        "gpt": 39,
+        "qwen": 25,
+        "real": 359,
+        "seeddream": 39,
+        "stable-diffusion-3.5-large": 46,
+        "stable-diffusion-3.5-medium": 48,
+        "stable-diffusion-inpainting": 38,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 38,
+        "step1x-edit": 43
+      },
+      "groups": 711,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 744,
+      "reference_types": {
+        "real": 359,
+        "remove": 385
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 359,
+        "remove": 385
+      },
+      "unique_image_paths": 744,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 301,
+          "test": 157
+        },
+        "mfclean": {
+          "select": 65,
+          "test": 119
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "raft_cf_cs.jsonl",
+      "generators": {
+        "flux.1-dev": 86,
+        "gemini": 82,
+        "gpt": 89,
+        "qwen": 76,
+        "real": 979,
+        "seeddream": 95,
+        "stable-diffusion-3.5-large": 112,
+        "stable-diffusion-3.5-medium": 96,
+        "stable-diffusion-inpainting": 91,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 93,
+        "step1x-edit": 87
+      },
+      "groups": 1697,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 1886,
+      "reference_types": {
+        "real": 979,
+        "remove": 907
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 979,
+        "remove": 907
+      },
+      "unique_image_paths": 1886,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 633,
+          "test": 337
+        },
+        "mfclean": {
+          "select": 142,
+          "test": 264
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "raft_cf_cs_a.jsonl",
+      "generators": {
+        "flux.1-dev": 40,
+        "gemini": 36,
+        "gpt": 35,
+        "qwen": 38,
+        "real": 512,
+        "seeddream": 48,
+        "stable-diffusion-3.5-large": 62,
+        "stable-diffusion-3.5-medium": 51,
+        "stable-diffusion-inpainting": 41,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 48,
+        "step1x-edit": 39
+      },
+      "groups": 905,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 950,
+      "reference_types": {
+        "real": 512,
+        "remove": 438
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 512,
+        "remove": 438
+      },
+      "unique_image_paths": 950,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 347,
+          "test": 185
+        },
+        "mfclean": {
+          "select": 77,
+          "test": 126
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "raft_cf_cs_b.jsonl",
+      "generators": {
+        "flux.1-dev": 46,
+        "gemini": 46,
+        "gpt": 54,
+        "qwen": 38,
+        "real": 467,
+        "seeddream": 47,
+        "stable-diffusion-3.5-large": 50,
+        "stable-diffusion-3.5-medium": 45,
+        "stable-diffusion-inpainting": 50,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 45,
+        "step1x-edit": 48
+      },
+      "groups": 888,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 936,
+      "reference_types": {
+        "real": 467,
+        "remove": 469
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 467,
+        "remove": 469
+      },
+      "unique_image_paths": 936,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 352,
+          "test": 189
+        },
+        "mfclean": {
+          "select": 83,
+          "test": 159
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "raft_crossforgery.jsonl",
+      "generators": {
+        "flux.1-dev": 64,
+        "gemini": 71,
+        "gpt": 65,
+        "qwen": 64,
+        "real": 746,
+        "seeddream": 86,
+        "stable-diffusion-3.5-large": 92,
+        "stable-diffusion-3.5-medium": 84,
+        "stable-diffusion-inpainting": 68,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 80,
+        "step1x-edit": 70
+      },
+      "groups": 1364,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 1490,
+      "reference_types": {
+        "real": 746,
+        "remove": 744
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 746,
+        "remove": 744
+      },
+      "unique_image_paths": 1490,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 537,
+          "test": 285
+        },
+        "mfclean": {
+          "select": 121,
+          "test": 212
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/root",
+      "file": "raft_crossforgery_cs.jsonl",
+      "generators": {
+        "flux.1-dev": 59,
+        "gemini": 49,
+        "gpt": 38,
+        "qwen": 48,
+        "real": 696,
+        "seeddream": 68,
+        "stable-diffusion-3.5-large": 85,
+        "stable-diffusion-3.5-medium": 75,
+        "stable-diffusion-inpainting": 63,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 77,
+        "step1x-edit": 64
+      },
+      "groups": 1224,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 1322,
+      "reference_types": {
+        "real": 696,
+        "remove": 626
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 696,
+        "remove": 626
+      },
+      "unique_image_paths": 1322,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 467,
+          "test": 247
+        },
+        "mfclean": {
+          "select": 104,
+          "test": 175
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "historical/root",
+      "file": "raft_crossmodel.jsonl",
+      "generators": {
+        "flux.1-dev": 85,
+        "qwen": 84,
+        "real": 464,
+        "seeddream": 94,
+        "stable-diffusion-3.5-large": 100,
+        "stable-diffusion-inpainting": 85,
+        "step1x-edit": 85
+      },
+      "groups": 921,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 997,
+      "reference_types": {
+        "edit": 272,
+        "real": 464,
+        "remove": 261
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 272,
+        "real": 464,
+        "remove": 261
+      },
+      "unique_image_paths": 997,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 432,
+          "test": 307
+        },
+        "mfclean": {
+          "select": 76,
+          "test": 158
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "historical/root",
+      "file": "raft_crossmodel_cs.jsonl",
+      "generators": {
+        "flux.1-dev": 119,
+        "qwen": 99,
+        "real": 638,
+        "seeddream": 114,
+        "stable-diffusion-3.5-large": 140,
+        "stable-diffusion-inpainting": 122,
+        "step1x-edit": 122
+      },
+      "groups": 1210,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 1354,
+      "reference_types": {
+        "edit": 369,
+        "real": 638,
+        "remove": 347
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 369,
+        "real": 638,
+        "remove": 347
+      },
+      "unique_image_paths": 1354,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 567,
+          "test": 386
+        },
+        "mfclean": {
+          "select": 107,
+          "test": 186
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/v3data",
+      "file": "rl_cf.jsonl",
+      "generators": {
+        "flux.1-dev": 305,
+        "gemini": 306,
+        "gpt": 302,
+        "qwen": 305,
+        "real": 1053,
+        "seeddream": 296,
+        "stable-diffusion-3.5-large": 304,
+        "stable-diffusion-3.5-medium": 304,
+        "stable-diffusion-inpainting": 300,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 304,
+        "step1x-edit": 291
+      },
+      "groups": 983,
+      "intentional_or_historical_repeated_references": 2718,
+      "reference_rows": 6788,
+      "reference_types": {
+        "real": 3771,
+        "remove": 3017
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 1053,
+        "remove": 3017
+      },
+      "unique_image_paths": 4070,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 227,
+          "test": 123
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "historical/v3data",
+      "file": "rl_cfcm.jsonl",
+      "generators": {
+        "flux.1-dev": 305,
+        "qwen": 305,
+        "real": 749,
+        "seeddream": 296,
+        "stable-diffusion-3.5-large": 304,
+        "stable-diffusion-inpainting": 300,
+        "step1x-edit": 291
+      },
+      "groups": 711,
+      "intentional_or_historical_repeated_references": 1502,
+      "reference_rows": 4052,
+      "reference_types": {
+        "real": 2251,
+        "remove": 1801
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 749,
+        "remove": 1801
+      },
+      "unique_image_paths": 2550,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 198,
+          "test": 111
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "historical/v3data",
+      "file": "rl_cm.jsonl",
+      "generators": {
+        "flux.1-dev": 572,
+        "qwen": 567,
+        "real": 1190,
+        "seeddream": 557,
+        "stable-diffusion-3.5-large": 571,
+        "stable-diffusion-inpainting": 564,
+        "step1x-edit": 553
+      },
+      "groups": 1100,
+      "intentional_or_historical_repeated_references": 3040,
+      "reference_rows": 7614,
+      "reference_types": {
+        "edit": 1583,
+        "real": 4230,
+        "remove": 1801
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 1583,
+        "real": 1190,
+        "remove": 1801
+      },
+      "unique_image_paths": 4574,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 252,
+          "test": 143
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/v3data",
+      "file": "rl_id.jsonl",
+      "generators": {
+        "flux.1-dev": 572,
+        "gemini": 573,
+        "gpt": 564,
+        "qwen": 567,
+        "real": 1759,
+        "seeddream": 557,
+        "stable-diffusion-3.5-large": 571,
+        "stable-diffusion-3.5-medium": 571,
+        "stable-diffusion-inpainting": 564,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 571,
+        "step1x-edit": 553
+      },
+      "groups": 1586,
+      "intentional_or_historical_repeated_references": 5319,
+      "reference_rows": 12741,
+      "reference_types": {
+        "edit": 2646,
+        "real": 7078,
+        "remove": 3017
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 2646,
+        "real": 1759,
+        "remove": 3017
+      },
+      "unique_image_paths": 7422,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 284,
+          "test": 155
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/v3data",
+      "file": "sft_cf.jsonl",
+      "generators": {
+        "flux.1-dev": 519,
+        "gemini": 518,
+        "gpt": 510,
+        "qwen": 526,
+        "real": 10580,
+        "seeddream": 505,
+        "stable-diffusion-3.5-large": 495,
+        "stable-diffusion-3.5-medium": 501,
+        "stable-diffusion-inpainting": 479,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 482,
+        "step1x-edit": 477
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 15592,
+      "reference_types": {
+        "real": 10580,
+        "remove": 5012
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 10580,
+        "remove": 5012
+      },
+      "unique_image_paths": 15592,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "historical/v3data",
+      "file": "sft_cfcm.jsonl",
+      "generators": {
+        "flux.1-dev": 860,
+        "qwen": 868,
+        "real": 10580,
+        "seeddream": 831,
+        "stable-diffusion-3.5-large": 836,
+        "stable-diffusion-inpainting": 808,
+        "step1x-edit": 799
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 15582,
+      "reference_types": {
+        "real": 10580,
+        "remove": 5002
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 10580,
+        "remove": 5002
+      },
+      "unique_image_paths": 15582,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "historical/v3data",
+      "file": "sft_cm.jsonl",
+      "generators": {
+        "flux.1-dev": 1031,
+        "qwen": 1019,
+        "real": 10580,
+        "seeddream": 979,
+        "stable-diffusion-3.5-large": 1011,
+        "stable-diffusion-inpainting": 969,
+        "step1x-edit": 961
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 16550,
+      "reference_types": {
+        "edit": 985,
+        "real": 10580,
+        "remove": 4985
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 985,
+        "real": 10580,
+        "remove": 4985
+      },
+      "unique_image_paths": 16550,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/v3data",
+      "file": "sft_id.jsonl",
+      "generators": {
+        "flux.1-dev": 629,
+        "gemini": 610,
+        "gpt": 611,
+        "qwen": 622,
+        "real": 10580,
+        "seeddream": 590,
+        "stable-diffusion-3.5-large": 594,
+        "stable-diffusion-3.5-medium": 597,
+        "stable-diffusion-inpainting": 570,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 582,
+        "step1x-edit": 575
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 16560,
+      "reference_types": {
+        "edit": 985,
+        "real": 10580,
+        "remove": 4995
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 985,
+        "real": 10580,
+        "remove": 4995
+      },
+      "unique_image_paths": 16560,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/v3data_b",
+      "file": "contsft_cf.jsonl",
+      "generators": {
+        "flux.1-dev": 305,
+        "gemini": 306,
+        "gpt": 302,
+        "qwen": 305,
+        "real": 1053,
+        "seeddream": 296,
+        "stable-diffusion-3.5-large": 304,
+        "stable-diffusion-3.5-medium": 304,
+        "stable-diffusion-inpainting": 300,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 304,
+        "step1x-edit": 291
+      },
+      "groups": 983,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 4070,
+      "reference_types": {
+        "real": 1053,
+        "remove": 3017
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 1053,
+        "remove": 3017
+      },
+      "unique_image_paths": 4070,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 227,
+          "test": 123
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/v3data_b",
+      "file": "contsft_cf_bal.jsonl",
+      "generators": {
+        "flux.1-dev": 305,
+        "gemini": 306,
+        "gpt": 302,
+        "qwen": 305,
+        "real": 1053,
+        "seeddream": 296,
+        "stable-diffusion-3.5-large": 304,
+        "stable-diffusion-3.5-medium": 304,
+        "stable-diffusion-inpainting": 300,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 304,
+        "step1x-edit": 291
+      },
+      "groups": 983,
+      "intentional_or_historical_repeated_references": 2718,
+      "reference_rows": 6788,
+      "reference_types": {
+        "real": 3771,
+        "remove": 3017
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 1053,
+        "remove": 3017
+      },
+      "unique_image_paths": 4070,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 227,
+          "test": 123
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/v3data_b",
+      "file": "rl_cf.jsonl",
+      "generators": {
+        "flux.1-dev": 305,
+        "gemini": 306,
+        "gpt": 302,
+        "qwen": 305,
+        "real": 1053,
+        "seeddream": 296,
+        "stable-diffusion-3.5-large": 304,
+        "stable-diffusion-3.5-medium": 304,
+        "stable-diffusion-inpainting": 300,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 304,
+        "step1x-edit": 291
+      },
+      "groups": 983,
+      "intentional_or_historical_repeated_references": 2718,
+      "reference_rows": 6788,
+      "reference_types": {
+        "real": 3771,
+        "remove": 3017
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 1053,
+        "remove": 3017
+      },
+      "unique_image_paths": 4070,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 227,
+          "test": 123
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "historical/v3data_b",
+      "file": "rl_cfcm.jsonl",
+      "generators": {
+        "flux.1-dev": 305,
+        "qwen": 305,
+        "real": 749,
+        "seeddream": 296,
+        "stable-diffusion-3.5-large": 304,
+        "stable-diffusion-inpainting": 300,
+        "step1x-edit": 291
+      },
+      "groups": 711,
+      "intentional_or_historical_repeated_references": 1502,
+      "reference_rows": 4052,
+      "reference_types": {
+        "real": 2251,
+        "remove": 1801
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 749,
+        "remove": 1801
+      },
+      "unique_image_paths": 2550,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 198,
+          "test": 111
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "historical/v3data_b",
+      "file": "rl_cm.jsonl",
+      "generators": {
+        "flux.1-dev": 572,
+        "qwen": 567,
+        "real": 1190,
+        "seeddream": 557,
+        "stable-diffusion-3.5-large": 571,
+        "stable-diffusion-inpainting": 564,
+        "step1x-edit": 553
+      },
+      "groups": 1100,
+      "intentional_or_historical_repeated_references": 3040,
+      "reference_rows": 7614,
+      "reference_types": {
+        "edit": 1583,
+        "real": 4230,
+        "remove": 1801
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 1583,
+        "real": 1190,
+        "remove": 1801
+      },
+      "unique_image_paths": 4574,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 252,
+          "test": 143
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/v3data_b",
+      "file": "rl_id.jsonl",
+      "generators": {
+        "flux.1-dev": 572,
+        "gemini": 573,
+        "gpt": 564,
+        "qwen": 567,
+        "real": 1759,
+        "seeddream": 557,
+        "stable-diffusion-3.5-large": 571,
+        "stable-diffusion-3.5-medium": 571,
+        "stable-diffusion-inpainting": 564,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 571,
+        "step1x-edit": 553
+      },
+      "groups": 1586,
+      "intentional_or_historical_repeated_references": 5319,
+      "reference_rows": 12741,
+      "reference_types": {
+        "edit": 2646,
+        "real": 7078,
+        "remove": 3017
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 2646,
+        "real": 1759,
+        "remove": 3017
+      },
+      "unique_image_paths": 7422,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 284,
+          "test": 155
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/v3data_b",
+      "file": "sft_cf.jsonl",
+      "generators": {
+        "flux.1-dev": 519,
+        "gemini": 518,
+        "gpt": 510,
+        "qwen": 526,
+        "real": 10580,
+        "seeddream": 505,
+        "stable-diffusion-3.5-large": 495,
+        "stable-diffusion-3.5-medium": 501,
+        "stable-diffusion-inpainting": 479,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 482,
+        "step1x-edit": 477
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 15592,
+      "reference_types": {
+        "real": 10580,
+        "remove": 5012
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 10580,
+        "remove": 5012
+      },
+      "unique_image_paths": 15592,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "historical/v3data_b",
+      "file": "sft_cfcm.jsonl",
+      "generators": {
+        "flux.1-dev": 860,
+        "qwen": 868,
+        "real": 10580,
+        "seeddream": 831,
+        "stable-diffusion-3.5-large": 836,
+        "stable-diffusion-inpainting": 808,
+        "step1x-edit": 799
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 15582,
+      "reference_types": {
+        "real": 10580,
+        "remove": 5002
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "real": 10580,
+        "remove": 5002
+      },
+      "unique_image_paths": 15582,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "historical/v3data_b",
+      "file": "sft_cm.jsonl",
+      "generators": {
+        "flux.1-dev": 1665,
+        "qwen": 1620,
+        "real": 10580,
+        "seeddream": 1582,
+        "stable-diffusion-3.5-large": 1633,
+        "stable-diffusion-inpainting": 1587,
+        "step1x-edit": 1565
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 20232,
+      "reference_types": {
+        "edit": 4650,
+        "real": 10580,
+        "remove": 5002
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 4650,
+        "real": 10580,
+        "remove": 5002
+      },
+      "unique_image_paths": 20232,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "historical/v3data_b",
+      "file": "sft_id.jsonl",
+      "generators": {
+        "flux.1-dev": 1019,
+        "gemini": 1018,
+        "gpt": 993,
+        "qwen": 1009,
+        "real": 10580,
+        "seeddream": 981,
+        "stable-diffusion-3.5-large": 997,
+        "stable-diffusion-3.5-medium": 1000,
+        "stable-diffusion-inpainting": 981,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 980,
+        "step1x-edit": 960
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 20518,
+      "reference_types": {
+        "edit": 4926,
+        "real": 10580,
+        "remove": 5012
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "HISTORICAL_EXPOSURE_RECORDED",
+      "types": {
+        "edit": 4926,
+        "real": 10580,
+        "remove": 5012
+      },
+      "unique_image_paths": 20518,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/mfclean",
+      "file": "contsft_cf.jsonl",
+      "generators": {
+        "flux.1-dev": 305,
+        "gemini": 306,
+        "gpt": 302,
+        "qwen": 305,
+        "real": 1055,
+        "seeddream": 296,
+        "stable-diffusion-3.5-large": 305,
+        "stable-diffusion-3.5-medium": 304,
+        "stable-diffusion-inpainting": 300,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 304,
+        "step1x-edit": 291
+      },
+      "groups": 978,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 4073,
+      "reference_types": {
+        "real": 1055,
+        "remove": 3018
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 1055,
+        "remove": 3018
+      },
+      "unique_image_paths": 4073,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 226,
+          "test": 128
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/mfclean",
+      "file": "contsft_cf_pair_exposure.jsonl",
+      "generators": {
+        "flux.1-dev": 305,
+        "gemini": 306,
+        "gpt": 302,
+        "qwen": 305,
+        "real": 1055,
+        "seeddream": 296,
+        "stable-diffusion-3.5-large": 305,
+        "stable-diffusion-3.5-medium": 304,
+        "stable-diffusion-inpainting": 300,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 304,
+        "step1x-edit": 291
+      },
+      "groups": 978,
+      "intentional_or_historical_repeated_references": 2717,
+      "reference_rows": 6790,
+      "reference_types": {
+        "real": 3772,
+        "remove": 3018
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 1055,
+        "remove": 3018
+      },
+      "unique_image_paths": 4073,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 226,
+          "test": 128
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/mfclean",
+      "file": "contsft_cfcm.jsonl",
+      "generators": {
+        "flux.1-dev": 305,
+        "qwen": 305,
+        "real": 751,
+        "seeddream": 296,
+        "stable-diffusion-3.5-large": 305,
+        "stable-diffusion-inpainting": 300,
+        "step1x-edit": 291
+      },
+      "groups": 702,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 2553,
+      "reference_types": {
+        "real": 751,
+        "remove": 1802
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 751,
+        "remove": 1802
+      },
+      "unique_image_paths": 2553,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 199,
+          "test": 110
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/mfclean",
+      "file": "contsft_cfcm_pair_exposure.jsonl",
+      "generators": {
+        "flux.1-dev": 305,
+        "qwen": 305,
+        "real": 751,
+        "seeddream": 296,
+        "stable-diffusion-3.5-large": 305,
+        "stable-diffusion-inpainting": 300,
+        "step1x-edit": 291
+      },
+      "groups": 702,
+      "intentional_or_historical_repeated_references": 1501,
+      "reference_rows": 4054,
+      "reference_types": {
+        "real": 2252,
+        "remove": 1802
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 751,
+        "remove": 1802
+      },
+      "unique_image_paths": 2553,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 199,
+          "test": 110
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/mfclean",
+      "file": "contsft_cm.jsonl",
+      "generators": {
+        "flux.1-dev": 572,
+        "qwen": 567,
+        "real": 1204,
+        "seeddream": 557,
+        "stable-diffusion-3.5-large": 572,
+        "stable-diffusion-inpainting": 564,
+        "step1x-edit": 553
+      },
+      "groups": 1105,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 4589,
+      "reference_types": {
+        "edit": 1583,
+        "real": 1204,
+        "remove": 1802
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 1583,
+        "real": 1204,
+        "remove": 1802
+      },
+      "unique_image_paths": 4589,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 249,
+          "test": 140
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/mfclean",
+      "file": "contsft_cm_pair_exposure.jsonl",
+      "generators": {
+        "flux.1-dev": 572,
+        "qwen": 567,
+        "real": 1204,
+        "seeddream": 557,
+        "stable-diffusion-3.5-large": 572,
+        "stable-diffusion-inpainting": 564,
+        "step1x-edit": 553
+      },
+      "groups": 1105,
+      "intentional_or_historical_repeated_references": 3027,
+      "reference_rows": 7616,
+      "reference_types": {
+        "edit": 1583,
+        "real": 4231,
+        "remove": 1802
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 1583,
+        "real": 1204,
+        "remove": 1802
+      },
+      "unique_image_paths": 4589,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 249,
+          "test": 140
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/mfclean",
+      "file": "contsft_id.jsonl",
+      "generators": {
+        "flux.1-dev": 572,
+        "gemini": 573,
+        "gpt": 564,
+        "qwen": 567,
+        "real": 1774,
+        "seeddream": 557,
+        "stable-diffusion-3.5-large": 572,
+        "stable-diffusion-3.5-medium": 571,
+        "stable-diffusion-inpainting": 564,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 571,
+        "step1x-edit": 553
+      },
+      "groups": 1588,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 7438,
+      "reference_types": {
+        "edit": 2646,
+        "real": 1774,
+        "remove": 3018
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 2646,
+        "real": 1774,
+        "remove": 3018
+      },
+      "unique_image_paths": 7438,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 277,
+          "test": 158
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/mfclean",
+      "file": "contsft_id_pair_exposure.jsonl",
+      "generators": {
+        "flux.1-dev": 572,
+        "gemini": 573,
+        "gpt": 564,
+        "qwen": 567,
+        "real": 1774,
+        "seeddream": 557,
+        "stable-diffusion-3.5-large": 572,
+        "stable-diffusion-3.5-medium": 571,
+        "stable-diffusion-inpainting": 564,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 571,
+        "step1x-edit": 553
+      },
+      "groups": 1588,
+      "intentional_or_historical_repeated_references": 5306,
+      "reference_rows": 12744,
+      "reference_types": {
+        "edit": 2646,
+        "real": 7080,
+        "remove": 3018
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 2646,
+        "real": 1774,
+        "remove": 3018
+      },
+      "unique_image_paths": 7438,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 277,
+          "test": 158
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/mfclean",
+      "file": "replay_eligible_cf.jsonl",
+      "generators": {
+        "flux.1-dev": 512,
+        "gemini": 512,
+        "gpt": 479,
+        "qwen": 513,
+        "real": 10640,
+        "seeddream": 510,
+        "stable-diffusion-3.5-large": 495,
+        "stable-diffusion-3.5-medium": 503,
+        "stable-diffusion-inpainting": 481,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 533,
+        "step1x-edit": 474
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 15652,
+      "reference_types": {
+        "real": 10640,
+        "remove": 5012
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 10640,
+        "remove": 5012
+      },
+      "unique_image_paths": 15652,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/mfclean",
+      "file": "replay_eligible_cfcm.jsonl",
+      "generators": {
+        "flux.1-dev": 852,
+        "qwen": 849,
+        "real": 10640,
+        "seeddream": 838,
+        "stable-diffusion-3.5-large": 865,
+        "stable-diffusion-inpainting": 803,
+        "step1x-edit": 795
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 15642,
+      "reference_types": {
+        "real": 10640,
+        "remove": 5002
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 10640,
+        "remove": 5002
+      },
+      "unique_image_paths": 15642,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/mfclean",
+      "file": "replay_eligible_cm.jsonl",
+      "generators": {
+        "flux.1-dev": 1509,
+        "qwen": 1479,
+        "real": 10640,
+        "seeddream": 1456,
+        "stable-diffusion-3.5-large": 1533,
+        "stable-diffusion-inpainting": 1451,
+        "step1x-edit": 1439
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 19507,
+      "reference_types": {
+        "edit": 3870,
+        "real": 10640,
+        "remove": 4997
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 3870,
+        "real": 10640,
+        "remove": 4997
+      },
+      "unique_image_paths": 19507,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/mfclean",
+      "file": "replay_eligible_id.jsonl",
+      "generators": {
+        "flux.1-dev": 905,
+        "gemini": 913,
+        "gpt": 860,
+        "qwen": 903,
+        "real": 10640,
+        "seeddream": 880,
+        "stable-diffusion-3.5-large": 905,
+        "stable-diffusion-3.5-medium": 892,
+        "stable-diffusion-inpainting": 874,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 936,
+        "step1x-edit": 882
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 19590,
+      "reference_types": {
+        "edit": 3943,
+        "real": 10640,
+        "remove": 5007
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 3943,
+        "real": 10640,
+        "remove": 5007
+      },
+      "unique_image_paths": 19590,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/mfclean",
+      "file": "rl_cf.jsonl",
+      "generators": {
+        "flux.1-dev": 305,
+        "gemini": 306,
+        "gpt": 302,
+        "qwen": 305,
+        "real": 1055,
+        "seeddream": 296,
+        "stable-diffusion-3.5-large": 305,
+        "stable-diffusion-3.5-medium": 304,
+        "stable-diffusion-inpainting": 300,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 304,
+        "step1x-edit": 291
+      },
+      "groups": 978,
+      "intentional_or_historical_repeated_references": 2717,
+      "reference_rows": 6790,
+      "reference_types": {
+        "real": 3772,
+        "remove": 3018
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 1055,
+        "remove": 3018
+      },
+      "unique_image_paths": 4073,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 226,
+          "test": 128
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/mfclean",
+      "file": "rl_cfcm.jsonl",
+      "generators": {
+        "flux.1-dev": 305,
+        "qwen": 305,
+        "real": 751,
+        "seeddream": 296,
+        "stable-diffusion-3.5-large": 305,
+        "stable-diffusion-inpainting": 300,
+        "step1x-edit": 291
+      },
+      "groups": 702,
+      "intentional_or_historical_repeated_references": 1501,
+      "reference_rows": 4054,
+      "reference_types": {
+        "real": 2252,
+        "remove": 1802
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 751,
+        "remove": 1802
+      },
+      "unique_image_paths": 2553,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 199,
+          "test": 110
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/mfclean",
+      "file": "rl_cm.jsonl",
+      "generators": {
+        "flux.1-dev": 572,
+        "qwen": 567,
+        "real": 1204,
+        "seeddream": 557,
+        "stable-diffusion-3.5-large": 572,
+        "stable-diffusion-inpainting": 564,
+        "step1x-edit": 553
+      },
+      "groups": 1105,
+      "intentional_or_historical_repeated_references": 3027,
+      "reference_rows": 7616,
+      "reference_types": {
+        "edit": 1583,
+        "real": 4231,
+        "remove": 1802
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 1583,
+        "real": 1204,
+        "remove": 1802
+      },
+      "unique_image_paths": 4589,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 249,
+          "test": 140
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/mfclean",
+      "file": "rl_id.jsonl",
+      "generators": {
+        "flux.1-dev": 572,
+        "gemini": 573,
+        "gpt": 564,
+        "qwen": 567,
+        "real": 1774,
+        "seeddream": 557,
+        "stable-diffusion-3.5-large": 572,
+        "stable-diffusion-3.5-medium": 571,
+        "stable-diffusion-inpainting": 564,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 571,
+        "step1x-edit": 553
+      },
+      "groups": 1588,
+      "intentional_or_historical_repeated_references": 5306,
+      "reference_rows": 12744,
+      "reference_types": {
+        "edit": 2646,
+        "real": 7080,
+        "remove": 3018
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 2646,
+        "real": 1774,
+        "remove": 3018
+      },
+      "unique_image_paths": 7438,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 277,
+          "test": 158
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/mfclean",
+      "file": "sft_cf.jsonl",
+      "generators": {
+        "flux.1-dev": 512,
+        "gemini": 512,
+        "gpt": 479,
+        "qwen": 513,
+        "real": 10640,
+        "seeddream": 510,
+        "stable-diffusion-3.5-large": 495,
+        "stable-diffusion-3.5-medium": 503,
+        "stable-diffusion-inpainting": 481,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 533,
+        "step1x-edit": 474
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 15652,
+      "reference_types": {
+        "real": 10640,
+        "remove": 5012
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 10640,
+        "remove": 5012
+      },
+      "unique_image_paths": 15652,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/mfclean",
+      "file": "sft_cfcm.jsonl",
+      "generators": {
+        "flux.1-dev": 852,
+        "qwen": 849,
+        "real": 10640,
+        "seeddream": 838,
+        "stable-diffusion-3.5-large": 865,
+        "stable-diffusion-inpainting": 803,
+        "step1x-edit": 795
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 15642,
+      "reference_types": {
+        "real": 10640,
+        "remove": 5002
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 10640,
+        "remove": 5002
+      },
+      "unique_image_paths": 15642,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/mfclean",
+      "file": "sft_cm.jsonl",
+      "generators": {
+        "flux.1-dev": 1509,
+        "qwen": 1479,
+        "real": 10640,
+        "seeddream": 1456,
+        "stable-diffusion-3.5-large": 1533,
+        "stable-diffusion-inpainting": 1451,
+        "step1x-edit": 1439
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 19507,
+      "reference_types": {
+        "edit": 3870,
+        "real": 10640,
+        "remove": 4997
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 3870,
+        "real": 10640,
+        "remove": 4997
+      },
+      "unique_image_paths": 19507,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/mfclean",
+      "file": "sft_id.jsonl",
+      "generators": {
+        "flux.1-dev": 905,
+        "gemini": 913,
+        "gpt": 860,
+        "qwen": 903,
+        "real": 10640,
+        "seeddream": 880,
+        "stable-diffusion-3.5-large": 905,
+        "stable-diffusion-3.5-medium": 892,
+        "stable-diffusion-inpainting": 874,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 936,
+        "step1x-edit": 882
+      },
+      "groups": 9416,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 19590,
+      "reference_types": {
+        "edit": 3943,
+        "real": 10640,
+        "remove": 5007
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 3943,
+        "real": 10640,
+        "remove": 5007
+      },
+      "unique_image_paths": 19590,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 0
+        },
+        "legacy_original": {
+          "select": 1356,
+          "test": 903
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/extension",
+      "file": "contsft_cf.jsonl",
+      "generators": {
+        "lama": 204,
+        "real": 255
+      },
+      "groups": 163,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 459,
+      "reference_types": {
+        "real": 255,
+        "remove": 204
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 255,
+        "remove": 204
+      },
+      "unique_image_paths": 459,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 24
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/extension",
+      "file": "contsft_cf_pair_exposure.jsonl",
+      "generators": {
+        "lama": 204,
+        "real": 255
+      },
+      "groups": 163,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 459,
+      "reference_types": {
+        "real": 255,
+        "remove": 204
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 255,
+        "remove": 204
+      },
+      "unique_image_paths": 459,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 24
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/extension",
+      "file": "contsft_cfcm.jsonl",
+      "generators": {
+        "lama": 204,
+        "real": 255
+      },
+      "groups": 163,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 459,
+      "reference_types": {
+        "real": 255,
+        "remove": 204
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 255,
+        "remove": 204
+      },
+      "unique_image_paths": 459,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 24
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/extension",
+      "file": "contsft_cfcm_pair_exposure.jsonl",
+      "generators": {
+        "lama": 204,
+        "real": 255
+      },
+      "groups": 163,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 459,
+      "reference_types": {
+        "real": 255,
+        "remove": 204
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 255,
+        "remove": 204
+      },
+      "unique_image_paths": 459,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 24
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/extension",
+      "file": "contsft_cm.jsonl",
+      "generators": {
+        "flux.1-kontext": 185,
+        "lama": 204,
+        "real": 388
+      },
+      "groups": 252,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 777,
+      "reference_types": {
+        "edit": 185,
+        "real": 388,
+        "remove": 204
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 185,
+        "real": 388,
+        "remove": 204
+      },
+      "unique_image_paths": 777,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 35
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/extension",
+      "file": "contsft_cm_pair_exposure.jsonl",
+      "generators": {
+        "flux.1-kontext": 185,
+        "lama": 204,
+        "real": 388
+      },
+      "groups": 252,
+      "intentional_or_historical_repeated_references": 98,
+      "reference_rows": 875,
+      "reference_types": {
+        "edit": 185,
+        "real": 486,
+        "remove": 204
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 185,
+        "real": 388,
+        "remove": 204
+      },
+      "unique_image_paths": 777,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 35
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/extension",
+      "file": "contsft_id.jsonl",
+      "generators": {
+        "flux.1-kontext": 185,
+        "lama": 204,
+        "real": 388
+      },
+      "groups": 252,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 777,
+      "reference_types": {
+        "edit": 185,
+        "real": 388,
+        "remove": 204
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 185,
+        "real": 388,
+        "remove": 204
+      },
+      "unique_image_paths": 777,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 35
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/extension",
+      "file": "contsft_id_pair_exposure.jsonl",
+      "generators": {
+        "flux.1-kontext": 185,
+        "lama": 204,
+        "real": 388
+      },
+      "groups": 252,
+      "intentional_or_historical_repeated_references": 98,
+      "reference_rows": 875,
+      "reference_types": {
+        "edit": 185,
+        "real": 486,
+        "remove": 204
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 185,
+        "real": 388,
+        "remove": 204
+      },
+      "unique_image_paths": 777,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 35
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/extension",
+      "file": "replay_eligible_cf.jsonl",
+      "generators": {
+        "lama": 842,
+        "real": 2376
+      },
+      "groups": 1423,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 3218,
+      "reference_types": {
+        "real": 2376,
+        "remove": 842
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 2376,
+        "remove": 842
+      },
+      "unique_image_paths": 3218,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 182
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/extension",
+      "file": "replay_eligible_cfcm.jsonl",
+      "generators": {
+        "lama": 842,
+        "real": 2376
+      },
+      "groups": 1423,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 3218,
+      "reference_types": {
+        "real": 2376,
+        "remove": 842
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 2376,
+        "remove": 842
+      },
+      "unique_image_paths": 3218,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 182
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/extension",
+      "file": "replay_eligible_cm.jsonl",
+      "generators": {
+        "flux.1-kontext": 985,
+        "lama": 842,
+        "real": 2376
+      },
+      "groups": 1423,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 4203,
+      "reference_types": {
+        "edit": 985,
+        "real": 2376,
+        "remove": 842
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 985,
+        "real": 2376,
+        "remove": 842
+      },
+      "unique_image_paths": 4203,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 182
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/extension",
+      "file": "replay_eligible_id.jsonl",
+      "generators": {
+        "flux.1-kontext": 985,
+        "lama": 842,
+        "real": 2376
+      },
+      "groups": 1423,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 4203,
+      "reference_types": {
+        "edit": 985,
+        "real": 2376,
+        "remove": 842
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 985,
+        "real": 2376,
+        "remove": 842
+      },
+      "unique_image_paths": 4203,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 182
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/extension",
+      "file": "rl_cf.jsonl",
+      "generators": {
+        "lama": 204,
+        "real": 255
+      },
+      "groups": 163,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 459,
+      "reference_types": {
+        "real": 255,
+        "remove": 204
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 255,
+        "remove": 204
+      },
+      "unique_image_paths": 459,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 24
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/extension",
+      "file": "rl_cfcm.jsonl",
+      "generators": {
+        "lama": 204,
+        "real": 255
+      },
+      "groups": 163,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 459,
+      "reference_types": {
+        "real": 255,
+        "remove": 204
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 255,
+        "remove": 204
+      },
+      "unique_image_paths": 459,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 24
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/extension",
+      "file": "rl_cm.jsonl",
+      "generators": {
+        "flux.1-kontext": 185,
+        "lama": 204,
+        "real": 388
+      },
+      "groups": 252,
+      "intentional_or_historical_repeated_references": 98,
+      "reference_rows": 875,
+      "reference_types": {
+        "edit": 185,
+        "real": 486,
+        "remove": 204
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 185,
+        "real": 388,
+        "remove": 204
+      },
+      "unique_image_paths": 777,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 35
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/extension",
+      "file": "rl_id.jsonl",
+      "generators": {
+        "flux.1-kontext": 185,
+        "lama": 204,
+        "real": 388
+      },
+      "groups": 252,
+      "intentional_or_historical_repeated_references": 98,
+      "reference_rows": 875,
+      "reference_types": {
+        "edit": 185,
+        "real": 486,
+        "remove": 204
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 185,
+        "real": 388,
+        "remove": 204
+      },
+      "unique_image_paths": 777,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 35
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/extension",
+      "file": "sft_cf.jsonl",
+      "generators": {
+        "lama": 842,
+        "real": 2376
+      },
+      "groups": 1423,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 3218,
+      "reference_types": {
+        "real": 2376,
+        "remove": 842
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 2376,
+        "remove": 842
+      },
+      "unique_image_paths": 3218,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 182
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": 0,
+      "cf_forbidden_implants": 0,
+      "cf_implant_exclusions_applicable": true,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/extension",
+      "file": "sft_cfcm.jsonl",
+      "generators": {
+        "lama": 842,
+        "real": 2376
+      },
+      "groups": 1423,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 3218,
+      "reference_types": {
+        "real": 2376,
+        "remove": 842
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "real": 2376,
+        "remove": 842
+      },
+      "unique_image_paths": 3218,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 182
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": true,
+      "cm_forbidden_editors": 0,
+      "family": "new/extension",
+      "file": "sft_cm.jsonl",
+      "generators": {
+        "flux.1-kontext": 985,
+        "lama": 842,
+        "real": 2376
+      },
+      "groups": 1423,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 4203,
+      "reference_types": {
+        "edit": 985,
+        "real": 2376,
+        "remove": 842
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 985,
+        "real": 2376,
+        "remove": 842
+      },
+      "unique_image_paths": 4203,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 182
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    },
+    {
+      "cf_forbidden_implant_reference_rows": null,
+      "cf_forbidden_implants": null,
+      "cf_implant_exclusions_applicable": false,
+      "cm_editor_exclusions_applicable": false,
+      "cm_forbidden_editors": null,
+      "family": "new/extension",
+      "file": "sft_id.jsonl",
+      "generators": {
+        "flux.1-kontext": 985,
+        "lama": 842,
+        "real": 2376
+      },
+      "groups": 1423,
+      "intentional_or_historical_repeated_references": 0,
+      "reference_rows": 4203,
+      "reference_types": {
+        "edit": 985,
+        "real": 2376,
+        "remove": 842
+      },
+      "regime_evidence": "manifest filename only; no claim that a checkpoint consumed this candidate",
+      "status": "PASS",
+      "types": {
+        "edit": 985,
+        "real": 2376,
+        "remove": 842
+      },
+      "unique_image_paths": 4203,
+      "unresolved_paths": 0,
+      "validation_test_component_exposure": {
+        "extension": {
+          "select": 0,
+          "test": 0
+        },
+        "legacy_extension": {
+          "test": 182
+        },
+        "legacy_original": {
+          "select": 0,
+          "test": 0
+        },
+        "mfclean": {
+          "select": 0,
+          "test": 0
+        }
+      }
+    }
+  ],
+  "historical_test_exposure_warning": "Old checkpoints and public test results remain historically exposed; initialize a new baseline from the base pretrained model.",
+  "new_stage_failures": 0,
+  "schema": "stage-exposure-audit-v2",
+  "scope": "Candidate manifests; consuming checkpoints not retrospectively certified",
+  "sft_rl_separation": [
+    {
+      "family": "historical/v3data",
+      "regime": "id",
+      "sft_rl_group_overlap": 0
+    },
+    {
+      "family": "historical/v3data",
+      "regime": "cf",
+      "sft_rl_group_overlap": 0
+    },
+    {
+      "family": "historical/v3data",
+      "regime": "cm",
+      "sft_rl_group_overlap": 0
+    },
+    {
+      "family": "historical/v3data",
+      "regime": "cfcm",
+      "sft_rl_group_overlap": 0
+    },
+    {
+      "family": "historical/v3data_b",
+      "regime": "id",
+      "sft_rl_group_overlap": 0
+    },
+    {
+      "family": "historical/v3data_b",
+      "regime": "cf",
+      "sft_rl_group_overlap": 0
+    },
+    {
+      "family": "historical/v3data_b",
+      "regime": "cm",
+      "sft_rl_group_overlap": 0
+    },
+    {
+      "family": "historical/v3data_b",
+      "regime": "cfcm",
+      "sft_rl_group_overlap": 0
+    },
+    {
+      "family": "new/mfclean",
+      "regime": "id",
+      "sft_rl_group_overlap": 0
+    },
+    {
+      "family": "new/mfclean",
+      "regime": "cf",
+      "sft_rl_group_overlap": 0
+    },
+    {
+      "family": "new/mfclean",
+      "regime": "cm",
+      "sft_rl_group_overlap": 0
+    },
+    {
+      "family": "new/mfclean",
+      "regime": "cfcm",
+      "sft_rl_group_overlap": 0
+    },
+    {
+      "family": "new/extension",
+      "regime": "id",
+      "sft_rl_group_overlap": 0
+    },
+    {
+      "family": "new/extension",
+      "regime": "cf",
+      "sft_rl_group_overlap": 0
+    },
+    {
+      "family": "new/extension",
+      "regime": "cm",
+      "sft_rl_group_overlap": 0
+    },
+    {
+      "family": "new/extension",
+      "regime": "cfcm",
+      "sft_rl_group_overlap": 0
+    }
+  ]
+}

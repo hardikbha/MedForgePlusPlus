@@ -70,3 +70,9 @@ latexmk -pdf supplementary.tex
 ```
 
 The existing PDFs are supplied for historical supervisor review. A complete scientific rewrite and current CVPR template/policy check are still required before submission. No author identities, citation metadata, conference acceptance or arXiv identifier have been invented for this release.
+
+## Private Change 1 execution
+
+See [the execution report](../SPLIT_AUDIT_REPORT.md) for actual paths, package versions, command outcomes and frozen artifacts. The raw-source checkpoint can be recreated with `scripts/private_split_audit.py --census-only`, then completed with `scripts/resume_identity_audit.py`. Both require the documented private input roots and a fresh output directory. `scripts/rebuild_split_protocol.py` forms versioned connected-component splits and exact-source twins; `scripts/prepare_continuation_pools.py` exports alternative unique/pair-exposure continuation controls and replay eligibility. `scripts/audit_training_exposure.py` checks pools against actual reconstructed identities and distinguishes a confirmed historical CF consumer from filename-only regime inference. `scripts/verify_rebuilt_artifacts.py` independently checks actual final image hashes/pixels, raw provenance and twins. Keep all row-level outputs private.
+
+The split-only extension keeps original encoding and authentic source copies, so its replica check compares exact source bytes, not MF-Clean JPEG reconstruction. Full-frame boxes with unavailable contrast rings use source delta or explicit unknown intensity; clipping decisions preserve original box annotations in the private v2r3 manifests. These rules do not establish clinical validity. A prepared baseline wrapper is recorded privately and was not executed.

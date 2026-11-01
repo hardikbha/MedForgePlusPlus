@@ -10,9 +10,33 @@ The historical Bridge paper is **not submission-ready**. Its major problems are 
 
 The user requested: an independent technical review of the repository and PDFs; interpretation of the actual AAAI reviews; a basic experiment with results; a priority-ordered improvement plan; publishing that work to GitHub; and starting Change 1 (train/selection/test integrity). The latest request additionally requires comprehensive, evolving project memory. The requested actions and remaining work are preserved here.
 
-Change 1 now has code checks, tests and a [protocol](SPLIT_PROTOCOL.md). **The private-data rebuild, final split freeze, retraining and new test inference are not complete.** Public predictions permit rescoring, not reconstruction of source provenance. Access to the private data host/manifests is the next execution dependency. The configured GitHub accounts lack upstream write permission; publication uses a fork/PR rather than claiming upstream main was changed.
+Change 1 has now been executed on the private data host: raw identity reconstruction, versioned split rebuilds, regenerated pools and split/pool freeze/verification are complete for available identities. **The overall issue remains partially resolved:** unknown patient/video identities, historical test exposure, prospective retraining and confirmatory evaluation remain open. The execution below supersedes earlier statements that access to private data was pending. Historical publication-account limitations describe the earlier session only.
 
 Publication milestone: implementation commit `3e564fa` is pushed on [`hardiksharma6555/MedForgePlusPlus:fix/split-protocol`](https://github.com/hardiksharma6555/MedForgePlusPlus/tree/fix/split-protocol), with [draft upstream PR #1](https://github.com/hardikbha/MedForgePlusPlus/pull/1). It was not merged by this session. GitHub fork creation initially hit transport errors; retrying with HTTP/2 disabled succeeded. The local working repository is `MedForgePlusPlus/` beneath the user's `fairness_cvpr` workspace.
+
+## Change 1 private-data execution — 2026-11-01
+
+**Status: partially resolved.** The private-data split/pool repair was executed from requested commit `fd894354bebc50595a6d7206058eea84a61997d0` in an isolated checkout. See [SPLIT_AUDIT_REPORT.md](../SPLIT_AUDIT_REPORT.md) and [aggregate evidence](evidence/change1_20261101/). No model training, alpha tuning, checkpoint selection or new model-performance evaluation occurred.
+
+- Rehashed and decoded **154,043** raw/source/historical-materialized image files. Existing raw census checksums matched for all 102,787 previously censused images. **3,870** near-duplicate links passed the full-pixel rule; **two** reconstructed components crossed historical MF-Clean partitions despite a declared-metadata PASS.
+- Preserved all **50,256** historical MF-Clean rows, merged whole connected identity components, added **286** exact-source real images, and moved **four** historical rows between partitions. New counts: **46,155 train / 1,482 validation / 2,905 test**. Every fake has an exact mapping-source twin; no arbitrary test-row deletion or row exclusion was used.
+- Kidney/colon were rebuilt separately: all **7,800** original extension rows plus **1,000** authentic kidney insertion sources. New counts: **5,206 train / 1,110 validation / 2,484 test**. KiTS IDs are case/volume fields; patient/study/video fields remain unknown. MF-Clean still covers only the original organs.
+- All **800/800** historical extension evaluation images remain recorded as training-exposed. Regrouping and new file paths do not make an untouched test set. Both new protocols explicitly label evaluation as exploratory/historically exposed.
+- The initial kidney-source lookup missed the generator's documented space-to-underscore conversion. It was corrected; the 1,000 authentic sources were actually rehashed/decoded and linked. Prior attempts are preserved. The source-complete extension pool build then failed on missing surrounding rings; final extension **v2r3** clips 15 declared grid-boundary boxes while retaining original annotations and all rows, and uses source delta or explicit unknown evidence when no ring exists.
+- **21** final regression tests passed. Scorer/evaluator CPU self-tests passed; the absent private legacy-resolver cache branch was explicitly skipped. Historical `v3data_b` and both regenerated actual-output pools passed their self-tests. New CF/CM exclusions, SFT/RL separation and validation/test exposure checks passed across the regenerated inventories.
+- **88** historical/new candidate stage files were audited. Historical consumer evidence confirms the old CF replay file has **4,678 implant references / 2,339 unique implants**. A file inventory is not by itself proof that every historical checkpoint consumed that file; the confirmed replay log is distinguished from other candidate manifests.
+- Split locks were frozen/verified after provenance and pool gates, and a SHA-256 pool lock was saved. An independent post-freeze verification re-read every final image and checked hashes, decoded content, raw identity components and exact twins. Complete identifiers, raw images, row transitions, logs and full manifests remain private; aggregate reports and code are shareable.
+
+Private execution paths:
+
+- mfclean: `/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/mfclean_change1_v2r2_20261101`
+- extension: `/home/sachin.chaudhary/medforge_change1_20261101T111042Z/data/extension_split_v2r3_20261101`
+- run: `/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run`
+- checkout: `/home/sachin.chaudhary/medforge_change1_20261101T111042Z/checkout`
+
+Next runnable baseline wrapper (prepared, **not executed**): `/home/sachin.chaudhary/medforge_change1_20261101T111042Z/run/next_baseline.sh`, inside an authorized GPU allocation. It verifies the split and pool locks and initializes a fresh CF SFT baseline from the pretrained base model. Do not reuse historical adapters as clean evidence. The complete balanced-continuation recipe now distinguishes unique-image controls from pair-exposure controls; no method gain is established by producing those files.
+
+Remaining blockers: unavailable original-organ patient/study IDs and extension patient/video linkage; an independent confirmatory population after historical inspection; extension source/format/editor confounds and clinical QC; prospective base-initialized training and validation-only selection. Source/duplicate separation is repaired for reconstructed identities, not universally certified patient independence.
 
 ## Names and attribution
 

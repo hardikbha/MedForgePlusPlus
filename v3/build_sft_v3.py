@@ -201,6 +201,16 @@ def replica_check(job):
 def intensity_of(st, typ, T, clean_ring=False):
     """-> (label, rule). rule in {mean, ring, contrast, fake_only}."""
     fr = st["fring_c"] if clean_ring else st["fring"]
+    tr = st.get("tring_c") if clean_ring else st.get("tring")
+    if fr is None or ("tin" in st and tr is None):
+        # A full-frame/border-touching edit can leave no surrounding ring.
+        # Retain the example; use measured pre/post intensity change when present.
+        # An exactly zero change or missing source gives unknown evidence, not a
+        # fabricated surrounding-contrast or lesion-removal assertion.
+        delta = st["fin"] - st["tin"] if "tin" in st else None
+        if delta is None or delta == 0:
+            return "none", "unavailable_ring_unknown"
+        return ("brighter" if delta > 0 else "darker"), "source_delta_no_ring"
     if "tin" not in st:                                        # no twin: fake-only statistics
         c = st["fin"] - fr
         if typ == "edit":
@@ -408,7 +418,7 @@ def selftest(out, mfclean, log):
                 exp = {"type": TYPE_WORD[r["type"]], "location": location_of(b), "size": size_of(b),
                        "intensity": ev_int.get(img)}
                 check_target(m[2]["content"], "deepfake", b, exp)
-                if fl["intensity"] not in ("brighter", "darker", "flattened"):
+                if fl["intensity"] not in ("brighter", "darker", "flattened", "none"):
                     schema_ok = False
             n_edit += r["type"] == "edit"
             n_cmgen += r["gen"] in CM_HOLDOUT
@@ -557,6 +567,12 @@ def main():
     fk = [r for r in allrows if r["type"] != "real" and r.get("box")]
 
     def src_of(r):  # authentic source the composite was built from (dataset_mapping real_image_path)
+        declared = r.get("source_id", "")
+        for prefix in ("extension:", "medforge90k:"):
+            if declared.startswith(prefix):
+                path = declared[len(prefix):]
+                if os.path.isabs(path) and os.path.isfile(path):
+                    return path
         it = mp.get(r.get("orig", "").split("/medforge90k_full/", 1)[-1])
         return MF + it["real_image_path"] if it and os.path.exists(MF + it["real_image_path"]) else None
 
@@ -581,8 +597,16 @@ def main():
     tw_rows = sorted((r for r in fk if r.get("twin") and r["split"] == "train"), key=lambda r: h("rep-v1:" + r["image"]))
     rep_jobs = [(r["twin"], row_of.get(r["twin"], {}).get("orig"), src_of(r), r["organ"])
                 for r in tw_rows[:args.replica_n]]
-    with ProcessPoolExecutor(args.workers) as ex:
-        rep = list(ex.map(replica_check, rep_jobs, chunksize=4))
+    if stats_json.get("population") == "extension split-only":
+        # Split-only extension images retain their original encoding. They are
+        # copies, not MF-Clean q90 renders; test exact authentic file provenance.
+        rep = [(bool(torig and open(twin, "rb").read() == open(torig, "rb").read()),
+                bool(fsrc and open(twin, "rb").read() == open(fsrc, "rb").read()))
+               for twin, torig, fsrc, organ in rep_jobs]
+        log("[replica] extension source-copy mode: compare exact source bytes; JPEG reconstruction not applicable")
+    else:
+        with ProcessPoolExecutor(args.workers) as ex:
+            rep = list(ex.map(replica_check, rep_jobs, chunksize=4))
     rep_twin = sum(1 for x in rep if x[0]); rep_src = sum(1 for x in rep if x[1])
     log(f"[replica] re-encode(twin's own original) == materialised twin: {rep_twin}/{len(rep)}; "
         f"re-encode(fake's mapping source) == materialised twin: {rep_src}/{len(rep)}")
@@ -601,9 +625,11 @@ def main():
         T, curve, dvec, pvec = choose_T(edit_tw, args.agree)
         T_src = f"data (agree>={args.agree})"
     else:
-        T, curve, dvec, pvec = args.T, choose_T(edit_tw, args.agree)[1], None, None
+        # A fixed target-construction threshold must not consult held-out-type
+        # examples merely to produce a diagnostic tuning curve.
+        T, curve, dvec, pvec = args.T, [], None, None
         T_src = "--T override"
-    log(f"[T] implants used to choose T: {len(edit_tw)}; T = {T} ({T_src})")
+    log(f"[T] implants used to choose T: {len(edit_tw) if args.T is None else 0}; T = {T} ({T_src})")
 
     # ---- assign fields
     rule_ct = collections.Counter()
@@ -795,6 +821,7 @@ def main():
                  f"{RING_CLEAN[0]}-{RING_CLEAN[1]} px ring (outside the paste-back feather) for {a}/{a + b} = "
                  f"{a / max(1, a + b):.4f}.")
     rem = [S[r["image"]] for r in fk if r["type"] == "remove" and r["image"] in S and "tin" in S[r["image"]]
+           and S[r["image"]].get("fring") is not None and S[r["image"]].get("tring") is not None
            and r["split"] == "train"]
     if rem:
         drop = np.array([abs(s["tin"] - s["tring"]) - abs(s["fin"] - s["fring"]) for s in rem])

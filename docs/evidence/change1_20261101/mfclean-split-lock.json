@@ -1,0 +1,96 @@
+{
+  "audit": {
+    "counts": {
+      "select": {
+        "groups": 525,
+        "rows": 1482,
+        "types": {
+          "edit": 460,
+          "real": 589,
+          "remove": 433
+        }
+      },
+      "test": {
+        "groups": 1007,
+        "rows": 2905,
+        "types": {
+          "edit": 924,
+          "real": 1157,
+          "remove": 824
+        }
+      },
+      "train": {
+        "groups": 11283,
+        "rows": 46155,
+        "types": {
+          "edit": 16826,
+          "real": 12752,
+          "remove": 16577
+        }
+      }
+    },
+    "fake_rows": 36044,
+    "fake_rows_without_twin": 0,
+    "identity_coverage_rows": {
+      "select": {
+        "content_md5": 1482,
+        "duplicate_cluster": 1482,
+        "group": 1482,
+        "input_sha256": 1482,
+        "materialized_sha256": 1482,
+        "orig": 1482,
+        "patient_id": 481,
+        "source_id": 1482,
+        "source_sha256": 1482,
+        "study_id": 0,
+        "video_id": 0,
+        "volume_id": 0
+      },
+      "test": {
+        "content_md5": 2905,
+        "duplicate_cluster": 2905,
+        "group": 2905,
+        "input_sha256": 2905,
+        "materialized_sha256": 2905,
+        "orig": 2905,
+        "patient_id": 1013,
+        "source_id": 2905,
+        "source_sha256": 2905,
+        "study_id": 0,
+        "video_id": 0,
+        "volume_id": 0
+      },
+      "train": {
+        "content_md5": 46155,
+        "duplicate_cluster": 46155,
+        "group": 46155,
+        "input_sha256": 46155,
+        "materialized_sha256": 46155,
+        "orig": 46155,
+        "patient_id": 13426,
+        "source_id": 46155,
+        "source_sha256": 46155,
+        "study_id": 0,
+        "video_id": 0,
+        "volume_id": 0
+      }
+    },
+    "scope": "Declared metadata only; raw pixels and unknown patient identities not verified",
+    "status": "PASS"
+  },
+  "files": {
+    "select": {
+      "name": "select_core.jsonl",
+      "sha256": "98d26542fec033af0fb1c3358772da0a445f5d7c39eca2086953318d4d8bbb79"
+    },
+    "test": {
+      "name": "test_core.jsonl",
+      "sha256": "faaa01f45e2232dd61912af589841db6ec448343382373104f921a54b766211f"
+    },
+    "train": {
+      "name": "train_all.jsonl",
+      "sha256": "9a1ca72f7b18f178bdea4efae4340da402aa7a5a89ec907865f039faf18e3aee"
+    }
+  },
+  "schema": "mfclean-split-lock-v1"
+}

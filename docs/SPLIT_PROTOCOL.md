@@ -1,11 +1,11 @@
 # Change 1: split integrity and validation-only selection
 
-Status (2026-11-01): code safeguards implemented; full private-data audit, a new frozen data release and fresh training remain pending. This change does not repair the historical kidney/colon evaluation or certify unknown patient identities.
+Status (2026-11-01): the private raw-file audit, new versioned split builds, regenerated pools and split/pool locks have been executed. See [the execution report](../SPLIT_AUDIT_REPORT.md). Overall **partially resolved**: unknown patient/study/video identities, historical exposure and fresh training/confirmatory evaluation remain open. Kidney/colon now have a separate split-only version; source/editor/format and clinical validity remain unrepaired.
 
 ## Fixed protocol
 
 1. Form connected components before splitting: original scan, every derived forgery, known patient/study/volume, exact duplicates and verified near duplicates. Use globally namespaced IDs; e.g. different datasets' patient `123` must not be conflated. Kidney CT requires case/volume grouping; video-derived colonoscopy requires patient/video grouping where available. Missing identifiers are an explicit limitation, not evidence of independence.
-2. Assign each component to exactly one partition. The existing MF-Clean hash is `SHA1("mfclean-v1:" + group) % 100`: train below 55, selection 55–69, test 70–99. These are group hash thresholds, not guaranteed image percentages. This patch preserves that assignment and the historical core sampling; it does not manufacture a fresh untouched test set.
+2. Assign each component to exactly one partition. The existing MF-Clean hash is `SHA1("mfclean-v1:" + group) % 100`: train below 55, selection 55–69, test 70–99. These are group hash thresholds, not guaranteed image percentages. The base implementation preserved that assignment and historical core sampling. The private-data repair merges independently verified connected components, retains historical examples, and adds exact-source twins; all population/group changes are versioned. Neither action manufactures an untouched test set.
 3. Inside train, use the existing `SHA1("sftrl-v1:" + group) % 6 == 0` RL-pool rule, otherwise SFT. Apply CF (no implants) and CM (held-out editors) exclusions to every training, replay and continued-SFT stage. Balanced continued SFT uses the same eligible continuation pool as RL, with its sampling recipe and exposure recorded.
 4. Choose checkpoints, replay settings, alpha, reward weights and all other hyperparameters using selection data only. Pre-register candidate IDs, budgets, configs, metric and tie-break. Primary selection metric here is binary balanced accuracy, with candidate ID as the deterministic exact-tie breaker. Localization and per-type recalls remain reported secondary outcomes.
 5. Freeze the chosen configuration and checkpoint hashes before final test inference. Use one predeclared policy per regime; do not pick a different stage using each test table's maximum. After test inspection, subsequent development needs a separately identified confirmatory evaluation. Existing public test results are historical/exploratory, not newly untouched evidence.
@@ -60,10 +60,10 @@ The selector requires exact selection-set coverage and matching manifest metadat
 | Gate | Required artifact | Current status |
 |---|---|---|
 | Code behavior | Adversarial synthetic tests for leakage, selection and resume | Implemented; see [validation](VALIDATION.md) |
-| Identity reconstruction | Mapping with exact source, patient/study where known, source hashes and duplicate decisions | Private data required |
-| Actual disjointness | Full-data audit, zero cross-split components, documented unknown-ID coverage | Not rerun here |
-| Locked experiment | Versioned split lock, candidate plan, run config, environment and immutable checkpoint hashes | Tooling provided; real protocol not frozen here |
-| Regime validity | SFT/replay/RL/continued-SFT inventories, zero forbidden types/editors and zero held-out identities | New real-data run pending |
+| Identity reconstruction | Mapping with exact source, patient/study where known, source hashes and duplicate decisions | Completed for available identities; unknown fields remain explicit |
+| Actual disjointness | Full-data audit, zero cross-split components, documented unknown-ID coverage | Passed for reconstructed identities; independent materialized-pixel check passed |
+| Locked experiment | Versioned split lock, candidate plan, run config, environment and immutable checkpoint hashes | Data/pool locks frozen and verified; prospective candidate/checkpoint plan remains future work |
+| Regime validity | SFT/replay/RL/continued-SFT inventories, zero forbidden types/editors and zero held-out identities | New pool inventories passed; historical exposure retained |
 | Confirmatory results | Retrained baselines, validation-selected checkpoints, fixed test predictions and grouped CIs | No new training/inference performed |
 
 Do not label Change 1 fully resolved until the data and experiment gates are complete. Run synthetic checks with `python -m unittest discover -s tests -v`.

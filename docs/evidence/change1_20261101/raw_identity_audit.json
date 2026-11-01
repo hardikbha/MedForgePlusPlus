@@ -1,0 +1,1392 @@
+{
+  "census_checkpoint_reused": true,
+  "census_checkpoint_sha256": "605e39eedcfa550eef1205f53c0a1b0d699bf59b05cf03ebbe35f53c1acb3262",
+  "extension_historical_eval_rows": 800,
+  "extension_legacy_overlap": {
+    "circe_sft_v2.jsonl": {
+      "eval_components_exposed": 800,
+      "exact_eval_paths": 800,
+      "unique_images": 7800
+    },
+    "circe_sft_v3.jsonl": {
+      "eval_components_exposed": 800,
+      "exact_eval_paths": 800,
+      "unique_images": 7800
+    }
+  },
+  "graph_link_counts": {
+    "content_md5_links": 1004,
+    "patient_id_links": 41296,
+    "pixel_sha256_links": 1004,
+    "source_links": 154043,
+    "volume_id_links": 2580
+  },
+  "historical_hash_comparison": {
+    "changed": 0,
+    "compared": 103787,
+    "not_in_historical_census": 50256
+  },
+  "historical_mfclean": {
+    "counts": [
+      {
+        "generator": "flux.1-dev",
+        "organ": "brain-mri",
+        "rows": 22,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "gemini",
+        "organ": "brain-mri",
+        "rows": 22,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "gpt",
+        "organ": "brain-mri",
+        "rows": 18,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "qwen",
+        "organ": "brain-mri",
+        "rows": 22,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "brain-mri",
+        "rows": 20,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "brain-mri",
+        "rows": 20,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "brain-mri",
+        "rows": 25,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "brain-mri",
+        "rows": 20,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "brain-mri",
+        "rows": 18,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "brain-mri",
+        "rows": 28,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "real",
+        "organ": "brain-mri",
+        "rows": 187,
+        "split": "select",
+        "type": "real"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "brain-mri",
+        "rows": 10,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "gemini",
+        "organ": "brain-mri",
+        "rows": 19,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "gpt",
+        "organ": "brain-mri",
+        "rows": 19,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "qwen",
+        "organ": "brain-mri",
+        "rows": 23,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "brain-mri",
+        "rows": 14,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "brain-mri",
+        "rows": 13,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "brain-mri",
+        "rows": 11,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "brain-mri",
+        "rows": 12,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "brain-mri",
+        "rows": 11,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "brain-mri",
+        "rows": 12,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "chest-xray",
+        "rows": 8,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "gemini",
+        "organ": "chest-xray",
+        "rows": 6,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "gpt",
+        "organ": "chest-xray",
+        "rows": 7,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "qwen",
+        "organ": "chest-xray",
+        "rows": 8,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "chest-xray",
+        "rows": 6,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "chest-xray",
+        "rows": 9,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "chest-xray",
+        "rows": 9,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "chest-xray",
+        "rows": 3,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "chest-xray",
+        "rows": 8,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "chest-xray",
+        "rows": 6,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "real",
+        "organ": "chest-xray",
+        "rows": 194,
+        "split": "select",
+        "type": "real"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "chest-xray",
+        "rows": 22,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "gemini",
+        "organ": "chest-xray",
+        "rows": 16,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "gpt",
+        "organ": "chest-xray",
+        "rows": 15,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "qwen",
+        "organ": "chest-xray",
+        "rows": 12,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "chest-xray",
+        "rows": 15,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "chest-xray",
+        "rows": 20,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "chest-xray",
+        "rows": 19,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "chest-xray",
+        "rows": 21,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "chest-xray",
+        "rows": 19,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "chest-xray",
+        "rows": 21,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "fundus",
+        "rows": 16,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "gemini",
+        "organ": "fundus",
+        "rows": 15,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "gpt",
+        "organ": "fundus",
+        "rows": 14,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "qwen",
+        "organ": "fundus",
+        "rows": 19,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "fundus",
+        "rows": 22,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "fundus",
+        "rows": 17,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "fundus",
+        "rows": 20,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "fundus",
+        "rows": 16,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "fundus",
+        "rows": 20,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "fundus",
+        "rows": 16,
+        "split": "select",
+        "type": "edit"
+      },
+      {
+        "generator": "real",
+        "organ": "fundus",
+        "rows": 145,
+        "split": "select",
+        "type": "real"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "fundus",
+        "rows": 11,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "gemini",
+        "organ": "fundus",
+        "rows": 11,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "gpt",
+        "organ": "fundus",
+        "rows": 17,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "qwen",
+        "organ": "fundus",
+        "rows": 6,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "fundus",
+        "rows": 12,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "fundus",
+        "rows": 10,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "fundus",
+        "rows": 6,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "fundus",
+        "rows": 17,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "fundus",
+        "rows": 14,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "fundus",
+        "rows": 6,
+        "split": "select",
+        "type": "remove"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "brain-mri",
+        "rows": 41,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "gemini",
+        "organ": "brain-mri",
+        "rows": 35,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "gpt",
+        "organ": "brain-mri",
+        "rows": 39,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "qwen",
+        "organ": "brain-mri",
+        "rows": 38,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "brain-mri",
+        "rows": 35,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "brain-mri",
+        "rows": 31,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "brain-mri",
+        "rows": 33,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "brain-mri",
+        "rows": 35,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "brain-mri",
+        "rows": 34,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "brain-mri",
+        "rows": 34,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "real",
+        "organ": "brain-mri",
+        "rows": 388,
+        "split": "test",
+        "type": "real"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "brain-mri",
+        "rows": 28,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "gemini",
+        "organ": "brain-mri",
+        "rows": 35,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "gpt",
+        "organ": "brain-mri",
+        "rows": 23,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "qwen",
+        "organ": "brain-mri",
+        "rows": 35,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "brain-mri",
+        "rows": 29,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "brain-mri",
+        "rows": 37,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "brain-mri",
+        "rows": 29,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "brain-mri",
+        "rows": 30,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "brain-mri",
+        "rows": 32,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "brain-mri",
+        "rows": 39,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "chest-xray",
+        "rows": 20,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "gemini",
+        "organ": "chest-xray",
+        "rows": 18,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "gpt",
+        "organ": "chest-xray",
+        "rows": 17,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "qwen",
+        "organ": "chest-xray",
+        "rows": 20,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "chest-xray",
+        "rows": 21,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "chest-xray",
+        "rows": 17,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "chest-xray",
+        "rows": 17,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "chest-xray",
+        "rows": 18,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "chest-xray",
+        "rows": 17,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "chest-xray",
+        "rows": 15,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "real",
+        "organ": "chest-xray",
+        "rows": 332,
+        "split": "test",
+        "type": "real"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "chest-xray",
+        "rows": 24,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "gemini",
+        "organ": "chest-xray",
+        "rows": 25,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "gpt",
+        "organ": "chest-xray",
+        "rows": 37,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "qwen",
+        "organ": "chest-xray",
+        "rows": 33,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "chest-xray",
+        "rows": 24,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "chest-xray",
+        "rows": 25,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "chest-xray",
+        "rows": 35,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "chest-xray",
+        "rows": 28,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "chest-xray",
+        "rows": 31,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "chest-xray",
+        "rows": 34,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "fundus",
+        "rows": 38,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "gemini",
+        "organ": "fundus",
+        "rows": 42,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "gpt",
+        "organ": "fundus",
+        "rows": 43,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "qwen",
+        "organ": "fundus",
+        "rows": 28,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "fundus",
+        "rows": 42,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "fundus",
+        "rows": 39,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "fundus",
+        "rows": 41,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "fundus",
+        "rows": 39,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "fundus",
+        "rows": 43,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "fundus",
+        "rows": 34,
+        "split": "test",
+        "type": "edit"
+      },
+      {
+        "generator": "real",
+        "organ": "fundus",
+        "rows": 288,
+        "split": "test",
+        "type": "real"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "fundus",
+        "rows": 24,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "gemini",
+        "organ": "fundus",
+        "rows": 20,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "gpt",
+        "organ": "fundus",
+        "rows": 16,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "qwen",
+        "organ": "fundus",
+        "rows": 20,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "fundus",
+        "rows": 24,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "fundus",
+        "rows": 25,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "fundus",
+        "rows": 20,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "fundus",
+        "rows": 25,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "fundus",
+        "rows": 18,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "fundus",
+        "rows": 19,
+        "split": "test",
+        "type": "remove"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "brain-mri",
+        "rows": 584,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "gemini",
+        "organ": "brain-mri",
+        "rows": 584,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "gpt",
+        "organ": "brain-mri",
+        "rows": 584,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "qwen",
+        "organ": "brain-mri",
+        "rows": 584,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "brain-mri",
+        "rows": 584,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "brain-mri",
+        "rows": 584,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "brain-mri",
+        "rows": 584,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "brain-mri",
+        "rows": 582,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "brain-mri",
+        "rows": 584,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "brain-mri",
+        "rows": 584,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "real",
+        "organ": "brain-mri",
+        "rows": 3146,
+        "split": "train",
+        "type": "real"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "brain-mri",
+        "rows": 531,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "gemini",
+        "organ": "brain-mri",
+        "rows": 541,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "gpt",
+        "organ": "brain-mri",
+        "rows": 538,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "qwen",
+        "organ": "brain-mri",
+        "rows": 541,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "brain-mri",
+        "rows": 541,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "brain-mri",
+        "rows": 523,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "brain-mri",
+        "rows": 523,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "brain-mri",
+        "rows": 519,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "brain-mri",
+        "rows": 523,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "brain-mri",
+        "rows": 510,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "chest-xray",
+        "rows": 595,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "gemini",
+        "organ": "chest-xray",
+        "rows": 595,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "gpt",
+        "organ": "chest-xray",
+        "rows": 595,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "qwen",
+        "organ": "chest-xray",
+        "rows": 592,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "chest-xray",
+        "rows": 547,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "chest-xray",
+        "rows": 595,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "chest-xray",
+        "rows": 595,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "chest-xray",
+        "rows": 577,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "chest-xray",
+        "rows": 595,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "chest-xray",
+        "rows": 595,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "real",
+        "organ": "chest-xray",
+        "rows": 6370,
+        "split": "train",
+        "type": "real"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "chest-xray",
+        "rows": 621,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "gemini",
+        "organ": "chest-xray",
+        "rows": 621,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "gpt",
+        "organ": "chest-xray",
+        "rows": 613,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "qwen",
+        "organ": "chest-xray",
+        "rows": 621,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "chest-xray",
+        "rows": 566,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "chest-xray",
+        "rows": 621,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "chest-xray",
+        "rows": 621,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "chest-xray",
+        "rows": 603,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "chest-xray",
+        "rows": 621,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "chest-xray",
+        "rows": 621,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "fundus",
+        "rows": 523,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "gemini",
+        "organ": "fundus",
+        "rows": 523,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "gpt",
+        "organ": "fundus",
+        "rows": 493,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "qwen",
+        "organ": "fundus",
+        "rows": 490,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "fundus",
+        "rows": 493,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "fundus",
+        "rows": 523,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "fundus",
+        "rows": 523,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "fundus",
+        "rows": 523,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "fundus",
+        "rows": 523,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "fundus",
+        "rows": 493,
+        "split": "train",
+        "type": "edit"
+      },
+      {
+        "generator": "real",
+        "organ": "fundus",
+        "rows": 3162,
+        "split": "train",
+        "type": "real"
+      },
+      {
+        "generator": "flux.1-dev",
+        "organ": "fundus",
+        "rows": 522,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "gemini",
+        "organ": "fundus",
+        "rows": 521,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "gpt",
+        "organ": "fundus",
+        "rows": 521,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "qwen",
+        "organ": "fundus",
+        "rows": 518,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "seeddream",
+        "organ": "fundus",
+        "rows": 519,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-large",
+        "organ": "fundus",
+        "rows": 522,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-3.5-medium",
+        "organ": "fundus",
+        "rows": 522,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-inpainting",
+        "organ": "fundus",
+        "rows": 522,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "stable-diffusion-xl-1.0-inpainting-0.1",
+        "organ": "fundus",
+        "rows": 520,
+        "split": "train",
+        "type": "remove"
+      },
+      {
+        "generator": "step1x-edit",
+        "organ": "fundus",
+        "rows": 470,
+        "split": "train",
+        "type": "remove"
+      }
+    ],
+    "cross_split_components": 2,
+    "identity_coverage_rows": {
+      "content_md5": 50256,
+      "patient_id": 14744,
+      "pixel_sha256": 50256,
+      "source": 50256
+    },
+    "repeated_resolved_image_paths": 0,
+    "rows": 50256,
+    "twins": {
+      "cross_component": 856,
+      "exact_source": 33605,
+      "missing": 392,
+      "substituted_representative": 1191
+    }
+  },
+  "identity_limitations": {
+    "kidney_case": "KiTS volume/case keys, not asserted patient IDs; Kaggle kidney patient IDs unavailable",
+    "near_duplicate_meaning": "conservative split-safety components, not inferred patient identities",
+    "patient": "Only known original-organ filename conventions; unknown remains null",
+    "study": "unavailable",
+    "video": "Kvasir/WCE video/patient linkage unavailable"
+  },
+  "mapping_items": 95276,
+  "missing_mapping_images_by_type": {
+    "real": 289
+  },
+  "near_duplicates": {
+    "dhash_cross_component_candidates": 12814258,
+    "full_rgb_verified_links": 3870,
+    "rejected": 34721,
+    "rule": "same organ/dimensions; dHash Hamming<=4; thumbnail MAE<=3; full RGB MAE<=3 and <=5% channel values differ by >10; exact decoded copies represented once",
+    "thumbnail_candidates": 38591
+  },
+  "raw_errors": 0,
+  "raw_files_rehashed_decoded": 154043,
+  "schema": "medforge-private-identity-audit-v2"
+}

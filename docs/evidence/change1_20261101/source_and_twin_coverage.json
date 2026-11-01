@@ -1,0 +1,11 @@
+{
+  "historical_mfclean_twin_semantics": {
+    "different_path_different_decoded_source": 1360,
+    "different_path_identical_decoded_source": 687,
+    "exact_mapping_source_path": 33605,
+    "missing_or_dangling": 392
+  },
+  "unavailable_authentic_sources_by_corpus": {
+    "original": 631
+  }
+}

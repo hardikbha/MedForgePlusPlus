@@ -11,7 +11,8 @@ from pathlib import Path
 import posixpath
 
 FILES = {"train": "train_all.jsonl", "select": "select_core.jsonl", "test": "test_core.jsonl"}
-IDENTITIES = ("group", "orig", "source_id", "patient_id", "duplicate_cluster", "content_md5")
+IDENTITIES = ("group", "orig", "source_id", "patient_id", "study_id", "volume_id", "video_id",
+              "duplicate_cluster", "content_md5", "input_sha256", "source_sha256", "materialized_sha256")
 
 
 def read_jsonl(path):

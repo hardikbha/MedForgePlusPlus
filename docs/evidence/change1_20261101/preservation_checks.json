@@ -1,0 +1,9 @@
+{
+  "historical_mapping_repeated_image_paths": 0,
+  "historical_three_manifest_bytes_unchanged": {
+    "select_core.jsonl": true,
+    "test_core.jsonl": true,
+    "train_all.jsonl": true
+  },
+  "writes": "Only new versioned data/run directories and isolated checkout; append-only CPU scheduler entries added. No checkpoint or historical image/manifest was rewritten."
+}
