@@ -6,6 +6,9 @@ Research code, paper drafts, dataset construction tools, and an independent read
 
 ## Start here
 
+- [Project blueprint: history, decisions, experiments and remaining work](docs/PROJECT_BLUEPRINT.md)
+- [Review response and priority-ordered action plan](docs/REVIEW_ACTION_PLAN.md)
+- [Change 1: split integrity and validation-only model selection](docs/SPLIT_PROTOCOL.md)
 - [Review: what is complete, what is pending, and how to improve it](docs/CVPR_REVIEW.md)
 - [Current results generated from saved metric files](docs/RESULTS.md)
 - [Dataset card and release limitations](docs/DATASET_CARD.md)
