@@ -7,6 +7,7 @@ Research code, paper drafts, dataset construction tools, and an independent read
 ## Start here
 
 - [Current first milestone: run Bridge on the full official MedForge splits](docs/ORIGINAL_PROTOCOL_REPRODUCTION.md)
+- [Short prompt to hand to the GPU-node operator](docs/GPU_NODE_PROMPT.md)
 - [Project blueprint: history, decisions, experiments and remaining work](docs/PROJECT_BLUEPRINT.md)
 - [Review response and priority-ordered action plan](docs/REVIEW_ACTION_PLAN.md)
 - [Change 1: split integrity and validation-only model selection](docs/SPLIT_PROTOCOL.md)

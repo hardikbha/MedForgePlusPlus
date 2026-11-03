@@ -8,6 +8,10 @@ Last updated: **2026-11-03**. Historical snapshot reviewed: `1bcbc7393e8e0a3cbb8
 
 Official HF SFT/RL/test manifests have been downloaded and counted: 55,276 / 10,000 / 30,000 rows, with zero cross-file image-ID overlap. This supersedes the earlier assumption that obtaining official sample lists was still unresolved. Raw-image availability and source/patient independence remain unverified. The upstream evaluator failed a synthetic check because parsing helpers are missing; metric compatibility still needs resolution. Conflicting beta/vLLM flags in the upstream GSPO launcher are retained as historical findings but do not block our independent Bridge training pipeline. No training or model inference has started.
 
+**GPU handoff:** the user requested a short, shareable Markdown prompt and received `MEDFORGE_BRIDGE_GPU_NODE_PROMPT.md` in the parent workspace. Its versioned copy is [GPU_NODE_PROMPT.md](GPU_NODE_PROMPT.md). It pins implementation commit `5baa6572f79ef9c272f17b7843de32314691601c`, requests ID first followed by independent CF/CM runs, and leaves Table 2 to a separate follow-up. An operator can run it directly on the data/GPU host. The user did not know the SSH host and chose to forward the prompt; no remote session or job was started by this assistant, and no operator run report/job ID has been received. A prepared prompt is not evidence of submission or execution.
+
+For immediate recovery: read this section, the [full work order](ORIGINAL_PROTOCOL_REPRODUCTION.md), the [short prompt](GPU_NODE_PROMPT.md), and the [official inventory](evidence/official_manifest_inventory_20261103.json), then inspect the working tree and any newly supplied operator logs. Do not restart MedForge baseline reproduction, add kidney/colon to the first run, or substitute MF-Clean for the official 30,000-image evaluation unless the user changes direction.
+
 The project addresses detecting and localizing lesion insertion/removal in medical images. The long-term goal is reliable, clinically meaningful evaluation across source populations, organs and editing models, supported by reproducible data lineage and uncertainty estimates.
 
 The historical Bridge paper is **not submission-ready**. Its major problems are experimental validity, confounded extension data, unsupported cross-organ claims and insufficient evidence that RL/interpolation improves on appropriate controls. The best-supported direction is an **audit-led benchmark**, with Bridge and CT-GRPO treated as experimental baselines until replicated gains justify a method contribution.
@@ -17,6 +21,23 @@ The user requested: an independent technical review of the repository and PDFs; 
 Change 1 now has code checks, tests and a [protocol](SPLIT_PROTOCOL.md). **The private-data rebuild, final split freeze, retraining and new test inference are not complete.** Public predictions permit rescoring, not reconstruction of source provenance. Access to the private data host/manifests is the next execution dependency. The configured GitHub accounts lack upstream write permission; publication uses a fork/PR rather than claiming upstream main was changed.
 
 Publication milestone: implementation commit `3e564fa` is pushed on [`hardiksharma6555/MedForgePlusPlus:fix/split-protocol`](https://github.com/hardiksharma6555/MedForgePlusPlus/tree/fix/split-protocol), with [draft upstream PR #1](https://github.com/hardikbha/MedForgePlusPlus/pull/1). It was not merged by this session. GitHub fork creation initially hit transport errors; retrying with HTTP/2 disabled succeeded. The local working repository is `MedForgePlusPlus/` beneath the user's `fairness_cvpr` workspace.
+
+Maintenance incident during this memory update: a full disk prevented Git from creating its index lock. Approximately 242 MiB of review-created temporary PDF/renderings and downloaded manifest copies were removed; the repository's inventory, hashes, source revisions, reports and GPU prompt were retained. Original manifests can be downloaded again at the pinned HF revision; do not assume the large `/tmp` copies still exist. No user dataset or model checkpoint was removed.
+
+## Milestones and superseded directions
+
+| Date / revision | Work or discussion | Outcome / continuing relevance |
+|---|---|---|
+| 2026-11-01, review of `1bcbc739` | Independent repository/paper review and CPU verification | Archived metrics reproduced; serious protocol/data/claim limitations identified; no fresh GPU experiment |
+| 2026-11-01 | User requested the most basic experiment | Rescored initial SFT, balanced continued SFT, image GRPO and constants; 5,000 group bootstraps. Results are preserved below. |
+| 2026-11-01 | Actual AAAI correspondence supplied | Two human reviews distinguished from AI review; paraphrased priorities published; raw correspondence kept local |
+| `3e564fa`, `fd89435` | Change 1, research blueprint and draft PR | Split gates, validation-only selector, resume-box repair and 15 passing tests; full private-data validation still pending |
+| 2026-11-03 | User identified original MedForge Tables 1 and 2 as targets | Detection and judge-based explanation evaluations separated; no verified exact-protocol Bridge result found |
+| `9411cbc` | User prioritized full original-data evaluation; baseline-first work order prepared | Official manifests actually downloaded and counted; upstream evaluator failure reproduced. Baseline-first execution was subsequently superseded. |
+| `5baa657` | User explicitly deferred reproducing MedForge-Reasoner | Active plan became Bridge-only training/evaluation on official splits, with published baseline rows as references |
+| 2026-11-03 | Short GPU-node prompt delivered | User will forward it to an operator. No returned run evidence yet. |
+
+The existing readiness assessment and suggested audit-led paper direction are research judgments, not permission to override the user's latest execution priority. Keep negative findings visible while carrying out the full official-split Bridge experiment.
 
 ## Names and attribution
 
@@ -68,6 +89,22 @@ Unless explicitly marked independently rerun below, raw-data figures are **recor
 
 Detailed sources: [expansion](evidence/audit/expansion.md), [labels](evidence/audit/labels.md), [shortcuts](evidence/audit/shortcut.md), [dataset card](DATASET_CARD.md).
 
+The original MedForge is **classification + localization + explanation** data, not classification-only. Our extension also provides verdict/type labels, boxes and generated explanations; localization itself is therefore not a new task contribution. Upstream masks/boxes are source-difference-derived, while many extension mask exports are filled rectangles. Neither establishes clinically precise segmentation. In the extension, authentic tumor/polyp examples may carry real-lesion boxes: these must be distinguished from forgery-region boxes. Extension file totals are kidney 4,000 (2,000 real/1,000 implant/1,000 removal) and colon 3,800 (1,800/1,000/1,000).
+
+### Official released manifests: verified 2026-11-03
+
+Dataset revision: `7bbf54f870584b37d6594593da76b2fc78fe4c5b`. These are separate from MF-Clean and our old locally randomized subset. [Inventory script](../scripts/audit_official_manifests.py) and [aggregate report with SHA-256 hashes](evidence/official_manifest_inventory_20261103.json) preserve the check.
+
+| Released pool | Total records | Real | Implant | Removal |
+|---|---:|---:|---:|---:|
+| SFT | 55,276 | 16,990 | 21,389 | 16,897 |
+| RL | 10,000 | 5,000 | 3,013 | 1,987 |
+| Test | 30,000 | 10,000 | 10,952 | 9,048 |
+
+Each pool has unique release-relative image IDs; all pairwise ID intersections are zero. Types were derived from image paths. This does not verify raw-file existence, pixel duplicates, source-family overlap, patient independence or whether these manifests produced the paper's scores. The release differs from the prose's nominal 50K/10K/30K and equal class proportions; do not silently resample it to match those statements.
+
+Before a documented training-side validation carve-out, eligible SFT/RL counts are ID **55,276/10,000**, CF **33,887/6,987**, CM **39,591/8,247**. CF excludes implants; CM excludes `gemini`, `gpt`, `stable-diffusion-3.5-medium`, and `stable-diffusion-xl-1.0-inpainting-0.1` from every training stage. All regimes use the unchanged full 30,000-image test. These are computed eligibility inventories, not completed training runs.
+
 MF-Clean recorded protocol:
 
 - Train: **46,080 rows / 11,283 groups**; selection: **1,420 / 526**; test: **2,756 / 1,008**. Test consists of 1,008 real, 924 implants and 824 removals.
@@ -89,6 +126,24 @@ Evidence/format rewards often have little within-group variation; formatting is 
 Legacy SFT dry-run assumptions (five messages versus v3's three), defaults (4B/rank16 versus recorded 8B/rank32), seeding and balancing recipe need reconciliation for fresh training. [build_rl_as_sft.py](../v3/build_rl_as_sft.py) deduplicates continuation images but does not fully specify the balanced-control training recipe. Existing weights/results alone do not establish matched compute or data exposure.
 
 ## Results and what was actually verified
+
+### Original-paper targets and current comparison status
+
+The [original MedForge v2 paper](https://arxiv.org/html/2603.18577v2) was read in HTML and its rendered PDF tables were inspected. Its Table 1 is detection; Table 2 is explanation judging. The following Bridge entries are historical manuscript claims, **not verified results from the full official test**:
+
+| Regime | Published MedForge accuracy / F1 | Historical Bridge accuracy / F1 |
+|---|---:|---:|
+| In-Domain | 99.23 / 98.98 | 99.03 / 98.87 |
+| Cross-Forgery | 95.93 / 95.13 | 96.96 / 96.18 |
+| Cross-Model | 93.94 / 93.49 | 94.66 / 94.62 |
+
+The historical Bridge rows use 2,994 examples and have the selection/training/numerical problems documented below; the Cross-Model displayed class values imply approximately 94.36 accuracy / 94.34 average F1. The original Table 1 comparison remains pending. Adding kidney/colon has not produced a verified augmentation gain on this exact test.
+
+For Table 2, MedForge with GSPO reports LC/VH/MP/average **71.1/67.4/83.2/73.9** under Gemini 3 Pro and **93.3/79.9/97.5/90.2** under Qwen3-VL-Plus. VH is a faithfulness score: higher is better. The highest average anywhere in that table is **76.2** under Gemini and **90.2** under Qwen. Evaluation uses 100 forgery examples correctly detected by all compared models. No matching Bridge judge artifacts were found. Parsing compliance, localization and structured-field accuracy cannot fill these columns.
+
+The exact 100-example sample and judge-version/configuration provenance remain unresolved. The released judge code compares generated and reference text, not images directly. A new sample can support a separately identified evaluation, not an undisclosed replacement for the original table.
+
+### Existing MF-Clean results
 
 The following are **rescored saved predictions**, not new training or model inference. All values below are percentages on the same MF-Clean CF test.
 
@@ -147,7 +202,8 @@ The [priority action plan](REVIEW_ACTION_PLAN.md) maps concerns to corrections, 
 |---|---|
 | Keep original MedForge, extension, Bridge and MF-Clean distinct | Avoid attribution errors and claiming clean original-organ results fix extension failures |
 | Use balanced accuracy plus class recalls and localization | Class imbalance can inflate plain accuracy and conceal removal collapse |
-| Compare against balanced continued SFT before adding RL complexity | Current evidence favors that control; compute/exposure matching and replication still needed |
+| Retain balanced continued SFT as the essential method control | Current evidence favors that control; compute/exposure matching and replication remain needed after the user's first full Bridge run |
+| Run Bridge directly on official splits; defer original-baseline reproduction | Latest user decision; use published MedForge rows as references and disclose unresolved comparability limits |
 | Resample declared source groups | Generated siblings are correlated; record limitations where patients are unknown |
 | Preserve archived predictions and historical core sampling | A silent dataset change would invalidate result provenance; new sampling/clinical repairs need a new version |
 | Fail data preparation on overlap or incomplete materialization | A partial/contaminated manifest should not become a valid training input |
@@ -159,13 +215,21 @@ The [priority action plan](REVIEW_ACTION_PLAN.md) maps concerns to corrections, 
 
 Change 1 adds [split_protocol.py](../v3/split_protocol.py), [select_checkpoint.py](../v3/select_checkpoint.py), builder integration, annotation-resume correction and [regression tests](../tests/test_split_protocol.py). It checks declared identity consistency, records provenance where known, freezes exact manifest bytes, and rejects test predictions during selection. It does not automatically enforce every legacy training entry point or retrospectively cleanse exposed results. Follow the complete [split protocol](SPLIT_PROTOCOL.md) on the data host.
 
-The new regression suite passed **15 tests** on CPU; scorer/evaluator self-tests passed, all **131** current Python files parsed, and new documentation links and diff checks passed. This is code behavior evidence, not the private-data completion gate. Current check results are appended to [VALIDATION](VALIDATION.md). Source snapshot hashes describe the original release; these new files are later work and should not be falsely included in that historical snapshot's provenance.
+At the Change 1 milestone, the new regression suite passed **15 tests** on CPU; scorer/evaluator self-tests passed, all **131 Python files then present** parsed, and new documentation links and diff checks passed. The later official-manifest inventory script was syntax-checked and run against the complete downloaded JSONs, with aggregate consistency checks passing. This is code/manifest evidence, not the private-data completion gate. Check results are recorded in [VALIDATION](VALIDATION.md) and the [official inventory](evidence/official_manifest_inventory_20261103.json). Source snapshot hashes describe the original release; new files are later work and should not be falsely included in that historical snapshot's provenance.
+
+Inspected upstream code revision: `f60505600d3de0959f4fcdc8bd1741754ed2c85f`. Its detection evaluator lacks `classify_image`, `extract_bbox`, `extract_model_name`, `compute_iou` and `visualize_result`; a synthetic 8×8 image invocation actually raised `NameError` at `classify_image`. Repair/test compatible evaluation before the full run. Upstream GSPO duplicate beta/vLLM flags and unpinned SWIFT dependencies are deferred reproduction findings, not requirements to use that trainer for Bridge. Bridge must still record an unambiguous objective, environment and validation policy.
 
 ## Roadmap, hypotheses and open questions
 
 2026-11-03 user steering: prioritize a direct comparison with **Tables 1 and 2 of the original MedForge paper**, before evaluating the benefit of the added kidney/colon images. Read the [upstream v2 paper](https://arxiv.org/html/2603.18577v2), including the rendered PDF tables and Appendix D.3. Table 1 covers detection; Table 2 covers judge-scored explanation quality. Our historical Table-1-style claims use a locally constructed 2,994-image test subset, not a verified reproduction of the paper's stated 30,000-image test. Training-pool reuse, forbidden CF replay and test-based model selection also block exact-protocol claims. No matching Gemini/Qwen Table-2 judge results were found in the available repository. MF-Clean's 2,756-image evaluation is a separate benchmark. No new model inference or training was run for this check.
 
-Next exact-protocol comparison requires the original split/sample identities, regime-specific training exclusions, a reconciled scorer and checkpoint provenance; explanation evaluation additionally requires the original judge rubric, reference annotations, sample identities and judge configurations. An added-data experiment should be labeled separately and retain the original test when measuring augmentation benefit. The private-node audit remains unreceived as of this update; no remote execution has been started from this workspace.
+The official detection split identities are now obtained. Next steps are verifying their raw images, enforcing regime-specific training exclusions, reconciling the scorer and recording checkpoint provenance. Explanation evaluation additionally requires the original judge rubric, reference annotations, sample identities and judge configurations. An added-data experiment should be labeled separately and retain the original test when measuring augmentation benefit. The private-node audit remains unreceived as of this update; no remote execution has been started from this workspace.
+
+### Handoff acceptance and next conversation
+
+When the operator responds, obtain the code/dataset revisions, resolved data paths, scheduler job IDs/state, exact commands/configs, validation manifest hashes, checkpoint locations, full-test prediction counts and report paths. Verify train/validation/test membership and CF/CM exclusions across replay and RL. Check that test labels were not supplied in prompts, malformed outputs were not silently dropped, and checkpoint/alpha selection preceded test inspection. Compare actual results only after confirming coverage and metric definitions. Missing raw images are a blocker to claiming the full official test, not permission to silently reduce it.
+
+If no operator response has arrived, report the handoff as prepared and results as pending. Do not invent progress, infer a running job from the prompt, or repeatedly demand SSH information the user already said they do not know. The user chose an operator handoff; direct execution can resume if connection details are supplied later.
 
 | Order | Work / hypothesis | Evidence to obtain |
 |---|---|---|
