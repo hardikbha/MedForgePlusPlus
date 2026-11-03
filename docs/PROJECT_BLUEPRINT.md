@@ -1,8 +1,10 @@
 # MedForge++ project blueprint and research memory
 
-Last updated: **2026-11-01**. Historical snapshot reviewed: `1bcbc7393e8e0a3cbb803abf2747a1c1da0517d7`. This document is the recovery index for subsequent research conversations. Preserve evidence and uncertainty; never promote a plan, recorded historical claim or synthetic check into a completed experiment.
+Last updated: **2026-11-03**. Historical snapshot reviewed: `1bcbc7393e8e0a3cbb803abf2747a1c1da0517d7`. This document is the recovery index for subsequent research conversations. Preserve evidence and uncertainty; never promote a plan, recorded historical claim or synthetic check into a completed experiment.
 
 ## Current state and immediate objective
+
+**Latest priority correction (2026-11-03): reproduce the full original MedForge setup first, then evaluate model/dataset novelty.** The user explicitly placed this before the earlier model-improvement roadmap. See [the reproduction work order](ORIGINAL_PROTOCOL_REPRODUCTION.md). Official HF SFT/RL/test manifests have now been downloaded and counted: 55,276 / 10,000 / 30,000 rows, with zero cross-file image-ID overlap. This supersedes the earlier assumption that obtaining official sample lists was still unresolved. Raw-image availability and source/patient independence remain unverified. The upstream evaluator failed a synthetic check because parsing helpers are missing, and its GSPO script contains conflicting beta/vLLM flags. No training or model inference has started.
 
 The project addresses detecting and localizing lesion insertion/removal in medical images. The long-term goal is reliable, clinically meaningful evaluation across source populations, organs and editing models, supported by reproducible data lineage and uncertainty estimates.
 
@@ -130,7 +132,7 @@ Specific historical numerical/terminology issues:
 
 - Main Cross-Model recalls 99.40 (n=994), 91.90 (n=1,000), 91.80 (n=1,000) imply weighted accuracy **94.3566**, not 94.66. The three displayed F1 values 92.12/95.48/95.43 average **94.3433**, not 94.62; clarify intended weighting/population from predictions.
 - Supplement S11's 83.80% real “agreement” is both-correct; adding 5.63% both-wrong yields 89.43% binary agreement.
-- Legacy `per_class_breakdown.py` aggregates F1 across incompatible class subsets; it is not standard binary or three-class macro-F1. Some table differences may reflect definitions rather than simple arithmetic.
+- Legacy `per_class_breakdown.py` aggregates F1 across different class subsets; it is not standard binary or three-class macro-F1. Correction from the 2026-11-03 upstream v2 check: Appendix D.3 explicitly defines Real versus all fakes, Implant versus Real, and Remove versus Real. These match the subgroup choices in our code; its comment claiming the upstream per-class methodology is unpublished is outdated. Exact table aggregation and prediction-level reproduction still require verification. Different F1 definitions must not be substituted for one another.
 - “Full corpus” reporting sometimes means a 3,794-example test aggregate. Some advertised 50/10/30 counts total 90K, not 95,276. “Accuracy” for a single ground-truth class is recall. Define “upper bound” and all routing populations explicitly.
 - Updated text repairs some KL-sign/replay-order/label wording and acknowledges SFT/RL pool reuse, but does not repair the experimental foundation. Main Tables 2–7 and supplementary S1–S11 require review against current code, populations and predictions.
 - Novelty comparisons suggested by the AI review are research leads, not verified literature conclusions. Read primary sources before claiming prior work does or does not subsume the method.
@@ -159,11 +161,15 @@ The new regression suite passed **15 tests** on CPU; scorer/evaluator self-tests
 
 ## Roadmap, hypotheses and open questions
 
+2026-11-03 user steering: prioritize a direct comparison with **Tables 1 and 2 of the original MedForge paper**, before evaluating the benefit of the added kidney/colon images. Read the [upstream v2 paper](https://arxiv.org/html/2603.18577v2), including the rendered PDF tables and Appendix D.3. Table 1 covers detection; Table 2 covers judge-scored explanation quality. Our historical Table-1-style claims use a locally constructed 2,994-image test subset, not a verified reproduction of the paper's stated 30,000-image test. Training-pool reuse, forbidden CF replay and test-based model selection also block exact-protocol claims. No matching Gemini/Qwen Table-2 judge results were found in the available repository. MF-Clean's 2,756-image evaluation is a separate benchmark. No new model inference or training was run for this check.
+
+Next exact-protocol comparison requires the original split/sample identities, regime-specific training exclusions, a reconciled scorer and checkpoint provenance; explanation evaluation additionally requires the original judge rubric, reference annotations, sample identities and judge configurations. An added-data experiment should be labeled separately and retain the original test when measuring augmentation benefit. The private-node audit remains unreceived as of this update; no remote execution has been started from this workspace.
+
 | Order | Work / hypothesis | Evidence to obtain |
 |---|---|---|
-| Now | Review published draft PR #1; obtain data-host access | Reviewed code/PR, private-data location and runnable environment |
-| Next | Can source/patient/duplicate grouping eliminate measured leakage? | Full-data lineage table, unknown-ID coverage, duplicate decisions, new versioned split lock and successful pool checks |
-| Next | Does balanced continued SFT explain the gain attributed to RL? | Matched three-or-more-seed experiment; identical base/continuation eligibility; configs, steps, image exposure, FLOPs/time and grouped CIs |
+| Now | Reproduce original full-data baseline before novelty; resolve upstream implementation gaps and execute on data host | Official manifest inventory, full image coverage, pinned environment, original-model baseline and complete 30,000-image evaluations |
+| Parallel audit | Can source/patient/duplicate grouping eliminate measured leakage? Keep any repaired benchmark separate from original-protocol reproduction. | Full-data lineage table, unknown-ID coverage, duplicate decisions, new versioned split lock and successful pool checks |
+| After original baseline | Does balanced continued SFT explain the gain attributed to RL? | Matched three-or-more-seed experiment; identical base/continuation eligibility; configs, steps, image exposure, FLOPs/time and grouped CIs |
 | Next | Do paste-back edges or nonclinical traces drive MF-Clean performance? | Boundary-only/outside-mask/sham controls, alternate compositing/encoding, unseen editors and source-matched authentic controls |
 | Major | Can the kidney/colon extension become a defensible benchmark? | Same-source real/edit/remove construction, source/video/case disjointness, diverse editors, deduplication and blinded clinical QC |
 | Major | Does a single fixed model transfer to genuinely unseen organs? | No-target-tuning kidney/colon results, per-type/source/organ metrics and external confirmatory set |

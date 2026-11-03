@@ -1,0 +1,107 @@
+{
+  "scope": "Manifest inventory only; no image verification, model inference or training",
+  "type_source": "Released image path; not a clinical annotation audit",
+  "splits": {
+    "sft": {
+      "file": "sft_train_dataset.json",
+      "sha256": "d999b468ae0ac6e677ad9b44b14d69c9d3938e54a52aa65ff468ed34f1c9d1e5",
+      "bytes": 135420979,
+      "rows": 55276,
+      "unique_image_ids": 55276,
+      "duplicate_image_ids": 0,
+      "by_type": {
+        "edit": 21389,
+        "real": 16990,
+        "remove": 16897
+      },
+      "by_generator": {
+        "step1x-edit": 3730,
+        "real": 16990,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 3963,
+        "flux.1-dev": 3925,
+        "gpt": 3849,
+        "stable-diffusion-inpainting": 3760,
+        "gemini": 3958,
+        "qwen": 3753,
+        "stable-diffusion-3.5-large": 3868,
+        "stable-diffusion-3.5-medium": 3915,
+        "seeddream": 3565
+      },
+      "training_eligible_by_regime": {
+        "id": 55276,
+        "cf": 33887,
+        "cm": 39591
+      }
+    },
+    "rl": {
+      "file": "grpo_train_10k_train.json",
+      "sha256": "85e2d49f9fb9eceffe8f47dd90d8b7f31ba7258d7ee6df02e91b6d6183eb52fa",
+      "bytes": 24723317,
+      "rows": 10000,
+      "unique_image_ids": 10000,
+      "duplicate_image_ids": 0,
+      "by_type": {
+        "real": 5000,
+        "remove": 1987,
+        "edit": 3013
+      },
+      "by_generator": {
+        "real": 5000,
+        "stable-diffusion-3.5-medium": 405,
+        "step1x-edit": 531,
+        "qwen": 654,
+        "gemini": 508,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 418,
+        "flux.1-dev": 421,
+        "seeddream": 701,
+        "stable-diffusion-3.5-large": 475,
+        "gpt": 422,
+        "stable-diffusion-inpainting": 465
+      },
+      "training_eligible_by_regime": {
+        "id": 10000,
+        "cf": 6987,
+        "cm": 8247
+      }
+    },
+    "test": {
+      "file": "test_dataset.json",
+      "sha256": "d1219b2c01772bd1df67204a8b54e775d3e8f538db75bd2b6d88e865c442be6c",
+      "bytes": 73579152,
+      "rows": 30000,
+      "unique_image_ids": 30000,
+      "duplicate_image_ids": 0,
+      "by_type": {
+        "remove": 9048,
+        "real": 10000,
+        "edit": 10952
+      },
+      "by_generator": {
+        "stable-diffusion-3.5-medium": 2063,
+        "real": 10000,
+        "stable-diffusion-xl-1.0-inpainting-0.1": 1999,
+        "step1x-edit": 1922,
+        "gpt": 2069,
+        "flux.1-dev": 2053,
+        "qwen": 1940,
+        "seeddream": 1889,
+        "stable-diffusion-3.5-large": 2040,
+        "stable-diffusion-inpainting": 2078,
+        "gemini": 1947
+      },
+      "training_eligible_by_regime": null
+    }
+  },
+  "cross_split_image_overlap": {
+    "sft_vs_rl": 0,
+    "sft_vs_test": 0,
+    "rl_vs_test": 0
+  },
+  "limitations": [
+    "No raw-image existence/hash verification",
+    "No source/patient/near-duplicate audit",
+    "Eligibility counts are proposed filters, not evidence of prior training exclusions",
+    "Does not establish that released manifests generated the published scores"
+  ],
+  "dataset_revision": "7bbf54f870584b37d6594593da76b2fc78fe4c5b"
+}
