@@ -4,7 +4,9 @@ Last updated: **2026-11-03**. Historical snapshot reviewed: `1bcbc7393e8e0a3cbb8
 
 ## Current state and immediate objective
 
-**Latest priority correction (2026-11-03): reproduce the full original MedForge setup first, then evaluate model/dataset novelty.** The user explicitly placed this before the earlier model-improvement roadmap. See [the reproduction work order](ORIGINAL_PROTOCOL_REPRODUCTION.md). Official HF SFT/RL/test manifests have now been downloaded and counted: 55,276 / 10,000 / 30,000 rows, with zero cross-file image-ID overlap. This supersedes the earlier assumption that obtaining official sample lists was still unresolved. Raw-image availability and source/patient independence remain unverified. The upstream evaluator failed a synthetic check because parsing helpers are missing, and its GSPO script contains conflicting beta/vLLM flags. No training or model inference has started.
+**Latest priority correction (2026-11-03): run our Bridge method directly on the full official MedForge splits; defer MedForge baseline reproduction.** The user superseded the earlier baseline-first plan. Neither retraining MedForge-Reasoner nor evaluating its released checkpoint is a prerequisite. See [the Bridge full-protocol work order](ORIGINAL_PROTOCOL_REPRODUCTION.md). Keep the official test and regime exclusions, use our own training method, and label published baseline numbers as references rather than reproduced results. Kidney/colon augmentation follows this first comparison.
+
+Official HF SFT/RL/test manifests have been downloaded and counted: 55,276 / 10,000 / 30,000 rows, with zero cross-file image-ID overlap. This supersedes the earlier assumption that obtaining official sample lists was still unresolved. Raw-image availability and source/patient independence remain unverified. The upstream evaluator failed a synthetic check because parsing helpers are missing; metric compatibility still needs resolution. Conflicting beta/vLLM flags in the upstream GSPO launcher are retained as historical findings but do not block our independent Bridge training pipeline. No training or model inference has started.
 
 The project addresses detecting and localizing lesion insertion/removal in medical images. The long-term goal is reliable, clinically meaningful evaluation across source populations, organs and editing models, supported by reproducible data lineage and uncertainty estimates.
 
@@ -167,9 +169,9 @@ Next exact-protocol comparison requires the original split/sample identities, re
 
 | Order | Work / hypothesis | Evidence to obtain |
 |---|---|---|
-| Now | Reproduce original full-data baseline before novelty; resolve upstream implementation gaps and execute on data host | Official manifest inventory, full image coverage, pinned environment, original-model baseline and complete 30,000-image evaluations |
+| Now | Train Bridge directly on the official eligible SFT/RL pools and evaluate the full official test; defer MedForge baseline runs | Verified image coverage, pinned Bridge environment, validated scorer, validation-selected ID/CF/CM checkpoints and complete 30,000-image evaluations |
 | Parallel audit | Can source/patient/duplicate grouping eliminate measured leakage? Keep any repaired benchmark separate from original-protocol reproduction. | Full-data lineage table, unknown-ID coverage, duplicate decisions, new versioned split lock and successful pool checks |
-| After original baseline | Does balanced continued SFT explain the gain attributed to RL? | Matched three-or-more-seed experiment; identical base/continuation eligibility; configs, steps, image exposure, FLOPs/time and grouped CIs |
+| After first full Bridge run | Does balanced continued SFT explain the gain attributed to RL? | Matched three-or-more-seed experiment; identical base/continuation eligibility; configs, steps, image exposure, FLOPs/time and grouped CIs |
 | Next | Do paste-back edges or nonclinical traces drive MF-Clean performance? | Boundary-only/outside-mask/sham controls, alternate compositing/encoding, unseen editors and source-matched authentic controls |
 | Major | Can the kidney/colon extension become a defensible benchmark? | Same-source real/edit/remove construction, source/video/case disjointness, diverse editors, deduplication and blinded clinical QC |
 | Major | Does a single fixed model transfer to genuinely unseen organs? | No-target-tuning kidney/colon results, per-type/source/organ metrics and external confirmatory set |
